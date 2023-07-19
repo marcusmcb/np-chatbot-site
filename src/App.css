@@ -27,6 +27,7 @@
 	color: white;
 	font-size: 14px;
 	height: 2vh;
+	color: rgb(242, 192, 74)
 }
 
 .details-inset {
@@ -47,6 +48,7 @@
 	font-size: 22px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 500;
+	color: rgb(242, 192, 74)
 }
 
 .download-section {
@@ -99,6 +101,10 @@
 	color: white;
 }
 
+.download-header {
+	font-size: 30px !important;
+}
+
 .description-box {
 	border-radius: 15px;
 	background-color: rgb(49, 49, 49);
@@ -142,6 +148,7 @@
 .site-title {
 	font-size: 36px;
 	font-weight: 700;
+	color: rgb(242, 192, 74)
 }
 
 button {
@@ -153,6 +160,7 @@ button {
 	cursor: pointer;
 	transition: background-color 0.3s;
 	font-family: 'DM Sans', sans-serif;
+	
 }
 
 button:hover {

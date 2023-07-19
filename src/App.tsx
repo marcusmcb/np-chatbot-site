@@ -11,7 +11,7 @@ function App() {
 			</div>
 			<div className='download-section'>
 				<div className='download-box'>
-					<p>Download npChatbot For Twitch</p>
+					<p className='download-header'>Download npChatbot For Twitch</p>
 					<button>Download</button>
 				</div>
 				<div className='description-box'>
@@ -31,7 +31,7 @@ function App() {
 			</div>
 			<div className='details-panel'>
 				<div className='details-inset'>
-					<div className='details-header'>Panel Left</div>
+					<div className='details-header'>Real Time Playlist Stats</div>
 					<p>
 						This is where the future description of the npChatbot app and
 						everything that it's capable of doing. It'll have way more text in
@@ -39,7 +39,7 @@ function App() {
 					</p>
 				</div>
 				<div className='details-inset'>
-					<div className='details-header'>Panel Right</div>
+					<div className='details-header'>Open Up A World Of Music Discovery</div>
 					<p>
 						This is where the future description of the npChatbot app and
 						everything that it's capable of doing. It'll have way more text in
