@@ -1,29 +1,55 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
 function App() {
-  return (
-    <div className="App">
-      <div className="banner">
-        npChatbot For Twitch
-      </div>
-      <div className="description">
-        This is where the future description of the npChatbot app and everything that it's capable of doing.  It'll have way more text in here once it's complete and will fill out the element properly.
-      </div>
-      <div className="download-section">
-        <div className="download-box">
-          <p>Download npChatbot For Twitch</p>
-          <button>Download</button>
-        </div>
-        <div className="description-box">
-          Here's a secondary element on the page that will display some relevant text to the user once it's been completed, tested, and deployed up to the live site for people to view and use and download.
-        </div>
-      </div>
-      <div className="footer">
-        npChatbot, 2023
-      </div>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<div className='banner navbar'>
+				<a href='#installation'>Installation</a>
+				<div className='site-title'>npChatbot For Twitch</div>
+				<a href='#commands'>Commands</a>
+			</div>
+			<div className='download-section'>
+				<div className='download-box'>
+					<p>Download npChatbot For Twitch</p>
+					<button>Download</button>
+				</div>
+				<div className='description-box'>
+					<div className='description-box-header'>
+						Add A New Level Of Interactivity To Your Twitch Stream
+					</div>
+					<div className='description-box-text'>
+						<p>
+							npChatbot for Twitch allows you to integrate your Serato play
+							history directly into your Twitch channel. With a series of chat
+							commands enabled, your viewers can find out the currently playing
+							song in your stream, the previously played song, the longest song
+							played so far, and many others.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div className='details-panel'>
+				<div className='details-inset'>
+					<div className='details-header'>Panel Left</div>
+					<p>
+						This is where the future description of the npChatbot app and
+						everything that it's capable of doing. It'll have way more text in
+						here once it's complete and will fill out the element properly.
+					</p>
+				</div>
+				<div className='details-inset'>
+					<div className='details-header'>Panel Right</div>
+					<p>
+						This is where the future description of the npChatbot app and
+						everything that it's capable of doing. It'll have way more text in
+						here once it's complete and will fill out the element properly.
+					</p>
+				</div>
+			</div>
+			<div className='footer'>npChatbot, 2023</div>
+		</div>
+	)
 }
 
-export default App;
+export default App

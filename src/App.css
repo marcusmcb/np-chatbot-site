@@ -1,66 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .App {
 	font-family: Arial, sans-serif;
 	text-align: center;
 	margin-left: 3vw;
-  margin-right: 3vw;
+	margin-right: 3vw;
 	padding: 0;
 	border: 2px solid black;
 }
 
 .banner {
-	background-color: darkslategray;	
-	padding: 20px 0;
+	background-color: black;
+	padding: 30px 0;
 	width: 100%;
 	font-size: 24px;
-	font-weight: bold;  
-  color: white;
+	font-weight: 600;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	font-family: 'Fira Sans', sans-serif;
 }
 
 .footer {
-  background-color: darkslategrey;
-  padding: 20px 0;
-  color: white;
-  font-size: 14px;
-  height: 2vh;
+	background-color: black;
+	padding: 20px 0;
+	color: white;
+	font-size: 14px;
+	height: 2vh;
 }
 
-.description {
-	padding: 25px;
-	color: black;
-  background-color: lightgrey;    
+.details-inset {
+	padding: 30px;
+	color: white;	
+	border-radius: 15px;		
+}
+
+.details-panel {
+	background-color: rgb(43, 43, 43);
+	padding: 15px 15px 30px 15px;
+	display: flex;
+	justify-content: space-between;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.details-header {
+	font-size: 22px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
 }
 
 .download-section {
+	position: relative;
+	background-image: url('../public/images/dj_bench.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 	display: flex;
 	justify-content: space-between;
-	
+	padding: 50px;
+}
+
+.download-section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(
+		0,
+		0,
+		0,
+		0.5
+	); /* Change the 0.5 to control the darkness level */
+	pointer-events: none; /* Ensures the overlay doesn't interfere with any interactions */
+	z-index: 1; /* Make sure the overlay is above the background image but below any child content */
+}
+
+/* Ensure content inside .download-section is above the overlay */
+.download-section > * {
+	position: relative;
+	z-index: 2;
+}
+
+.footer {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
 }
 
 .download-box,
 .description-box {
 	flex: 1;
-	padding: 20px;
-	height: 200px;
+	padding: 20px;	
 	box-sizing: border-box;
-  border: 1px solid grey;
+}
+
+.download-box {
+	color: white;
+}
+
+.description-box {
+	border-radius: 15px;
+	background-color: rgb(49, 49, 49);
+	color: white;	
+}
+
+.description-box-header {
+	font-size: 28px;
+	margin: 20px 150px 40px 150px;			
+	font-family: 'Fira Sans', sans-serif;	
+	font-weight: 600;
+}
+
+.description-box-text {
+	margin-bottom: 40px;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .download-box p {
 	margin-top: 40px;
 	margin-bottom: 20px;
-	font-size: 20px;
+	font-size: 25px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 600;
+}
+
+.navbar a {
+	color: white;
+	margin: 0 15px;
+	text-decoration: none;
+	padding: 5px 10px;
+	transition: background-color 0.3s;
+	font-size: 16px;
+	border-radius: 15px;
+}
+
+.navbar a:hover {
+	background-color: grey;
+}
+
+.site-title {
+	font-size: 36px;
+	font-weight: 700;
 }
 
 button {
 	padding: 10px 20px;
-	background-color: darkslategray;
+	background-color: rgb(49, 49, 49);
 	border: none;
 	color: #fff;
 	border-radius: 5px;
 	cursor: pointer;
 	transition: background-color 0.3s;
+	font-family: 'DM Sans', sans-serif;
 }
 
 button:hover {
-	background-color: #0056b3;
+	background-color: grey;
 }
