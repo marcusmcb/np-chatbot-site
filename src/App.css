@@ -1,3 +1,66 @@
 .App {
-  text-align: center;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	margin-left: 3vw;
+  margin-right: 3vw;
+	padding: 0;
+	border: 2px solid black;
+}
+
+.banner {
+	background-color: darkslategray;	
+	padding: 20px 0;
+	width: 100%;
+	font-size: 24px;
+	font-weight: bold;  
+  color: white;
+}
+
+.footer {
+  background-color: darkslategrey;
+  padding: 20px 0;
+  color: white;
+  font-size: 14px;
+  height: 2vh;
+}
+
+.description {
+	padding: 25px;
+	color: black;
+  background-color: lightgrey;    
+}
+
+.download-section {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.download-box,
+.description-box {
+	flex: 1;
+	padding: 20px;
+	height: 200px;
+	box-sizing: border-box;
+  border: 1px solid grey;
+}
+
+.download-box p {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+button {
+	padding: 10px 20px;
+	background-color: darkslategray;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #0056b3;
 }
