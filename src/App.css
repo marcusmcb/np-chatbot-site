@@ -27,13 +27,13 @@
 .footer {
 	font-size: 14px;
 	height: 2vh;
-	color: rgb(242, 192, 74);
+	color: rgb(74, 242, 228);
 	font-weight: 500;
 }
 
 .navbar a {
 	color: white;
-	margin: 10px 15px;
+	/* margin: 10px 20px; */
 	/* margin-top: 10px; */
 	text-decoration: none;
 	padding: 5px 10px;
@@ -47,7 +47,7 @@
 }
 
 .navbar a:hover {
-	color: rgb(242, 192, 74)
+	color: rgb(74, 242, 228);
 }
 
 /* Details styling */
@@ -62,7 +62,7 @@
 .details-header, .download-box p, .description-box-header {
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 600;
-	color: rgb(242, 192, 74);
+	color: rgb(74, 242, 228);
 }
 
 .details-header {
@@ -125,15 +125,16 @@
 
 .description-box-text {
 	margin-bottom: 40px;
+	margin-left: 55px;
+	margin-right: 55px;
 	font-family: 'DM Sans', sans-serif;
 	font-size: 20px;
-	font-weight: 300 !important;
-	/* color: rgb(201, 255, 157); */
+	font-weight: 300 !important;	
 }
 
 /* Buttons styling */
 button {
-	padding: 10px 20px;
+	padding: 20px 35px;
 	background-color: rgb(49, 49, 49);
 	border: none;
 	color: #fff;
@@ -141,10 +142,12 @@ button {
 	cursor: pointer;
 	transition: background-color 0.3s;
 	font-family: 'DM Sans', sans-serif;
+	font-size: 1em;
 }
 
 button:hover {
-	background-color: grey;
+	background-color: rgb(74, 242, 228);
+	color: rgb(49, 49, 49)
 }
 
 @media (min-width: 1400px) {
@@ -167,11 +170,26 @@ button:hover {
 	}
 
 	.download-box, .description-box {
-		width: 100%;
-		margin-bottom: 20px;
+		width: 100%;	
+		padding: 5px;	
+		margin-bottom: 30px;
+	}
+
+	.description-box-text {
+		margin-left: 5px;
+		margin-right: 5px;		
+	}
+
+	.description-box {
+
 	}
 
 	.description-box-header {
-		margin: 20px 50px 40px 50px;
+		margin: 20px 20px 40px 20px;
 	}	
+
+	.details-inset {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
 }
