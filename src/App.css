@@ -88,7 +88,7 @@
 	background-image: url('../public/images/dj_bench.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center -360px;
 	padding: 50px;
 }
 
@@ -188,10 +188,7 @@ button:hover {
 	.description-box-text {
 		margin-left: 5px;
 		margin-right: 5px;
-	}
-
-	.description-box {
-	}
+	}	
 
 	.description-box-header {
 		margin: 20px 20px 40px 20px;

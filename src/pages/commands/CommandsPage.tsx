@@ -5,7 +5,11 @@ const CommandsPage = (): JSX.Element => {
 		<>
 			<div className='commands-page'>
 				<div className='commands-page-container'>
-					<div className='commands-page-header'>Commands List:</div>
+					<div className='commands-page-header'>Command List:</div>
+					<div className='commands-page-text'>
+						<b>!np <i>test</i></b>{' '}
+						<p>utility command to test communication between npChatbot and your Twitch chatbot account (restricted to streamer/mod use only)</p>
+					</div>
 					<div className='commands-page-text'>
 						<b>!np ("now playing")</b>{' '}
 						<p>displays the title/artist of the current song playing</p>
