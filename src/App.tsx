@@ -10,7 +10,7 @@ import LandingPage from './pages/landing/LandingPage'
 
 import './App.css'
 
-const App = ():JSX.Element => {
+const App = (): JSX.Element => {
 	return (
 		<Router>
 			<div className='App'>

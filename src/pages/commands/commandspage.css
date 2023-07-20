@@ -1,32 +1,32 @@
 .commands-page {
 	background-color: rgb(49, 49, 49);
 	color: white;
-  padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .commands-page-container {
-  margin-left: 20vw;
-  margin-right: 20vw;
-  text-align: left;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	text-align: left;
 }
 
 .commands-page-header {
-  padding: 20px 10px;
-  font-size: 28px;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 500;
-  color: rgb(74, 242, 228);
+	padding: 20px 10px;
+	font-size: 28px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
+	color: rgb(74, 242, 228);
 }
 
 .commands-page-text {
-  padding: 10px;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300; 
+	padding: 10px;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 300;
 }
 
 @media (max-width: 700px) {
-  .commands-page-container {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
+	.commands-page-container {
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
 }

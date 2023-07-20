@@ -13,8 +13,8 @@ const LandingPage = (): JSX.Element => {
 					<div className='description-box-text'>
 						<p>
 							Use the npChatbot app to connect your Twitch© chat with your
-							Serato&copy; Live Playlist and add a suite of interactive playlist commands to
-							your live-streamed DJ sets.
+							Serato&copy; Live Playlist and add a suite of interactive playlist
+							commands to your live-streamed DJ sets.
 						</p>
 					</div>
 				</div>

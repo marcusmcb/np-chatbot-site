@@ -59,13 +59,15 @@ const CommandsPage = (): JSX.Element => {
 					<div className='commands-page-text'>
 						<b>!shortestsong</b>{' '}
 						<p>
-							displays the title, artist, and length of the shortest song played in your stream so far
+							displays the title, artist, and length of the shortest song played
+							in your stream so far
 						</p>
 					</div>
 					<div className='commands-page-text'>
 						<b>!longestsong</b>{' '}
 						<p>
-							displays the title, artist, and length of the longest song played in your stream so far
+							displays the title, artist, and length of the longest song played
+							in your stream so far
 						</p>
 					</div>
 				</div>

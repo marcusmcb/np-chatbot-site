@@ -9,7 +9,8 @@
 	border: 2px solid black;
 }
 
-.banner, .footer {
+.banner,
+.footer {
 	background-color: black;
 	color: white;
 	padding: 30px 0;
@@ -51,7 +52,8 @@
 }
 
 /* Details styling */
-.details-panel, .download-section {
+.details-panel,
+.download-section {
 	background-color: rgb(43, 43, 43);
 	padding: 15px 15px 30px 15px;
 	display: flex;
@@ -59,7 +61,9 @@
 	font-family: 'DM Sans', sans-serif;
 }
 
-.details-header, .download-box p, .description-box-header {
+.details-header,
+.download-box p,
+.description-box-header {
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 600;
 	color: rgb(74, 242, 228);
@@ -71,8 +75,8 @@
 
 .details-inset {
 	padding: 30px;
-	color: white;	
-	border-radius: 15px;		
+	color: white;
+	border-radius: 15px;
 	font-weight: 300;
 	margin-left: 30px;
 	margin-right: 30px;
@@ -91,7 +95,10 @@
 .download-section::before {
 	content: '';
 	position: absolute;
-	top: 0; right: 0; bottom: 0; left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	background-color: rgba(0, 0, 0, 0.5);
 	pointer-events: none;
 	z-index: 1;
@@ -102,15 +109,16 @@
 	z-index: 2;
 }
 
-.download-box, .description-box {
+.download-box,
+.description-box {
 	flex: 1;
-	padding: 20px;	
+	padding: 20px;
 	box-sizing: border-box;
 	color: white;
 }
 
 .download-header {
-	font-size: 30px !important;	
+	font-size: 30px !important;
 }
 
 /* Description box styling */
@@ -129,7 +137,7 @@
 	margin-right: 55px;
 	font-family: 'DM Sans', sans-serif;
 	font-size: 20px;
-	font-weight: 300 !important;	
+	font-weight: 300 !important;
 }
 
 /* Buttons styling */
@@ -147,7 +155,7 @@ button {
 
 button:hover {
 	background-color: rgb(74, 242, 228);
-	color: rgb(49, 49, 49)
+	color: rgb(49, 49, 49);
 }
 
 @media (min-width: 1400px) {
@@ -160,33 +168,34 @@ button:hover {
 @media (max-width: 1200px) {
 	.description-box-header {
 		margin: 20px 80px 40px 80px;
-	}	
+	}
 }
 
 /* Media query for responsiveness */
 @media (max-width: 900px) {
-	.download-section, .details-panel {
+	.download-section,
+	.details-panel {
 		flex-direction: column;
 	}
 
-	.download-box, .description-box {
-		width: 100%;	
-		padding: 5px;	
+	.download-box,
+	.description-box {
+		width: 100%;
+		padding: 5px;
 		margin-bottom: 30px;
 	}
 
 	.description-box-text {
 		margin-left: 5px;
-		margin-right: 5px;		
+		margin-right: 5px;
 	}
 
 	.description-box {
-
 	}
 
 	.description-box-header {
 		margin: 20px 20px 40px 20px;
-	}	
+	}
 
 	.details-inset {
 		margin-left: 5px;
