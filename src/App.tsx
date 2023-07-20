@@ -81,7 +81,7 @@ const App = () => {
 					</p>
 				</div>
 			</div>
-			<div className='footer'>npChatbot, 2023</div>
+			<div className='footer'>npChatbot {new Date().getFullYear()}</div>
 		</div>
 	)
 }

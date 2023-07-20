@@ -154,6 +154,12 @@ button:hover {
 	}
 }
 
+@media (max-width: 1200px) {
+	.description-box-header {
+		margin: 20px 80px 40px 80px;
+	}	
+}
+
 /* Media query for responsiveness */
 @media (max-width: 900px) {
 	.download-section, .details-panel {
