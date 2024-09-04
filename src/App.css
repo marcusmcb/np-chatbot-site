@@ -45,7 +45,7 @@
 
 .footer a {
 	color: white;
-	text-decoration: none	;
+	text-decoration: none;
 }
 
 .site-title {
@@ -129,7 +129,7 @@
 
 /* Description box styling */
 .description-box {
-	border-radius: 15px;	
+	border-radius: 15px;
 	padding: 60px;
 }
 
@@ -145,6 +145,10 @@
 	font-family: 'DM Sans', sans-serif;
 	font-size: 24px;
 	font-weight: 300 !important;
+}
+
+.navbar-element {
+	margin-top: 12px;
 }
 
 /* Buttons styling */
@@ -195,7 +199,7 @@ button:hover {
 	.description-box-text {
 		margin-left: 5px;
 		margin-right: 5px;
-	}	
+	}
 
 	.description-box-header {
 		margin: 20px 20px 40px 20px;

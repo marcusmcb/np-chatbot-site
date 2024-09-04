@@ -18,15 +18,18 @@ const App = (): JSX.Element => {
 					<Link to='/'>
 						<span className='site-title'>npChatbot For Twitch</span>
 					</Link>
+					{/* move the remaining navbar links into single div
+					and set the flex direction accordingly on
+					smaller viewports */}
 					<Link to='/features'>
-						<span>Features</span>
+						<div className='navbar-element'>Features</div>
 					</Link>
 					<Link to='/installation'>
-						<span>Installation</span>
+						<div className='navbar-element'>Installation</div>
 					</Link>
 					{/* <div className='site-title'>npChatbot For Twitch</div> */}
 					<Link to='/commands'>
-						<span>Command List</span>
+						<div className='navbar-element'>Command List</div>
 					</Link>
 				</div>
 
@@ -37,9 +40,13 @@ const App = (): JSX.Element => {
 				</Routes>
 
 				<div className='footer'>
-					<Link to='/'>Feedback</Link>
+					<Link to='/feedback'>
+						<span>Feedback</span>
+					</Link>
 					<div>npChatbot {new Date().getFullYear()}</div>
-					<Link to='/'>Data Quirks</Link>
+					<Link to='/analysis'>
+						<span>Data Quirks</span>
+					</Link>
 				</div>
 			</div>
 		</Router>
