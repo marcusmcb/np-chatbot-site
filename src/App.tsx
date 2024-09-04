@@ -7,6 +7,9 @@ import { Routes } from 'react-router-dom'
 import InstallationPage from './pages/installation/InstallationPage'
 import CommandsPage from './pages/commands/CommandsPage'
 import LandingPage from './pages/landing/LandingPage'
+import FeaturesPage from './pages/features/FeaturesPage'
+import FeedbackPage from './pages/feedback/FeedbackPage'
+import AnalysisPage from './pages/analysis/AnalysisPage'
 
 import './App.css'
 
@@ -16,7 +19,7 @@ const App = (): JSX.Element => {
 			<div className='App'>
 				<div className='banner navbar'>
 					<Link to='/'>
-						<span className='site-title'>npChatbot For Twitch</span>
+						<span className='site-title'>npChatbot</span>
 					</Link>
 					{/* move the remaining navbar links into single div
 					and set the flex direction accordingly on
@@ -37,6 +40,9 @@ const App = (): JSX.Element => {
 					<Route path='/' element={<LandingPage />} />
 					<Route path='/installation' element={<InstallationPage />} />
 					<Route path='/commands' element={<CommandsPage />} />
+					<Route path='/features' element={<FeaturesPage />} />
+					<Route path='/feedback' element={<FeedbackPage />} />
+					<Route path='/analysis' element={<AnalysisPage />} />
 				</Routes>
 
 				<div className='footer'>
