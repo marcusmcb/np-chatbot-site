@@ -4,38 +4,67 @@ const FeaturesPage = (): JSX.Element => {
 	return (
 		<div className='features-page'>
 			<div className='features-page-header'>Features</div>
-			<div className='features-page-subheader'>Real Time Music Discovery</div>
-			<div className='features-page-container'>
-				<div className='features-page-feature'>
-					Minim elit amet officia sit cupidatat Lorem mollit minim culpa enim in
-					minim. Nostrud deserunt commodo tempor voluptate voluptate irure in
-					laboris cupidatat aliquip laborum irure. Duis ipsum mollit occaecat
-					enim. Consequat anim deserunt commodo esse ea voluptate reprehenderit
-					consectetur deserunt mollit pariatur anim.
-				</div>
-			</div>
 			<div className='features-page-subheader'>Real Time Playlist Stats</div>
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
-					Anim mollit ipsum duis officia occaecat aliquip id tempor ea. Proident
-					deserunt deserunt ullamco magna tempor sit amet anim. Enim ad elit
-					aliquip velit ipsum et minim duis veniam fugiat enim do reprehenderit
-					mollit. In anim labore tempor amet occaecat fugiat minim sint
-					exercitation quis commodo. Lorem qui ullamco irure elit ut deserunt
-					pariatur pariatur incididunt laboris aute officia tempor occaecat. Est
-					id aliquip qui occaecat labore pariatur est in dolor officia do magna.
+					<p>
+						npChatbot gives your viewers the ability to see your 'stats' in
+						real-time at any point during your stream.
+					</p>
+					<p>
+						Using the commmands in npChatbot, they (or you!) can check your
+						playlist stats for your current DJ set at any time. The !stats
+						command displays the total number of songs you've played so far,
+						your average song length for this set currently, and whether that
+						average has increased/decreased since the previous song played.
+					</p>
+					<p>
+						For a deeper dive, viewers have access to commands that determine
+						the shortest and longest songs played so far in your set, as well as
+						how many times you've rocked doubles during your set and which songs
+						you were cutting it up with.
+					</p>
 				</div>
 			</div>
-			<div className='features-page-subheader'>Search Your Play History By Song Or Artist</div>
+			<div className='features-page-subheader'>Interactive Music Discovery</div>
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
-					Anim mollit ipsum duis officia occaecat aliquip id tempor ea. Proident
-					deserunt deserunt ullamco magna tempor sit amet anim. Enim ad elit
-					aliquip velit ipsum et minim duis veniam fugiat enim do reprehenderit
-					mollit. In anim labore tempor amet occaecat fugiat minim sint
-					exercitation quis commodo. Lorem qui ullamco irure elit ut deserunt
-					pariatur pariatur incididunt laboris aute officia tempor occaecat. Est
-					id aliquip qui occaecat labore pariatur est in dolor officia do magna.
+					<p>
+						By opening up access to your real-time play history during your
+						live-stream DJ set, your viewers can query that history to see if
+						any specific artist or title has been played previously in your set.
+					</p>
+					<p>
+						The !np command ("now playing") and its options allow your viewers
+						to see the song currently playing, the previous song played (in case
+						they missed it!), the song you began your set with, and a "vibe
+						check" that returns a random selection from your play history
+						(title/artist) and how long ago you played it.
+					</p>
+				</div>
+			</div>
+			<div className='features-page-subheader'>
+				Search Your Play History By Song Or Artist
+			</div>
+			<div className='features-page-container'>
+				<div className='features-page-feature'>
+					<p>
+						The !dyp command (short for "did you play...?") allows your viewers
+						to digitally "dig" through your current Serato Live Playlist data in
+						real time.
+					</p>
+					<p>
+						When using the !dyp command followed by an artist's name or a song
+						title your viewers will see the total number of songs that match the
+						result along with the most recent song played and how long ago it
+						was played.
+					</p>
+					<p>
+						This gives a your viewers the ability to see what kind of music/vibe
+						you've been playing up to that point in the set, but also gives the
+						DJ some insight (and potential inspiration) on where to go next
+						musically speaking.
+					</p>
 				</div>
 			</div>
 		</div>

@@ -43,6 +43,10 @@
 	border-radius: 15px;
 }
 
+.navbar a:hover {
+	color: rgb(74, 242, 228);
+}
+
 .footer a {
 	color: white;
 	text-decoration: none;
@@ -66,6 +70,10 @@
 	justify-content: space-between;
 	font-family: 'DM Sans', sans-serif;
 }
+
+/* .download-box {
+	margin-top: 55px;
+} */
 
 .details-header,
 .download-box p,
@@ -95,7 +103,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center -360px;
-	padding: 50px;
+	/* padding: 50px; */
 }
 
 .download-section::before {
@@ -117,8 +125,7 @@
 
 .download-box,
 .description-box {
-	flex: 1;
-	padding: 20px;
+	flex: 1;	
 	box-sizing: border-box;
 	color: white;
 }
