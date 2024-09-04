@@ -15,15 +15,18 @@ const App = (): JSX.Element => {
 		<Router>
 			<div className='App'>
 				<div className='banner navbar'>
-					<Link to='/installation'>
-						<span>Installation</span>
-					</Link>
 					<Link to='/'>
 						<span className='site-title'>npChatbot For Twitch</span>
 					</Link>
+					<Link to='/features'>
+						<span>Features</span>
+					</Link>
+					<Link to='/installation'>
+						<span>Installation</span>
+					</Link>
 					{/* <div className='site-title'>npChatbot For Twitch</div> */}
 					<Link to='/commands'>
-						<span>Commands</span>
+						<span>Command List</span>
 					</Link>
 				</div>
 
@@ -33,7 +36,11 @@ const App = (): JSX.Element => {
 					<Route path='/commands' element={<CommandsPage />} />
 				</Routes>
 
-				<div className='footer'>npChatbot {new Date().getFullYear()}</div>
+				<div className='footer'>
+					<Link to='/'>Feedback</Link>
+					<div>npChatbot {new Date().getFullYear()}</div>
+					<Link to='/'>Data Quirks</Link>
+				</div>
 			</div>
 		</Router>
 	)
