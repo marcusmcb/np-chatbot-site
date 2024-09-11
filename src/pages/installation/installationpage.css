@@ -9,6 +9,16 @@
   font-family: "Fira Sans", sans-serif;
   text-align: left;
   margin-left: 30px;
+  color: rgb(74, 242, 228);
+}
+
+.installation-page-directions-step a {
+  text-decoration: none;
+  color: rgb(158, 239, 131);
+}
+
+.installation-page-directions-step a:visited {
+  color: rgb(158, 239, 131);
 }
 
 .installation-page-directions-container {
@@ -34,6 +44,6 @@
   color: rgb(74, 242, 228);
 }
 
-.installation-page-directions-step a:visited, a:hover {
+.installation-page-directions-step a:hover {
   color: rgb(74, 242, 228);
 }

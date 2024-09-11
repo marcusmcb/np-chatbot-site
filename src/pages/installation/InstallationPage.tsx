@@ -15,6 +15,15 @@ const InstallationPage = (): JSX.Element => {
 					3. Once installation has completed, start the npChatbot app.
 				</div>
 				<div className='installation-page-directions-step'>
+					3. Once started, click the "Authorize" button in the upper left to
+					authorize npChatbot with Twitch. You will need to be signed into the
+					account you want npChatbot to use for its responses (typically your
+					channel's chatbot account).
+				</div>
+				<div className='installation-page-directions-step'>
+					4. Once authorized with Twitch, you should be returned to the npChatbot app.
+				</div>
+				<div className='installation-page-directions-step'>
 					4. Enter and save your credentials on first use. You will not have to
 					resubmit your credentials each time.
 				</div>
@@ -23,7 +32,11 @@ const InstallationPage = (): JSX.Element => {
 				</div>
 				<div className='installation-page-directions-step'>
 					6. Start a{' '}
-					<a href='https://support.serato.com/hc/en-us/articles/228019568-Live-Playlists'>
+					<a
+						href='https://support.serato.com/hc/en-us/articles/228019568-Live-Playlists'
+						rel='noreferrer'
+						target='_blank'
+					>
 						Live Playlist
 					</a>{' '}
 					session in Serato DJ Pro.
@@ -53,7 +66,7 @@ const InstallationPage = (): JSX.Element => {
 						<li>individual command use</li>
 						<li>artists and titles queried (!dyp command use)</li>
 						<li>now playing queries (!np command use)</li>
-            <li>the shortest, longest, and average track lengths</li>
+						<li>the shortest, longest, and average track lengths</li>
 					</div>
 				</div>
 			</div>

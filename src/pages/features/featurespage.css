@@ -25,9 +25,14 @@
   padding-bottom: 30px;
 }
 
-.features-page-feature {
+.features-page-feature { 
   text-align: left;
   margin-left: 30px;
   padding: 10px 30px 10px 30px;
   font-family: "DM Sans", sans-serif;
+}
+
+.highlighted-text {
+  color: rgb(158, 239, 131);
+  font-weight: 600;
 }
