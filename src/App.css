@@ -6,7 +6,9 @@
 	text-align: center;
 	/* margin: 3vw 3vw 0 3vw; */
 	padding: 0;
-	border: 2px solid black;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
 }
 
 .banner,
@@ -65,10 +67,11 @@
 .details-panel,
 .download-section {
 	background-color: rgb(43, 43, 43);
-	padding: 15px 15px 30px 15px;
+	padding: 30px 15px 30px 15px;
 	display: flex;
 	justify-content: space-between;
 	font-family: 'DM Sans', sans-serif;
+	flex-grow: 1;
 }
 
 /* .download-box {
@@ -123,9 +126,14 @@
 	z-index: 2;
 }
 
+/* .download-box,
+.description-box {
+	padding: 100px;
+} */
+
 .download-box,
 .description-box {
-	flex: 1;	
+	flex: 1;
 	box-sizing: border-box;
 	color: white;
 }
@@ -137,7 +145,6 @@
 /* Description box styling */
 .description-box {
 	border-radius: 15px;
-	padding: 60px;
 }
 
 .description-box-header {
