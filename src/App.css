@@ -140,6 +140,7 @@
 
 .download-header {
 	font-size: 30px !important;
+	margin-top: 40px;
 }
 
 /* Description box styling */
@@ -153,9 +154,8 @@
 }
 
 .description-box-text {
-	margin-bottom: 40px;
-	margin-left: 55px;
-	margin-right: 55px;
+	margin: 40px 55px 40px 55px;
+
 	font-family: 'DM Sans', sans-serif;
 	font-size: 24px;
 	font-weight: 300 !important;
