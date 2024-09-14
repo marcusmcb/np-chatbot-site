@@ -24,6 +24,10 @@
 	font-weight: 300;
 }
 
+.commands-highlighted-text {
+	color: rgb(158, 239, 131);
+}
+
 @media (max-width: 700px) {
 	.commands-page-container {
 		margin-left: 5vw;

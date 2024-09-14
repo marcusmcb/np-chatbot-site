@@ -6,23 +6,31 @@ const CommandsPage = (): JSX.Element => {
 			<div className='commands-page'>
 				<div className='commands-page-container'>
 					<div className='commands-page-header'>Command List:</div>
+
 					<div className='commands-page-text'>
-						<b>!np <i>test</i></b>{' '}
-						<p>utility command to test communication between npChatbot and your Twitch chatbot account (restricted to streamer/mod use only)</p>
-					</div>
-					<div className='commands-page-text'>
-						<b>!np ("now playing")</b>{' '}
+						<b>
+							!np{' '}
+							<span className='commands-highlighted-text'>
+								(<i>"now playing"</i>)
+							</span>
+						</b>{' '}
 						<p>displays the title/artist of the current song playing</p>
 					</div>
 					<div className='commands-page-text'>
 						<b>
-							!np <i>previous</i>
+							!np{' '}
+							<span className='commands-highlighted-text'>
+								<i>previous</i>
+							</span>
 						</b>{' '}
 						<p>displays the title/artist of the previous song played</p>
 					</div>
 					<div className='commands-page-text'>
 						<b>
-							!np <i>start</i>
+							!np{' '}
+							<span className='commands-highlighted-text'>
+								<i>start</i>
+							</span>
 						</b>{' '}
 						<p>
 							displays the title/artist of the first song played in your stream
@@ -30,7 +38,10 @@ const CommandsPage = (): JSX.Element => {
 					</div>
 					<div className='commands-page-text'>
 						<b>
-							!np <i>vibecheck</i>
+							!np{' '}
+							<span className='commands-highlighted-text'>
+								<i>vibecheck</i>
+							</span>
 						</b>{' '}
 						<p>
 							displays the title/artist of a random selection from your play
@@ -39,9 +50,39 @@ const CommandsPage = (): JSX.Element => {
 					</div>
 					<div className='commands-page-text'>
 						<b>
-							!np <i>options</i>
+							!np{' '}
+							<span className='commands-highlighted-text'>
+								<i>shortest</i>
+							</span>
 						</b>{' '}
-						<p>displays the options for the !np commands in this chatbot</p>
+						<p>
+							displays the title, artist, and length of the shortest song played
+							in your stream so far
+						</p>
+					</div>
+					<div className='commands-page-text'>
+						<b>
+							!np{' '}
+							<span className='commands-highlighted-text'>
+								<i>longest</i>
+							</span>
+						</b>{' '}
+						<p>
+							displays the title, artist, and length of the longest song played
+							in your stream so far
+						</p>
+					</div>
+					<div className='commands-page-text'>
+						<b>
+							!np{' '}
+							<span className='commands-highlighted-text'>
+								<i>options</i>
+							</span>
+						</b>{' '}
+						<p>
+							links to this page for your viewer's to browse the available
+							commands
+						</p>
 					</div>
 					<div className='commands-page-text'>
 						<b>!stats</b>{' '}
@@ -61,17 +102,15 @@ const CommandsPage = (): JSX.Element => {
 						</p>
 					</div>
 					<div className='commands-page-text'>
-						<b>!shortestsong</b>{' '}
+						<b>
+							!np{' '}
+							<span className='commands-highlighted-text'>
+								<i>test</i>
+							</span>
+						</b>{' '}
 						<p>
-							displays the title, artist, and length of the shortest song played
-							in your stream so far
-						</p>
-					</div>
-					<div className='commands-page-text'>
-						<b>!longestsong</b>{' '}
-						<p>
-							displays the title, artist, and length of the longest song played
-							in your stream so far
+							utility command to test communication between npChatbot and your
+							Twitch chatbot account (restricted to streamer/mod use only)
 						</p>
 					</div>
 				</div>
