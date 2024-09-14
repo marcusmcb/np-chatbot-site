@@ -3,10 +3,50 @@ import './featurespage.css'
 const FeaturesPage = (): JSX.Element => {
 	return (
 		<div className='features-page'>
-			<div className='features-page-header'>Features</div>
-			<div className='features-page-subheader'>Interactive Music Discovery</div>
+			<div className='features-page-header-container'>
+				<div className='features-page-feature'>
+					<div className='features-page-header main-header page-title'>
+						So... what is npChatbot anyway?
+					</div>
+					<div className='features-page-feature main-header-text'>
+						<p>
+							npChatbot is a desktop app that adds a suite of interactive chat
+							commands to your Twitch© channel during your live streamed DJ
+							sets.
+						</p>
+						<p>
+							Under the hood, npChatbot links your{' '}
+							<a
+								className='serato-link'
+								href='https://support.serato.com/hc/en-us/articles/228019568-Live-Playlists'
+								rel='noreferrer'
+								target='_blank'
+							>
+								<span className='highlighted-text'>Serato© Live Playlist</span>
+							</a>{' '}
+							data to your Twitch© channel's chat, enabling an interactive
+							connection between the music you're playing and your viewers in
+							real time.
+						</p>
+					</div>
+				</div>
+				<div className='features-page-feature video-element'>
+					<video controls width='100%'>
+						<source src='/videos/npchatbot_demo.MP4' type='video/mp4' />
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+
+			<div className='features-page-container'></div>
+
+			{/* <hr /> */}
+
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
+					<div className='features-page-subheader'>
+						Interactive Music Discovery
+					</div>
 					<p>
 						By opening up access to your play history during your live-streamed
 						DJ sets, viewers can directly interact with that history in
@@ -22,15 +62,10 @@ const FeaturesPage = (): JSX.Element => {
 						history (title/artist) and how long ago you played it.
 					</p>
 				</div>
-			</div>
-			<div className='features-page-subheader'>Search By Song Or Artist</div>
-			<div className='features-page-container'>
 				<div className='features-page-feature'>
-					{/* <p>
-						The included <span className='highlighted-text'>!dyp</span> command
-						(short for "did you play...?") allows your viewers to digitally
-						"dig" through your current Serato Live Playlist data in real time.
-					</p> */}
+					<div className='features-page-subheader'>
+						Search By Song Or Artist
+					</div>
 					<p>
 						When using the <span className='highlighted-text'>!dyp</span>{' '}
 						command (short for "did you play...?") followed by an artist name or
@@ -47,13 +82,11 @@ const FeaturesPage = (): JSX.Element => {
 					</p>
 				</div>
 			</div>
-			<div className='features-page-subheader'>Real Time Playlist Stats</div>
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
-					{/* <p>
-						npChatbot gives your viewers the ability to see your 'stats' in
-						real-time at any point during your stream.
-					</p> */}
+					<div className='features-page-subheader'>
+						Real Time Playlist Stats
+					</div>
 					<p>
 						Using the commmands in npChatbot, they (or you!) can check your
 						current
@@ -63,11 +96,6 @@ const FeaturesPage = (): JSX.Element => {
 						whether that average has increased/decreased since the previous song
 						played.
 					</p>
-				</div>
-			</div>
-			<div className='features-page-subheader'>Deep Playlist Dives</div>
-			<div className='features-page-container'>
-				<div className='features-page-feature'>
 					<p>
 						For a deeper dive, viewers have access to commands that determine
 						the <span className='highlighted-text'>!shortestsong</span> and{' '}
@@ -77,14 +105,34 @@ const FeaturesPage = (): JSX.Element => {
 						and which songs you were cutting it up with when you did.
 					</p>
 				</div>
-			</div>
-			<div className='features-page-subheader'>OBS Integration</div>
-			<div className='features-page-container'>
 				<div className='features-page-feature'>
+					<div className='features-page-subheader'>OBS Integration</div>
 					<p>
-						With OBS Websockets enabled, you can enter your OBS socket address
-						(and password if secured) which will allow npChatbot to send its
-						command responses as text to OBS for use on-screen in your streams.
+						For streamers using OBS, npChatbot can be configured to send each
+						command's response to OBS for use in overlays in your live streams.
+					</p>
+					<p>
+						With{' '}
+						<a
+							className='serato-link'
+							href='https://obsproject.com/kb/remote-control-guide'
+							rel='noreferrer'
+							target='_blank'
+						>
+							<span className='highlighted-text'>OBS WebSockets</span>
+						</a>{' '}
+						enabled, you can enter your OBS websocket address (and password if
+						secured) which will allow npChatbot to send each command's response to OBS for
+						use on-screen as part of a{' '}
+						<a
+							className='serato-link'
+							href='https://obsproject.com/kb/text-sources'
+							rel='noreferrer'
+							target='_blank'
+						>
+							<span className='highlighted-text'>Text (GDI+)</span>
+						</a>{' '}
+						element.
 					</p>
 				</div>
 			</div>

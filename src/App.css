@@ -223,4 +223,10 @@ button:hover {
 		margin-left: 5px;
 		margin-right: 5px;
 	}
+
+	@media (max-width: 800px) {
+		.banner {
+			flex-direction: column;
+		}
+	}
 }

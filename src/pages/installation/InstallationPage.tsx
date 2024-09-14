@@ -21,7 +21,8 @@ const InstallationPage = (): JSX.Element => {
 					channel's chatbot account).
 				</div>
 				<div className='installation-page-directions-step'>
-					4. Once authorized with Twitch, you should be returned to the npChatbot app.
+					4. Once authorized with Twitch, you should be returned to the
+					npChatbot app.
 				</div>
 				<div className='installation-page-directions-step'>
 					4. Enter and save your credentials on first use. You will not have to
@@ -53,21 +54,6 @@ const InstallationPage = (): JSX.Element => {
 					9. Once you begin playing tracks in your stream, responses from the
 					npChatbot commands will be visible in your Twitch stream as chat text
 					or, optionally, on-screen in your OBS display.
-				</div>
-			</div>
-			<div className='installation-page-header'>FAQ</div>
-			<div className='installation-page-directions-setup'>
-				<div className='installation-page-faq-heading'>
-					What data is collected by npChatbot during my live streams?
-				</div>
-				<div className='installation-page-faq-text'>
-					The following data is collected by the app during your stream:
-					<div className='installation-page-faq-list-container'>
-						<li>individual command use</li>
-						<li>artists and titles queried (!dyp command use)</li>
-						<li>now playing queries (!np command use)</li>
-						<li>the shortest, longest, and average track lengths</li>
-					</div>
 				</div>
 			</div>
 		</div>

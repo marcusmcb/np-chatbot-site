@@ -1,6 +1,7 @@
 .installation-page {
   background-color: rgb(43, 43, 43);
   color: white;  
+  height: 100vh;
 }
 
 .installation-page-header {

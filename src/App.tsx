@@ -47,7 +47,7 @@ const App = (): JSX.Element => {
 
 				<div className='footer'>
 					<Link to='/feedback'>
-						<span>Feedback</span>
+						<span>Support</span>
 					</Link>
 					<div>npChatbot {new Date().getFullYear()}</div>
 					<Link to='/analysis'>

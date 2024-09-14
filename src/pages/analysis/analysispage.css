@@ -1,0 +1,39 @@
+.analysis-page {
+	background-color: rgb(43, 43, 43);
+	color: white;
+	padding-bottom: 30px;
+  height: 100vh;
+}
+
+.analysis-page-header {
+	font-size: 30px;
+	padding: 30px;
+	font-family: 'Fira Sans', sans-serif;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.analysis-page-subheader {
+	font-size: 20px;
+	padding: 10px 0px 10px 0px;
+	font-family: 'Fira Sans', sans-serif;
+	text-align: left;
+	margin-left: 50px;
+	color: rgb(74, 242, 228);
+}
+
+.analysis-page-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 15px;
+}
+
+.analysis-page-item {
+	text-align: left;
+	margin-left: 20px;
+	padding: 10px 30px 10px 30px;
+	font-family: 'DM Sans', sans-serif;
+	flex: 1;
+	box-sizing: border-box;
+}
