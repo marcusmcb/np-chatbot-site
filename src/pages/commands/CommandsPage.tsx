@@ -6,14 +6,8 @@ const CommandsPage = (): JSX.Element => {
 			<div className='commands-page'>
 				<div className='commands-page-container'>
 					<div className='commands-page-header'>Command List:</div>
-
 					<div className='commands-page-text'>
-						<b>
-							!np{' '}
-							<span className='commands-highlighted-text'>
-								(<i>"now playing"</i>)
-							</span>
-						</b>{' '}
+						<b>!np </b>{' '}
 						<p>displays the title/artist of the current song playing</p>
 					</div>
 					<div className='commands-page-text'>
@@ -85,7 +79,12 @@ const CommandsPage = (): JSX.Element => {
 						</p>
 					</div>
 					<div className='commands-page-text'>
-						<b>!stats</b>{' '}
+						<b>
+							!np{' '}
+							<span className='commands-highlighted-text'>
+								<i>stats</i>
+							</span>
+						</b>{' '}
 						<p>
 							displays the total number of songs played so far, your current
 							average song length for this stream, and your average song
@@ -93,12 +92,30 @@ const CommandsPage = (): JSX.Element => {
 						</p>
 					</div>
 					<div className='commands-page-text'>
-						<b>!doubles</b>{' '}
+						<b>
+							!np{' '}
+							<span className='commands-highlighted-text'>
+								<i>doubles</i>
+							</span>
+						</b>{' '}
 						<p>
 							displays the total number of times that you've played doubles (the
 							same track playing simultaneously on both decks) so far in your
 							stream and the title/artist of the last song you played doubles
 							with
+						</p>
+					</div>
+					<div className='commands-page-text'>
+						<b>
+							!dyp{' '}
+							<span className='commands-highlighted-text'>
+								(<i>artist or title</i>)
+							</span>
+						</b>{' '}
+						<p>
+							searches your play history for the artist or title queried. if
+							found, the response will display the how many matches were found
+							along with most recent match found and how long ago it was played.
 						</p>
 					</div>
 					<div className='commands-page-text'>
