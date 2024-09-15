@@ -21,9 +21,6 @@ const App = (): JSX.Element => {
 					<Link to='/'>
 						<span className='site-title'>npChatbot</span>
 					</Link>
-					{/* move the remaining navbar links into single div
-					and set the flex direction accordingly on
-					smaller viewports */}
 					<Link to='/features'>
 						<div className='navbar-element'>Features</div>
 					</Link>
@@ -49,7 +46,9 @@ const App = (): JSX.Element => {
 					<Link to='/feedback'>
 						<span>Support</span>
 					</Link>
-					<div>npChatbot {new Date().getFullYear()}</div>
+					<Link to='/'>
+						<div>npChatbot {new Date().getFullYear()}</div>
+					</Link>
 					<Link to='/analysis'>
 						<span>Data Quirks</span>
 					</Link>

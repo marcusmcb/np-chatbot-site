@@ -2,7 +2,6 @@
 	background-color: rgb(43, 43, 43);
 	color: white;
 	padding-bottom: 30px;
-  height: 100vh;
 }
 
 .analysis-page-header {
@@ -36,4 +35,14 @@
 	font-family: 'DM Sans', sans-serif;
 	flex: 1;
 	box-sizing: border-box;
+}
+
+.highlighted-analysis-text {
+	color: rgb(158, 239, 131);
+	font-weight: 600;
+}
+
+.icon-span {
+	font-size: 10px;
+	vertical-align: top;;
 }
