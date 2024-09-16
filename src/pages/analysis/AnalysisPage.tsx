@@ -11,21 +11,21 @@ const AnalysisPage = (): JSX.Element => {
 				<div className='analysis-page-item'>
 					<p>
 						Under the hood, npChatbot collects your Serato
-						<span className='icon-span'>©</span> Live Playlist data in real time
+						<span className='icon-span'>©</span> live playlist data in real time
 						and uses it to calculate the various stats used in the chatbot's
-						responses. Within that data, the title, artist, and the time each
+						responses. Within that data, the title, artist, and the time that each
 						song began playing is available and, from those start times,
 						npChatbot can determine the length of each song played.
 					</p>
 					<p>
-						However, the live playlist data only indicates when each song began
+						The live playlist data only indicates when each song began
 						playing, not when it ended. Assuming you're playing music with
 						minimal breaks between songs, this should create no issue in
-						determining the longest song in your set. With an extended
-						break between songs during a live set, making that determination
-						becomes challenging as it's difficult for npChatbot to assess
-						whether or not an abnormally long song was actually played in full
-						or was simply the result of a pause in the music during your set.
+						determining the longest song in your set. </p><p>However, with an extended break
+						between songs during a live set, making that determination becomes
+						challenging as it's difficult for npChatbot to assess whether or not
+						an abnormally long song was actually played in full or was simply
+						the result of a pause in the music during your set.
 					</p>
 					<p>
 						As such, when this scenario occurs during a live playlist set, the{' '}
@@ -66,15 +66,19 @@ const AnalysisPage = (): JSX.Element => {
 					<p>
 						"Doubles" occur during a live set when the DJ has the same song
 						playing on both decks at the same time (beat juggles, cut sessions,
-						etc). This is easily detected within a live playlist set as song
+						etc). This is easily detected within a live playlist set as the song
 						duplicated on both decks will appear as back to back track entries
 						within the DJ's play history.
 					</p>
 					<p>
-						However, despite extensive testing, we've noticed that Serato
-						<span className='icon-span'>©</span> DJ Pro Live Playlist feature
-						does not always log the duplicate consistently when playing doubles
-						like this.
+						However, despite extensive testing, we've noticed that the Serato
+						<span className='icon-span'>©</span> live playlist feature does not
+						always log the duplicate song entry consistently when playing doubles. Thus, when using the{' '}
+						<b>
+							<span className='highlighted-analysis-text'>!np doubles</span>
+						</b>{' '}
+						command, npChatbot may not display a response even though doubles
+						have actually occurred previously during your set.
 					</p>
 				</div>
 			</div>

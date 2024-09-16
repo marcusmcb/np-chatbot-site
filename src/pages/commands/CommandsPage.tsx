@@ -114,8 +114,8 @@ const CommandsPage = (): JSX.Element => {
 						</b>{' '}
 						<p>
 							searches your play history for the artist or title queried. if
-							found, the response will display the how many matches were found
-							along with most recent match found and how long ago it was played.
+							found, the response will display how many matches were found along
+							with most recent match found and how long ago it was played.
 						</p>
 					</div>
 					<div className='commands-page-text'>
