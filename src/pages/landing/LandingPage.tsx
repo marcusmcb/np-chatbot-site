@@ -20,20 +20,23 @@ const LandingPage = (): JSX.Element => {
 				</div>
 			</div>
 			<div className='details-panel'>
-				<div className='details-inset'>
-					<div className='details-header'>Real Time Music Discovery</div>
-					<p>
-						By opening up access to your real-time play history during your
-						live-stream DJ set, your viewers can query that history to see if
-						any specific artist or title has been played previously in your set.
-					</p>
-				</div>
-				<div className='details-inset'>
-					<div className='details-header'>Real Time Playlist Stats</div>
-					<p>
-						npChatbot gives your viewers the ability to see your 'stats' in
-						real-time at any point during your stream.
-					</p>
+				<div className='details-panel-container'>
+					<div className='details-inset'>
+						<div className='details-header'>Real Time Music Discovery</div>
+						<p>
+							By opening up access to your real-time play history during your
+							live-stream DJ set, your viewers can query that history to see if
+							any specific artist or title has been played previously in your
+							set.
+						</p>
+					</div>
+					<div className='details-inset'>
+						<div className='details-header'>Real Time Playlist Stats</div>
+						<p>
+							npChatbot gives your viewers the ability to see your 'stats' in
+							real-time at any point during your stream.
+						</p>
+					</div>
 				</div>
 			</div>
 		</>
