@@ -4,11 +4,11 @@ const FeaturesPage = (): JSX.Element => {
 	return (
 		<div className='features-page'>
 			<div className='features-page-header-container'>
-				<div className='features-page-feature'>
+				<div className='features-page-feature-main'>
 					<div className='features-page-header main-header page-title'>
 						What is npChatbot anyway?
 					</div>
-					<div className='features-page-feature main-header-text'>
+					<div className='features-page-feature-main main-header-text'>
 						<p>
 							npChatbot (<span className='highlighted-text'>"now playing"</span>
 							) is a desktop app that adds a suite of interactive chat commands

@@ -4,7 +4,6 @@
 .App {
 	font-family: Arial, sans-serif;
 	text-align: center;
-	/* margin: 3vw 3vw 0 3vw; */
 	padding: 0;
 	display: flex;
 	height: 100vh;
@@ -36,11 +35,9 @@
 
 .navbar a {
 	color: white;
-	/* margin: 10px 20px; */
-	/* margin-top: 10px; */
 	text-decoration: none;
 	padding: 5px 10px;
-	transition: background-color 0.3s;
+	transition: background-color 0.5s;
 	font-size: 16px;
 	border-radius: 15px;
 }
@@ -74,10 +71,6 @@
 	flex-grow: 1;
 }
 
-/* .download-box {
-	margin-top: 55px;
-} */
-
 .details-header,
 .download-box p,
 .description-box-header {
@@ -106,14 +99,12 @@
 	justify-content: space-around;
 }
 
-/* Download section styling */
 .download-section {
 	position: relative;
 	background-image: url('../public/images/dj_bench.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center -360px;
-	/* padding: 50px; */
 }
 
 .download-section::before {
@@ -133,11 +124,6 @@
 	z-index: 2;
 }
 
-/* .download-box,
-.description-box {
-	padding: 100px;
-} */
-
 .download-box,
 .description-box {
 	flex: 1;
@@ -150,7 +136,6 @@
 	margin-top: 40px;
 }
 
-/* Description box styling */
 .description-box {
 	border-radius: 15px;
 }
@@ -172,7 +157,6 @@
 	margin-top: 12px;
 }
 
-/* Buttons styling */
 button {
 	padding: 20px 35px;
 	background-color: rgb(49, 49, 49);
@@ -180,7 +164,7 @@ button {
 	color: #fff;
 	border-radius: 5px;
 	cursor: pointer;
-	transition: background-color 0.3s;
+	transition: background-color 0.5s;
 	font-family: 'DM Sans', sans-serif;
 	font-size: 1em;
 }
@@ -203,7 +187,6 @@ button:hover {
 	}
 }
 
-/* Media query for responsiveness */
 @media (max-width: 900px) {
 	.download-section,
 	.details-panel {
