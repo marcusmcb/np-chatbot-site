@@ -12,9 +12,10 @@ const LandingPage = (): JSX.Element => {
 					</div> */}
 					<div className='description-box-text'>
 						<p>
-							Use the npChatbot app to connect your Twitch© chat with your
-							Serato&copy; Live Playlist and add a suite of interactive playlist
-							commands to your live-streamed DJ sets.
+							Connect your Twitch<span className='icon-span-header'>©</span>{' '}
+							chat with your Serato<span className='icon-span-header'>©</span>{' '}
+							Live Playlist to add a collection of interactive music discovery
+							commands to your channel
 						</p>
 					</div>
 				</div>
@@ -24,17 +25,35 @@ const LandingPage = (): JSX.Element => {
 					<div className='details-inset'>
 						<div className='details-header'>Real Time Music Discovery</div>
 						<p>
-							By opening up access to your real-time play history during your
-							live-stream DJ set, your viewers can query that history to see if
-							any specific artist or title has been played previously in your
-							set.
+							npChatbot enables a unique level of music discovery during your
+							live-streamed DJ sets
+						</p>
+						<p>
+							The desktop app accomplishes this by connecting your Twitch
+							<span className='icon-span'>©</span> channel's chat to your Serato
+							<span className='icon-span'>©</span> Live Playlist via a group of
+							interactive chat commands.{' '}
+						</p>
+						<p>
+							The commands included allow your viewers to see the song "now
+							playing" or any song previously played during your set, as well as
+							the ability to directly search your play history by title or
+							artist.
 						</p>
 					</div>
 					<div className='details-inset'>
 						<div className='details-header'>Real Time Playlist Stats</div>
+						<p>npChatbot's commands aren't limited to just music discovery.</p>
+
 						<p>
-							npChatbot gives your viewers the ability to see your 'stats' in
-							real-time at any point during your stream.
+							The app also has the ability to display a number of real-time
+							"stats" during your live streams, giving both viewers and
+							streamers alike new insight into these DJ sets.
+						</p>
+						<p>
+							Check the average song length for your set, total songs played so
+							far, how many times you've rocked doubles, and more through the
+							included chat commands.
 						</p>
 					</div>
 				</div>

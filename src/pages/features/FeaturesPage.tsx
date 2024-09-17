@@ -6,13 +6,13 @@ const FeaturesPage = (): JSX.Element => {
 			<div className='features-page-header-container'>
 				<div className='features-page-feature'>
 					<div className='features-page-header main-header page-title'>
-						So... what is npChatbot anyway?
+						What is npChatbot anyway?
 					</div>
 					<div className='features-page-feature main-header-text'>
 						<p>
-							npChatbot is a desktop app that adds a suite of interactive chat
-							commands to your Twitch© channel during your live streamed DJ
-							sets.
+							npChatbot (<span className='highlighted-text'>"now playing"</span>
+							) is a desktop app that adds a suite of interactive chat commands
+							to your Twitch© channel during your live streamed DJ sets.
 						</p>
 						<p>
 							Under the hood, npChatbot links your{' '}
@@ -54,12 +54,15 @@ const FeaturesPage = (): JSX.Element => {
 						discovery to each stream.
 					</p>
 					<p>
-						The <span className='highlighted-text'>!np</span> command ("now
-						playing") and its options allow your viewers to see the song
-						currently playing, the previous song played (in case they missed
-						it!), the song you began your set with, and others. There's also a
-						"vibe check" option that returns a random selection from your play
-						history (title/artist) and how long ago you played it.
+						The <span className='highlighted-text'>!np</span> command and its
+						options allow your viewers to see the song currently playing, the
+						previous song played (in case they missed it!), the song you began
+						your set with, and others.
+					</p>
+					<p>
+						There's also a "vibecheck" option that returns a random selection
+						from your play history (title/artist) and how long ago you played
+						it.
 					</p>
 				</div>
 				<div className='features-page-feature'>
@@ -122,8 +125,8 @@ const FeaturesPage = (): JSX.Element => {
 							<span className='highlighted-text'>OBS WebSockets</span>
 						</a>{' '}
 						enabled, you can enter your OBS websocket address (and password if
-						secured) which will allow npChatbot to send each command's response to OBS for
-						use on-screen as part of a{' '}
+						secured) which will allow npChatbot to send each command's response
+						to OBS for use on-screen as part of a{' '}
 						<a
 							className='serato-link'
 							href='https://obsproject.com/kb/text-sources'
