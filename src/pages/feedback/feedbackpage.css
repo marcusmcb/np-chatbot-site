@@ -2,6 +2,7 @@
 	background-color: rgb(43, 43, 43);
 	color: white;
 	padding-bottom: 30px;	
+	
 }
 
 .feedback-page-header {
@@ -44,5 +45,7 @@
 .highlighted-text:hover {
 	color: rgb(74, 242, 228);
 }
+
+
 
 
