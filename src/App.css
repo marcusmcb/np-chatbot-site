@@ -219,4 +219,10 @@ button:hover {
 			flex-direction: column;
 		}
 	}
+
+	@media (max-width: 700px) {
+		.details-panel-container {
+			display: block;
+		}
+	}
 }

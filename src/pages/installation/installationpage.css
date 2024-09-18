@@ -1,50 +1,74 @@
 .installation-page {
-  background-color: rgb(43, 43, 43);
-  color: white;  
-  height: 100vh;
+	background-color: rgb(43, 43, 43);
+	color: white;
 }
 
 .installation-page-header {
-  font-size: 30px;
-  padding: 30px;
-  font-family: "Fira Sans", sans-serif;
-  text-align: left;
-  margin-left: 30px;
-  color: rgb(74, 242, 228);
+	font-size: 30px;
+	padding: 30px;
+	font-family: 'Fira Sans', sans-serif;
+	text-align: left;
+	margin-left: 30px;
+	color: rgb(74, 242, 228);
 }
 
 .installation-page-directions-step a {
-  text-decoration: none;
-  color: rgb(158, 239, 131);
+	text-decoration: none;
+	color: rgb(158, 239, 131);
 }
 
 .installation-page-directions-step a:visited {
-  color: rgb(158, 239, 131);
+	color: rgb(158, 239, 131);
 }
 
 .installation-page-directions-container {
-  padding-bottom: 30px;
+	padding-bottom: 30px;
 }
 
 .installation-page-directions-step,
 .installation-page-faq-heading,
 .installation-page-faq-text {
-  text-align: left;
-  margin-left: 30px;
-  padding: 10px 30px 10px 30px;
-  font-family: "DM Sans", sans-serif;
+	text-align: left;
+	margin-left: 30px;
+	padding: 10px 30px 10px 30px;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .installation-page-faq-list-container {
-  margin-top: 20px;
-  margin-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .installation-page-faq-heading {
-  font-size: 20px;
-  color: rgb(74, 242, 228);
+	font-size: 20px;
+	color: rgb(74, 242, 228);
 }
 
 .installation-page-directions-step a:hover {
-  color: rgb(74, 242, 228);
+	color: rgb(74, 242, 228);
 }
+
+.installation-page-directions-step img {
+	display: block; /* Ensures images start on a new line */
+	margin: 10px 0; /* Adds some spacing above and below the image */
+	height: auto; /* Maintains aspect ratio */
+}
+
+.highlighted-installation-text {
+	color: rgb(158, 239, 131);
+	font-weight: 600;
+}
+
+.installation-page-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@media (max-width: 575px) {
+	.installation-page-directions-step img {
+		width: 100%;
+	}
+}
+
+
