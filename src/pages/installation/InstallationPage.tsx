@@ -21,7 +21,10 @@ const InstallationPage = (): JSX.Element => {
 					<span className='highlighted-installation-text'>Authorize</span>{' '}
 					button in the upper left to authorize npChatbot with Twitch
 					<span className='icon-span'>©</span>.
-					<img src='/images/installation/setup_01_final.png' />
+					<img
+						src='/images/installation/setup_01_final.png'
+						alt='npChatbot instructions, step 1'
+					/>
 				</div>
 
 				<div className='installation-page-directions-step'>
@@ -41,13 +44,19 @@ const InstallationPage = (): JSX.Element => {
 						continue.
 					</p>
 
-					<img src='/images/installation/setup_02_final.png' />
+					<img
+						alt='npChatbot instructions, step 2'
+						src='/images/installation/setup_02_final.png'
+					/>
 				</div>
 
 				<div className='installation-page-directions-step'>
 					npChatbot will confirm the authorization and the app is now ready for
 					your credentials and preferences.
-					<img src='/images/installation/setup_03_final.png' />
+					<img
+						alt='npChatbot instructions, step 3'
+						src='/images/installation/setup_03_final.png'
+					/>
 				</div>
 			</div>
 
@@ -59,7 +68,10 @@ const InstallationPage = (): JSX.Element => {
 					your Serato<span className='icon-span'>©</span> profile display name.
 					Click <span className='highlighted-installation-text'>Update</span> to
 					save your settings and credentials.
-					<img src='/images/installation/setup_05_final.png' />
+					<img
+						alt='npChatbot instructions, step 4'
+						src='/images/installation/setup_05_final.png'
+					/>
 				</div>
 			</div>
 
@@ -91,7 +103,10 @@ const InstallationPage = (): JSX.Element => {
 						.
 					</p>
 
-					<img src='/images/installation/serato_01_final.png' />
+					<img
+						alt='npChatbot instructions, step 5'
+						src='/images/installation/serato_01_final.png'
+					/>
 				</div>
 
 				<div className='installation-page-directions-step'>
@@ -102,7 +117,10 @@ const InstallationPage = (): JSX.Element => {
 						<span className='highlighted-installation-text'>Edit Details</span>.
 					</p>
 
-					<img src='/images/installation/serato_02_final.png' />
+					<img
+						alt='npChatbot instructions, step 6'
+						src='/images/installation/serato_02_final.png'
+					/>
 				</div>
 
 				<div className='installation-page-directions-step'>
@@ -115,7 +133,10 @@ const InstallationPage = (): JSX.Element => {
 						<span className='highlighted-installation-text'>Save Changes</span>.
 					</p>
 
-					<img src='/images/installation/serato_03_final.png' />
+					<img
+						alt='npChatbot instructions, step 7'
+						src='/images/installation/serato_03_final.png'
+					/>
 				</div>
 
 				<div className='installation-page-directions-step'>
@@ -128,7 +149,10 @@ const InstallationPage = (): JSX.Element => {
 						You'll see a confirmation message once npChatbot is successfully
 						connected to Twitch.
 					</p>
-					<img src='/images/installation/setup_10_final.png' />
+					<img
+						alt='npChatbot instructions, step 8'
+						src='/images/installation/setup_10_final.png'
+					/>
 				</div>
 
 				<div className='installation-page-directions-step'>
@@ -166,7 +190,10 @@ const InstallationPage = (): JSX.Element => {
 						to save your settings.
 					</p>
 
-					<img src='/images/installation/setup_08_final.png' />
+					<img
+						alt='npChatbot instructions, step 9'
+						src='/images/installation/setup_08_final.png'
+					/>
 				</div>
 				<div className='installation-page-directions-step'>
 					<p>
@@ -188,7 +215,10 @@ const InstallationPage = (): JSX.Element => {
 						Password.
 					</p>
 
-					<img src='/images/installation/obs_setup_01_final.png' />
+					<img
+						alt='npChatbot instructions, step 9'
+						src='/images/installation/obs_setup_01_final.png'
+					/>
 				</div>
 			</div>
 
@@ -198,7 +228,10 @@ const InstallationPage = (): JSX.Element => {
 					Set your chatbot preferences for OBS display and interval messages.
 					Click <span className='highlighted-installation-text'>Update</span> to
 					save your settings.
-					<img src='/images/installation/setup_09_final.png' />
+					<img
+						alt='npChatbot instructions, step 9'
+						src='/images/installation/setup_09_final.png'
+					/>
 				</div>
 			</div>
 
