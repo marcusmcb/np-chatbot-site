@@ -6,7 +6,9 @@ const LandingPage = (): JSX.Element => {
 			<div className='download-section'>
 				<div className='download-box'>
 					<p className='download-header'>Download npChatbot</p>
-					<button>Download</button>
+					<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-setup.exe'>
+						<button>Download</button>
+					</a>
 				</div>
 				<div className='description-box'>
 					<div className='description-box-text'>

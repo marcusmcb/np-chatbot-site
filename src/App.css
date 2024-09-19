@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Basic layout and styles */
 .App {
 	font-family: Arial, sans-serif;
 	text-align: center;
@@ -60,7 +59,6 @@
 	color: rgb(74, 242, 228);
 }
 
-/* Details styling */
 .details-panel,
 .download-section {
 	background-color: rgb(43, 43, 43);
