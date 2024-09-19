@@ -5,6 +5,30 @@ const AnalysisPage = (): JSX.Element => {
 		<div className='analysis-page'>
 			<div className='analysis-page-header'>Data Quirks</div>
 			<div className='analysis-page-subheader'>
+				Command Responses On Start Up
+			</div>
+			<div className='analysis-page-container'>
+				<div className='analysis-page-item'>
+					<p>
+						A number of the calculations used in several of npChatbot's commands
+						require a minimum of 3-4 tracks to be played in order to generate an
+						accurate result.
+					</p>
+					<p>
+						As such, the following commands require a minimum of 3-4 tracks to
+						return a proper response.
+					</p>
+					<p className='highlighted-analysis-text'>!np stats</p>
+					<p className='highlighted-analysis-text'>!np longest</p>
+					<p className='highlighted-analysis-text'>!np shortest</p>
+					<p>
+						The response from npChatbot will indicate this if used before the
+						minimum number of tracks have been played. Once the threshold's been
+						met, all commands will return the expected results.
+					</p>
+				</div>
+			</div>
+			<div className='analysis-page-subheader'>
 				Determining The Longest Song Played
 			</div>
 			<div className='analysis-page-container'>
@@ -13,19 +37,22 @@ const AnalysisPage = (): JSX.Element => {
 						Under the hood, npChatbot collects your Serato
 						<span className='icon-span'>©</span> live playlist data in real time
 						and uses it to calculate the various stats used in the chatbot's
-						responses. Within that data, the title, artist, and the time that each
-						song began playing is available and, from those start times,
+						responses. Within that data, the title, artist, and the time that
+						each song began playing is available and, from those start times,
 						npChatbot can determine the length of each song played.
 					</p>
 					<p>
-						The live playlist data only indicates when each song began
-						playing, not when it ended. Assuming you're playing music with
-						minimal breaks between songs, this should create no issue in
-						determining the longest song in your set. </p><p>However, with an extended break
-						between songs during a live set, making that determination becomes
-						challenging as it's difficult for npChatbot to assess whether or not
-						an abnormally long song was actually played in full or was simply
-						the result of a pause in the music during your set.
+						The live playlist data only indicates when each song began playing,
+						not when it ended. Assuming you're playing music with minimal breaks
+						between songs, this should create no issue in determining the
+						longest song in your set.{' '}
+					</p>
+					<p>
+						However, with an extended break between songs during a live set,
+						making that determination becomes challenging as it's difficult for
+						npChatbot to assess whether or not an abnormally long song was
+						actually played in full or was simply the result of a pause in the
+						music during your set.
 					</p>
 					<p>
 						As such, when this scenario occurs during a live playlist set, the{' '}
@@ -73,12 +100,15 @@ const AnalysisPage = (): JSX.Element => {
 					<p>
 						However, despite extensive testing, we've noticed that the Serato
 						<span className='icon-span'>©</span> live playlist feature does not
-						always log the duplicate song entry consistently when playing doubles. Thus, when using the{' '}
+						always log the duplicate song entry consistently when playing
+						doubles. Thus, when using the{' '}
 						<b>
 							<span className='highlighted-analysis-text'>!np doubles</span>
 						</b>{' '}
 						command, npChatbot may not display a response even though doubles
-						have actually occurred previously during your set.
+						have actually occurred previously during your set. Alternately, it
+						may display an older set of doubles as the most recent played
+						despite a more recent set having taken place.
 					</p>
 				</div>
 			</div>

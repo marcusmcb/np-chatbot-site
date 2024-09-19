@@ -1,3 +1,7 @@
+const CopyRightIcon = (): JSX.Element => {
+	return <span className='icon-span'>©</span>
+}
+
 const LandingPage = (): JSX.Element => {
 	return (
 		<>
@@ -26,35 +30,29 @@ const LandingPage = (): JSX.Element => {
 						<div className='details-header'>Real Time Music Discovery</div>
 						<p>
 							npChatbot enables a unique level of music discovery during your
-							live-streamed DJ sets
+							live-streamed DJ sets by connecting your Twitch
+							<CopyRightIcon /> chat to your Serato
+							<CopyRightIcon /> Live Playlist and includes:
 						</p>
+						<p>* Real-time display of the track "now playing"</p>
+						<p>* Access to any previously played song during your set</p>
 						<p>
-							The desktop app accomplishes this by connecting your Twitch
-							<span className='icon-span'>©</span> channel's chat to your Serato
-							<span className='icon-span'>©</span> Live Playlist via a group of
-							interactive chat commands.{' '}
-						</p>
-						<p>
-							The commands included allow your viewers to see the song "now
-							playing" or any song previously played during your set, as well as
-							the ability to directly search your play history by title or
-							artist.
+							* Search functionality by song title and artist in your live play
+							history
 						</p>
 					</div>
 					<div className='details-inset'>
-						<div className='details-header'>Real Time Playlist Stats</div>
-						<p>npChatbot's commands aren't limited to just music discovery.</p>
-
+						<div className='details-header'>Instant Playlist Stats</div>
 						<p>
-							The app also has the ability to display a number of real-time
-							"stats" during your live streams, giving both viewers and
-							streamers alike new insight into these DJ sets.
+							npChatbot's commands aren't limited to just music discovery. The
+							app also provides real-time "stats" during your live streams,
+							offering unique insights to both viewers and streamers these DJ
+							sets. These includes:
 						</p>
-						<p>
-							Check the average song length for your set, total songs played so
-							far, how many times you've rocked doubles, and more through the
-							included chat commands.
-						</p>
+						<p>* Average song length for your set</p>
+						<p>* Total songs played at any point during your set</p>
+						<p>* The shortest or longest song of your set</p>
+						<p>* How many times you've played "doubles" during your set</p>
 					</div>
 				</div>
 			</div>
