@@ -173,6 +173,17 @@ button:hover {
 	color: rgb(74, 242, 228);
 }
 
+.main-logo {
+	fill: white;
+	height: 50px;
+	width: 50px;
+}
+
+.logo-cluster {
+	display: flex;
+	flex-direction: row;
+}
+
 @media (min-width: 1400px) {
 	.details-inset {
 		margin-left: 80px;
@@ -202,8 +213,7 @@ button:hover {
 		padding: 5px;
 		margin-bottom: 30px;
 	}
-
-	.description-box-text {
+	a .description-box-text {
 		margin-left: 5px;
 		margin-right: 5px;
 	}
@@ -225,6 +235,10 @@ button:hover {
 	@media (max-width: 800px) {
 		.banner {
 			flex-direction: column;
+		}
+		.logo-cluster {
+			align-content: center;
+			justify-content: center;
 		}
 	}
 

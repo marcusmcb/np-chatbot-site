@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { Route } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
+import { ReactComponent as Logo } from './images/npchatbot-icon-black.svg'
 
 import InstallationPage from './pages/installation/InstallationPage'
 import CommandsPage from './pages/commands/CommandsPage'
@@ -18,9 +19,18 @@ const App = (): JSX.Element => {
 		<Router>
 			<div className='App'>
 				<div className='banner navbar'>
-					<Link to='/'>
-						<span className='site-title'>npChatbot</span>
-					</Link>
+					<div className='logo-cluster'>
+						<div>
+							<Link to='/'>
+								<span className='site-title'>npChatbot</span>
+							</Link>
+						</div>
+
+						<div>
+							<Logo className='main-logo' />
+						</div>
+					</div>
+
 					<Link to='/features'>
 						<div className='navbar-element'>Features</div>
 					</Link>
