@@ -50,7 +50,7 @@
 
 .installation-page-directions-step img {
 	display: block; /* Ensures images start on a new line */
-	margin: 10px 0; /* Adds some spacing above and below the image */
+	margin-top: 30px; /* Adds some spacing above and below the image */
 	height: auto; /* Maintains aspect ratio */
 }
 
