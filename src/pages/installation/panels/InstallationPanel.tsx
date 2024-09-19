@@ -4,7 +4,7 @@ const InstallationPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
 			<div className='installation-page-header'>
-				Installation & Initial Setup
+				1. Installation & Initial Setup
 			</div>
 			<div className='installation-page-directions-step'>
 				Download the npChatbot desktop app <a href='#downloadlink'>here</a>.

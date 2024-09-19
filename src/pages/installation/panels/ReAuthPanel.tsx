@@ -3,7 +3,7 @@ import '../installationpage.css'
 const ReAuthPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
-			<div className='installation-page-header'>Re-Authorizing npChatbot</div>
+			<div className='installation-page-header'>6. Re-Authorizing npChatbot</div>
 			<div className='installation-page-directions-step'>
 				<p>
 					Changing the password for the Twitch account that npChatbot is linked

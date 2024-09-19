@@ -106,16 +106,6 @@
 	}
 }
 
-/* At 700px and below, stack buttons in a single column */
-@media (max-width: 400px) {
-	.tab-navigation {
-		flex-direction: column; /* Stack the buttons vertically */
-		align-items: center; /* Center align the buttons */
-		margin: 15px;
-	}
-	
-}
-
 /* Panel container to hold the selected content */
 .panel-container {
 	border-radius: 5px;

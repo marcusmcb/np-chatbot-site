@@ -3,7 +3,7 @@ import '../installationpage.css'
 const CredentialsPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
-			<div className='installation-page-header'>Storing Your Credentials</div>
+			<div className='installation-page-header'>2. Storing Your Credentials</div>
 			<div className='installation-page-directions-step'>
 				<p>The follow credentials are required:</p>
 				<p>

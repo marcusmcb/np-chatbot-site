@@ -3,7 +3,7 @@ import '../installationpage.css'
 const NPChatbotStartupPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
-			<div className='installation-page-header'>Starting npChatbot</div>
+			<div className='installation-page-header'>3. Starting npChatbot</div>
 			<div className='installation-page-directions-step'>
 				<p>
 					In Serato<span className='icon-span'>©</span> DJ Pro, click the{' '}

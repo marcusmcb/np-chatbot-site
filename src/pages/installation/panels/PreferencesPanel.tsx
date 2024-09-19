@@ -3,7 +3,7 @@ import '../installationpage.css'
 const PreferencesPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
-			<div className='installation-page-header'>Preferences (optional)</div>
+			<div className='installation-page-header'>5. Preferences (optional)</div>
 			<div className='installation-page-directions-step'>
 				Set your preferences for OBS response and interval messages. Click{' '}
 				<span className='highlighted-installation-text'>Update</span> to save
