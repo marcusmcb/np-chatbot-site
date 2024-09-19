@@ -219,6 +219,10 @@ button:hover {
 		margin-right: 5px;
 	}
 
+	.obs-config-step {
+		margin-right: 40%;
+	}
+
 	@media (max-width: 800px) {
 		.banner {
 			flex-direction: column;

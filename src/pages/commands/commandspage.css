@@ -22,15 +22,28 @@
 	padding: 10px;
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 300;
+	width: 50vw;
 }
 
 .commands-highlighted-text {
 	color: rgb(158, 239, 131);
 }
 
+.command-name-span {
+	font-size: 24px;
+}
+
+.command-name-description-text {
+	margin: 3px 0px 16px 0px;
+	font-size: 16px;	
+}
+
 @media (max-width: 700px) {
 	.commands-page-container {
 		margin-left: 5vw;
 		margin-right: 5vw;
+	}
+	.commands-page-text {
+		width: auto;
 	}
 }
