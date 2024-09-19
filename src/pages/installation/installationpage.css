@@ -5,7 +5,7 @@
 
 .installation-page-header {
 	font-size: 30px;
-	padding: 30px;
+	padding: 30px 30px 15px 30px;
 	font-family: 'Fira Sans', sans-serif;
 	text-align: left;
 	margin-left: 30px;
@@ -65,10 +65,66 @@
 	justify-content: space-between;
 }
 
+.tab-navigation {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; /* Allows buttons to wrap into multiple rows */
+	justify-content: space-evenly;
+	gap: 10px;
+	margin: 15px 10px;
+}
+
+/* Styling for tab buttons */
+.tab-navigation button {
+	flex: 1 1 auto; /* Auto size with respect to container */
+	padding: 10px 20px;
+	border: none;
+	background-color: rgb(74, 74, 74);
+	color: white;
+	cursor: pointer;
+	font-family: 'Fira Sans', sans-serif;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+/* Active tab button styling */
+.tab-navigation button.active {
+	background-color: rgb(74, 242, 228);
+	color: rgb(43, 43, 43);
+}
+
+.tab-navigation button:hover {
+	background-color: rgb(158, 239, 131);
+}
+
+/* Responsive adjustments */
+
+/* At 1000px and below, display buttons in two rows of three */
+@media (max-width: 1000px) {
+	.tab-navigation button {
+		flex: 1 1 30%; /* Adjusts button width to fit three per row */
+	}
+}
+
+/* At 700px and below, stack buttons in a single column */
+@media (max-width: 400px) {
+	.tab-navigation {
+		flex-direction: column; /* Stack the buttons vertically */
+		align-items: center; /* Center align the buttons */
+		margin: 15px;
+	}
+	
+}
+
+/* Panel container to hold the selected content */
+.panel-container {
+	border-radius: 5px;
+	padding: 20px;
+	background-color: rgb(30, 30, 30);
+}
+
 @media (max-width: 575px) {
 	.installation-page-directions-step img {
 		width: 100%;
 	}
 }
-
-

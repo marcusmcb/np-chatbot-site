@@ -3,9 +3,7 @@ import '../installationpage.css'
 const ReAuthPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
-			<div className='installation-page-header'>
-				Re-Authorizing / De-Authorizing npChatbot
-			</div>
+			<div className='installation-page-header'>Re-Authorizing npChatbot</div>
 			<div className='installation-page-directions-step'>
 				<p>
 					Changing the password for the Twitch account that npChatbot is linked
@@ -18,6 +16,39 @@ const ReAuthPanel = (): JSX.Element => {
 					button in the upper left of the app to restart the authorization
 					process. You will not need to re-enter your credentials or
 					preferences.
+				</p>
+			</div>
+			<div className='installation-page-header'>De-Authorizing npChatbot</div>
+			<div className='installation-page-directions-step'>
+				<p>
+					If you'd like to de-authorize npChatbot from your connected Twitch
+					account altogether:
+				</p>
+				- Log in to the Twitch account npChatbot is authorized with
+				<p>
+					<p>
+						- Select{' '}
+						<span className='highlighted-installation-text'>Settings</span> from
+						the dropdown menu in the upper right
+					</p>
+					<p>
+						- Navigate to{' '}
+						<span className='highlighted-installation-text'>Settings</span>, and
+						then select the{' '}
+						<span className='highlighted-installation-text'>Connections</span>{' '}
+						tab
+					</p>
+					<p>
+						Scroll down to the{' '}
+						<span className='highlighted-installation-text'>
+							Other Connections
+						</span>{' '}
+						section and click the{' '}
+						<span className='highlighted-installation-text'>
+							Disconnect
+						</span>{' '}
+						button next to npChatbot app to remove the authorization.
+					</p>
 				</p>
 			</div>
 		</div>

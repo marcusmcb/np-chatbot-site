@@ -193,6 +193,10 @@ button:hover {
 		flex-direction: column;
 	}
 
+	.download-section {
+		background-position: center 0px;
+	}
+
 	.download-box,
 	.description-box {
 		width: 100%;

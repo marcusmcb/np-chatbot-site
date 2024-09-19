@@ -62,6 +62,13 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 					option, scroll down, and select{' '}
 					<span className='highlighted-installation-text'>Save Changes</span>.
 				</p>
+				<p>
+					<span className='highlighted-installation-text'>IMPORTANT: </span>
+				</p>
+				<p>
+					npChatbot will not function properly if the your live playlist is NOT set
+					to public.
+				</p>
 
 				<img
 					alt='npChatbot instructions, step 7'
