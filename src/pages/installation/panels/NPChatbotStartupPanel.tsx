@@ -1,3 +1,4 @@
+import IconSpan from '../../components/IconSpan'
 import '../installationpage.css'
 
 const NPChatbotStartupPanel = (): JSX.Element => {
@@ -6,13 +7,15 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 			<div className='installation-page-header'>3. Starting npChatbot</div>
 			<div className='installation-page-directions-step'>
 				<p>
-					In Serato<span className='icon-span'>©</span> DJ Pro, click the{' '}
+					In Serato
+					<IconSpan /> DJ Pro, click the{' '}
 					<span className='highlighted-installation-text'>History</span> tab.
 				</p>
 				<p>
 					Next, click{' '}
 					<span className='highlighted-installation-text'>Start Session</span>{' '}
-					to reset Serato's play history.
+					to reset Serato's
+					<IconSpan /> play history.
 				</p>
 				<p>
 					Finally, click{' '}
@@ -38,13 +41,16 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 
 			<div className='installation-page-directions-step'>
 				<p>
-					Your Serato Live Playlist page will open in your browser. Scroll down
+					Your Serato
+					<IconSpan /> Live Playlist page will open in your browser. Scroll down
 					to the bottom of the page to start your Live Playlist.
 				</p>
 				<p>
-					Serato Live Playlists are set to private by default. Click the option
-					to <span className='highlighted-installation-text'>Edit Details</span>{' '}
-					on the right.
+					Serato
+					<IconSpan /> Live Playlists are set to private by default. Click the
+					option to{' '}
+					<span className='highlighted-installation-text'>Edit Details</span> on
+					the right.
 				</p>
 
 				<img
@@ -66,8 +72,8 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 					<span className='highlighted-installation-text'>IMPORTANT: </span>
 				</p>
 				<p>
-					npChatbot will not function properly if the your live playlist is NOT set
-					to public.
+					npChatbot will not function properly if the your live playlist is NOT
+					set to public.
 				</p>
 
 				<img
@@ -96,8 +102,8 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 				<p>
 					Once you begin playing tracks in your stream, responses from the
 					npChatbot commands will be visible in your Twitch
-					<span className='icon-span'>©</span> stream as chat text or,
-					optionally, on-screen as text in your OBS configuration.
+					<IconSpan /> stream as chat text or, optionally, on-screen as text in
+					your OBS configuration.
 				</p>
 				<p className='highlighted-installation-text'>NOTE:</p>
 				<p>

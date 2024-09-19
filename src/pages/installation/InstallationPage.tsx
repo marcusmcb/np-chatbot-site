@@ -9,10 +9,8 @@ import InstallationPanel from './panels/InstallationPanel'
 import './installationpage.css'
 
 const InstallationPage = (): JSX.Element => {
-	// State to manage the current active panel
 	const [activeTab, setActiveTab] = useState<string>('Installation')
 
-	// Function to render the active panel based on the selected tab
 	const renderActivePanel = () => {
 		switch (activeTab) {
 			case 'Installation':

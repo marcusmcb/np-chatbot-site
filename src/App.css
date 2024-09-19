@@ -219,8 +219,9 @@ button:hover {
 		margin-right: 5px;
 	}
 
-	.obs-config-step {
-		margin-right: 40%;
+	.icon-span-header {
+		font-size: 14px;
+		vertical-align: top;
 	}
 
 	@media (max-width: 800px) {

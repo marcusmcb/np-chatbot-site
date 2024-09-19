@@ -13,7 +13,6 @@
 }
 
 .installation-page-directions-step a {
-	/* text-decoration: none; */
 	color: rgb(158, 239, 131);
 }
 
@@ -50,9 +49,9 @@
 }
 
 .installation-page-directions-step img {
-	display: block; /* Ensures images start on a new line */
-	margin-top: 30px; /* Adds some spacing above and below the image */
-	height: auto; /* Maintains aspect ratio */
+	display: block;
+	margin-top: 30px;
+	height: auto;
 }
 
 .highlighted-installation-text {
@@ -69,15 +68,14 @@
 .tab-navigation {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap; /* Allows buttons to wrap into multiple rows */
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	gap: 10px;
 	margin: 15px 10px;
 }
 
-/* Styling for tab buttons */
 .tab-navigation button {
-	flex: 1 1 auto; /* Auto size with respect to container */
+	flex: 1 1 auto;
 	padding: 10px 20px;
 	border: none;
 	background-color: rgb(74, 74, 74);
@@ -88,7 +86,6 @@
 	transition: background-color 0.3s;
 }
 
-/* Active tab button styling */
 .tab-navigation button.active {
 	background-color: rgb(74, 242, 228);
 	color: rgb(43, 43, 43);
@@ -110,7 +107,7 @@
 	.installation-page-faq-text,
 	.installation-page-header {
 		margin-right: 0%;
-		margin-left: 0%
+		margin-left: 0%;
 	}
 }
 

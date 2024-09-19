@@ -27,7 +27,6 @@ const App = (): JSX.Element => {
 					<Link to='/installation'>
 						<div className='navbar-element'>Installation & Setup</div>
 					</Link>
-					{/* <div className='site-title'>npChatbot For Twitch</div> */}
 					<Link to='/commands'>
 						<div className='navbar-element'>Command List</div>
 					</Link>

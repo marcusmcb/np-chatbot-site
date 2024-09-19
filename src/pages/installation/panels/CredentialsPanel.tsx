@@ -1,21 +1,26 @@
+import IconSpan from '../../../pages/components/IconSpan'
 import '../installationpage.css'
 
 const CredentialsPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
-			<div className='installation-page-header'>2. Storing Your Credentials</div>
+			<div className='installation-page-header'>
+				2. Storing Your Credentials
+			</div>
 			<div className='installation-page-directions-step'>
 				<p>The follow credentials are required:</p>
 				<p>
-					- Your primary Twitch<span className='icon-span'>©</span> channel name
+					- Your primary Twitch
+					<IconSpan /> channel name
 				</p>
 				<p>
-					- Your Twitch<span className='icon-span'>©</span> chatbot's channel
-					name (the account you've authorized npChatbot with)
+					- Your Twitch
+					<IconSpan /> chatbot's channel name (the account you've authorized
+					npChatbot with)
 				</p>
 				<p>
 					- your Serato
-					<span className='icon-span'>©</span> profile display name
+					<IconSpan /> profile display name
 				</p>
 				<p>
 					Click <span className='highlighted-installation-text'>Update</span> to
@@ -28,8 +33,8 @@ const CredentialsPanel = (): JSX.Element => {
 			</div>
 			<div className='installation-page-directions-step'>
 				<p>
-					To find your Serato<span className='icon-span'>©</span> profile
-					display name,{' '}
+					To find your Serato
+					<IconSpan /> profile display name,{' '}
 					<a
 						href='https://id.serato.com/en/login'
 						rel='noreferrer'
@@ -37,12 +42,14 @@ const CredentialsPanel = (): JSX.Element => {
 					>
 						sign in
 					</a>{' '}
-					to your Serato<span className='icon-span'>©</span> profile and select{' '}
+					to your Serato
+					<IconSpan /> profile and select{' '}
 					<span className='highlighted-installation-text'>Account</span> from
 					the menu on the upper-right.
 				</p>
 				<p>
-					Enter your Serato Display Name in npChatbot as it appears in the{' '}
+					Enter your Serato
+					<IconSpan /> Display Name in npChatbot as it appears in the{' '}
 					<span className='highlighted-installation-text'>
 						Account Overview
 					</span>{' '}

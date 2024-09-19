@@ -1,3 +1,5 @@
+import IconSpan from "../../components/IconSpan"
+
 const OBSConfigurationPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
@@ -66,7 +68,7 @@ const OBSConfigurationPanel = (): JSX.Element => {
 					How you style and place the text data in your OBS overlays is up to
 					you. You can test placement in OBS by following the start up
 					instructions for npChatbot without actually starting a live stream on
-					Twitch. Update your preferences to set the OBS display time to a
+					Twitch<IconSpan/>. Update your preferences to set the OBS display time to a
 					longer duration to test placement within your OBS scenes or overlays.
 				</p>
 			</div>

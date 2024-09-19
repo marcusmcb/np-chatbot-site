@@ -52,8 +52,6 @@ const PreferencesPanel = (): JSX.Element => {
 					used.
 				</p>
 			</div>
-			<div className='installation-page-directions-step'></div>
-			<div className='installation-page-directions-step'></div>
 		</div>
 	)
 }

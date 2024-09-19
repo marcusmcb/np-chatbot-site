@@ -1,6 +1,4 @@
-const CopyRightIcon = (): JSX.Element => {
-	return <span className='icon-span'>©</span>
-}
+import IconSpan from '../components/IconSpan'
 
 const LandingPage = (): JSX.Element => {
 	return (
@@ -11,15 +9,12 @@ const LandingPage = (): JSX.Element => {
 					<button>Download</button>
 				</div>
 				<div className='description-box'>
-					{/* <div className='description-box-header'>
-						Add A New Level Of Interactivity To Your Twitch Stream
-					</div> */}
 					<div className='description-box-text'>
 						<p>
-							Connect your Twitch<span className='icon-span-header'>©</span>{' '}
-							chat with your Serato<span className='icon-span-header'>©</span>{' '}
-							Live Playlist to add a collection of interactive music discovery
-							commands to your channel
+							Connect your Twitch
+							<IconSpan /> chat with your Serato
+							<IconSpan /> Live Playlist to add a collection of interactive
+							music discovery commands to your channel
 						</p>
 					</div>
 				</div>
@@ -31,8 +26,8 @@ const LandingPage = (): JSX.Element => {
 						<p>
 							npChatbot enables a unique level of music discovery during your
 							live-streamed DJ sets by connecting your Twitch
-							<CopyRightIcon /> chat to your Serato
-							<CopyRightIcon /> Live Playlist and includes:
+							<IconSpan /> chat to your Serato
+							<IconSpan /> Live Playlist and includes:
 						</p>
 						<p>* Real-time display of the track "now playing"</p>
 						<p>* Access to any previously played song during your set</p>

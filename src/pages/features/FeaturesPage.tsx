@@ -1,3 +1,4 @@
+import IconSpan from '../components/IconSpan'
 import './featurespage.css'
 
 const FeaturesPage = (): JSX.Element => {
@@ -22,9 +23,12 @@ const FeaturesPage = (): JSX.Element => {
 								rel='noreferrer'
 								target='_blank'
 							>
-								<span className='highlighted-text'>Serato© Live Playlist</span>
+								<span className='highlighted-text'>
+									Serato
+									<IconSpan /> Live Playlist
+								</span>
 							</a>{' '}
-							data to your Twitch© channel's chat, enabling an interactive
+							data to your Twitch<IconSpan/> channel's chat, enabling an interactive
 							connection between the music you're playing and your viewers in
 							real time.
 						</p>
@@ -91,9 +95,9 @@ const FeaturesPage = (): JSX.Element => {
 						Real Time Playlist Stats
 					</div>
 					<p>
-						Using the commmands in npChatbot, they (or you!) can check your
+						Using the commmands in npChatbot, your viewers (or you!) can check your
 						current
-						<span className='highlighted-text'> !stats</span> at any time during
+						<span className='highlighted-text'> stats</span> at any time during
 						the stream with options to display the total number of songs you've
 						played so far, your average song length for this set currently, and
 						whether that average has increased/decreased since the previous song
@@ -101,10 +105,10 @@ const FeaturesPage = (): JSX.Element => {
 					</p>
 					<p>
 						For a deeper dive, viewers have access to commands that determine
-						the <span className='highlighted-text'>!shortestsong</span> and{' '}
-						<span className='highlighted-text'>!longestsong</span> played so far
+						the <span className='highlighted-text'>shortest song</span> and{' '}
+						<span className='highlighted-text'>longest song</span> played so far
 						in your set, as well as how many times you've rocked{' '}
-						<span className='highlighted-text'>!doubles</span> during your set
+						<span className='highlighted-text'>doubles</span> during your set
 						and which songs you were cutting it up with when you did.
 					</p>
 				</div>

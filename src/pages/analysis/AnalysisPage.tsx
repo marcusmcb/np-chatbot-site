@@ -1,3 +1,4 @@
+import IconSpan from '../components/IconSpan'
 import './analysispage.css'
 
 const AnalysisPage = (): JSX.Element => {
@@ -31,7 +32,7 @@ const AnalysisPage = (): JSX.Element => {
 			<div className='analysis-page-container'>
 				<div className='analysis-page-item'>
 					<p>
-						npChatbot collects your Serato© live playlist data in real time to
+						npChatbot collects your Serato<IconSpan/> live playlist data in real time to
 						calculate your stats, data which is limited to the title, artist, and the
 						start time of each song played. Using this data, it estimates song
 						lengths based on when each song started.
@@ -80,7 +81,7 @@ const AnalysisPage = (): JSX.Element => {
 						entries.
 					</p>
 					<p>
-						However, due to inconsistencies in Serato's© playlist logging, the
+						However, due to inconsistencies in Serato's<IconSpan/> playlist logging, the
 						!np doubles command may sometimes fail to detect recent doubles or
 						display older doubles instead of the latest ones.
 					</p>
