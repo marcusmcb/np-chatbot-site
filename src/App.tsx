@@ -11,6 +11,7 @@ import LandingPage from './pages/landing/LandingPage'
 import FeaturesPage from './pages/features/FeaturesPage'
 import FeedbackPage from './pages/feedback/FeedbackPage'
 import AnalysisPage from './pages/analysis/AnalysisPage'
+import PageNotFound from './pages/pagenotfound/PageNotFound'
 
 import './App.css'
 
@@ -49,6 +50,7 @@ const App = (): JSX.Element => {
 					<Route path='/features' element={<FeaturesPage />} />
 					<Route path='/feedback' element={<FeedbackPage />} />
 					<Route path='/analysis' element={<AnalysisPage />} />
+					<Route path='*' element={<PageNotFound />} />
 				</Routes>
 
 				<div className='footer'>

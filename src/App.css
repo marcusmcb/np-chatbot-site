@@ -184,6 +184,16 @@ button:hover {
 	flex-direction: row;
 }
 
+.page-not-found {
+	text-align: center;
+	padding: 50px;
+	color: rgb(74, 242, 228);
+	background-color: rgb(49, 49, 49);
+	height: fill;
+	font-family: "DM Sans", sans-serif;
+	
+}
+
 @media (min-width: 1400px) {
 	.details-inset {
 		margin-left: 80px;
