@@ -45,13 +45,23 @@
 	color: rgb(74, 242, 228);
 }
 
+.main-logo-text {
+	margin-top: 10px;
+}
+
+.navbar-links {
+	display: flex;
+	flex-direction: row;
+	margin-top: 15px;
+}
+
 .footer a {
 	color: white;
 	text-decoration: none;
 }
 
 .site-title {
-	font-size: 40px;
+	font-size: 44px;
 }
 
 .navbar,
@@ -145,15 +155,14 @@
 }
 
 .description-box-text {
-	margin: 40px 55px 40px 55px;
-
+	/* margin: 40px 55px 40px 55px; */
 	font-family: 'DM Sans', sans-serif;
 	font-size: 24px;
 	font-weight: 300 !important;
 }
 
 .navbar-element {
-	margin-top: 12px;
+	margin: 12px 10px 0px 10px;
 }
 
 button {
@@ -175,8 +184,8 @@ button:hover {
 
 .main-logo {
 	fill: white;
-	height: 50px;
-	width: 50px;
+	height: 75px;
+	width: 75px;
 }
 
 .logo-cluster {
@@ -187,11 +196,10 @@ button:hover {
 .page-not-found {
 	text-align: center;
 	padding: 50px;
-	color: rgb(74, 242, 228);
+	color: white;
 	background-color: rgb(49, 49, 49);
-	height: fill;
-	font-family: "DM Sans", sans-serif;
-	
+	height: stretch;
+	font-family: 'DM Sans', sans-serif;
 }
 
 @media (min-width: 1400px) {
@@ -249,6 +257,9 @@ button:hover {
 		.logo-cluster {
 			align-content: center;
 			justify-content: center;
+		}
+		.navbar-links {
+			flex-direction: column;
 		}
 	}
 

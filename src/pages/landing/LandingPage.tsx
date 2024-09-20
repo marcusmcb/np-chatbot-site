@@ -19,6 +19,14 @@ const LandingPage = (): JSX.Element => {
 							music discovery commands to your channel
 						</p>
 					</div>
+					<div className='description-box-text'>
+						<div className='features-page-feature video-element'>
+							<video controls width='100%'>
+								<source src='/videos/npchatbot_demo.MP4' type='video/mp4' />
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div className='details-panel'>

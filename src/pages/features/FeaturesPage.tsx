@@ -28,15 +28,15 @@ const FeaturesPage = (): JSX.Element => {
 									<IconSpan /> Live Playlist
 								</span>
 							</a>{' '}
-							data to your Twitch<IconSpan/> channel's chat, enabling an interactive
-							connection between the music you're playing and your viewers in
-							real time.
+							data to your Twitch
+							<IconSpan /> channel's chat, enabling an interactive connection
+							between the music you're playing and your viewers in real time.
 						</p>
 					</div>
 				</div>
 				<div className='features-page-feature video-element'>
 					<video controls width='100%'>
-						<source src='/videos/npchatbot_demo.MP4' type='video/mp4' />
+						<source src='/videos/npchatbot-demo-01.mp4' type='video/mp4' />
 						Your browser does not support the video tag.
 					</video>
 				</div>
@@ -69,6 +69,14 @@ const FeaturesPage = (): JSX.Element => {
 						it.
 					</p>
 				</div>
+				<div className='features-page-video'>
+					<video controls width='100%'>
+						<source src='/videos/npchatbot-demo-02.mp4' type='video/mp4' />
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+			<div className='features-page-container'>
 				<div className='features-page-feature'>
 					<div className='features-page-subheader'>
 						Search By Song Or Artist
@@ -88,6 +96,12 @@ const FeaturesPage = (): JSX.Element => {
 						speaking.
 					</p>
 				</div>
+				<div className='features-page-video'>
+					<video controls width='100%'>
+						<source src='/videos/dyp-command-video.mp4' type='video/mp4' />
+						Your browser does not support the video tag.
+					</video>
+				</div>
 			</div>
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
@@ -95,8 +109,8 @@ const FeaturesPage = (): JSX.Element => {
 						Real Time Playlist Stats
 					</div>
 					<p>
-						Using the commmands in npChatbot, your viewers (or you!) can check your
-						current
+						Using the commmands in npChatbot, your viewers (or you!) can check
+						your current
 						<span className='highlighted-text'> stats</span> at any time during
 						the stream with options to display the total number of songs you've
 						played so far, your average song length for this set currently, and
@@ -112,6 +126,14 @@ const FeaturesPage = (): JSX.Element => {
 						and which songs you were cutting it up with when you did.
 					</p>
 				</div>
+				<div className='features-page-video'>
+					<video controls width='100%'>
+						<source src='/videos/doubles_command_video.mp4' type='video/mp4' />
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+			<div className='features-page-container'>
 				<div className='features-page-feature'>
 					<div className='features-page-subheader'>OBS Integration</div>
 					<p>
@@ -142,6 +164,7 @@ const FeaturesPage = (): JSX.Element => {
 						element.
 					</p>
 				</div>
+				<div className='features-page-feature'></div>
 			</div>
 		</div>
 	)

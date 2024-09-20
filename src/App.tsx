@@ -21,26 +21,26 @@ const App = (): JSX.Element => {
 			<div className='App'>
 				<div className='banner navbar'>
 					<div className='logo-cluster'>
-						<div>
+						<div className='main-logo-text'>
 							<Link to='/'>
 								<span className='site-title'>npChatbot</span>
 							</Link>
 						</div>
-
 						<div>
 							<Logo className='main-logo' />
 						</div>
 					</div>
-
-					<Link to='/features'>
-						<div className='navbar-element'>Features</div>
-					</Link>
-					<Link to='/installation'>
-						<div className='navbar-element'>Installation & Setup</div>
-					</Link>
-					<Link to='/commands'>
-						<div className='navbar-element'>Command List</div>
-					</Link>
+					<div className='navbar-links'>
+						<Link to='/features'>
+							<div className='navbar-element'>Features</div>
+						</Link>
+						<Link to='/installation'>
+							<div className='navbar-element'>Installation & Setup</div>
+						</Link>
+						<Link to='/commands'>
+							<div className='navbar-element'>Command List</div>
+						</Link>
+					</div>
 				</div>
 
 				<Routes>
