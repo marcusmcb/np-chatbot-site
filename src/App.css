@@ -182,6 +182,11 @@ button:hover {
 	color: rgb(74, 242, 228);
 }
 
+.mac-installer-text {
+	font-size: 14px;
+	margin-top: 35px;
+}
+
 .main-logo {
 	fill: white;
 	height: 75px;
