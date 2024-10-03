@@ -13,7 +13,7 @@ const FeaturesPage = (): JSX.Element => {
 						<p>
 							npChatbot (<span className='highlighted-text'>"now playing"</span>
 							) is a desktop app that adds a suite of interactive chat commands
-							to your Twitch© channel during your live streamed DJ sets.
+							to your Twitch<IconSpan/> channel during your live streamed DJ sets.
 						</p>
 						<p>
 							Under the hood, npChatbot links your{' '}
@@ -53,8 +53,7 @@ const FeaturesPage = (): JSX.Element => {
 					</div>
 					<p>
 						By opening up access to your play history during your live-streamed
-						DJ sets, viewers can directly interact with that history in
-						real-time, adding a unique layer of interactivity and music
+						DJ sets, viewers can directly interact with that history, adding a unique layer of interactivity and music
 						discovery to each stream.
 					</p>
 					<p>

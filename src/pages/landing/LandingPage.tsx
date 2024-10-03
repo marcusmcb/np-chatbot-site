@@ -43,22 +43,26 @@ const LandingPage = (): JSX.Element => {
 						<p>* Real-time display of the track "now playing"</p>
 						<p>* Access to any previously played song during your set</p>
 						<p>
-							* Search functionality by song title and artist in your live play
-							history
+							* Search functionality by song title and artist directly in your
+							Twitch
+							<IconSpan /> chat
+						</p>
+						<p>
+							* A "vibe check" command that provides viewer insight as
+							to what type of set you've been playing
 						</p>
 					</div>
 					<div className='details-inset'>
 						<div className='details-header'>Instant Playlist Stats</div>
 						<p>
 							npChatbot's commands aren't limited to just music discovery. The
-							app also provides real-time "stats" during your live streams,
-							offering unique insights to both viewers and streamers these DJ
-							sets. These includes:
+							app also provides real-time "stats" about your DJ set during your live streams,
+							offering unique insights to both viewers and streamers alike. These include:
 						</p>
-						<p>* Average song length for your set</p>
+						<p>* The average song length for your set</p>
 						<p>* Total songs played at any point during your set</p>
 						<p>* The shortest or longest song of your set</p>
-						<p>* How many times you've played "doubles" during your set</p>
+						<p>* How many times you've rocked "doubles" during your set</p>
 					</div>
 				</div>
 			</div>

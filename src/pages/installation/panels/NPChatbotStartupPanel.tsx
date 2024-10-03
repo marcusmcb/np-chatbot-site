@@ -68,18 +68,44 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 					option, scroll down, and select{' '}
 					<span className='highlighted-installation-text'>Save Changes</span>.
 				</p>
+				<img
+					alt='npChatbot instructions, step 7'
+					src='/images/installation/serato_03_final.png'
+				/>
+				
 				<p>
-					<span className='highlighted-installation-text'>IMPORTANT: </span>
+					<span className='highlighted-installation-text'>
+						IMPORTANT - Playlist Visibility{' '}
+					</span>
 				</p>
 				<p>
 					npChatbot will not function properly if the your live playlist is NOT
 					set to public.
 				</p>
 
-				<img
-					alt='npChatbot instructions, step 7'
-					src='/images/installation/serato_03_final.png'
-				/>
+				<hr />
+				<p>
+					<span className='highlighted-installation-text'>
+						IMPORTANT - Playlist Titles
+					</span>
+				</p>
+				<p>
+					By default, Serato
+					<IconSpan /> will set a default title for your live playlist as the
+					current date.
+				</p>
+				<p>
+					For npChatbot to properly retrieve this data during your stream, it
+					relies on the default title set by Serato
+					<IconSpan />. Do not edit or update this before or during your live
+					stream.
+				</p>
+				<p>
+					If you happen to edit the title by mistake, resetting it to the
+					previous value or simply starting a new live playlist will resolve the
+					issue.
+				</p>
+				<hr />
 			</div>
 
 			<div className='installation-page-directions-step'>
