@@ -12,16 +12,12 @@
 	color: rgb(74, 242, 228);
 }
 
-.installation-page-directions-step a {	
+.installation-page-directions-step a {
 	color: rgb(158, 239, 131);
 }
 
 .installation-page-directions-step a:visited {
 	color: rgb(158, 239, 131);
-}
-
-.installation-page-directions-container {
-	/* padding: 50px; */
 }
 
 .installation-page-directions-step,
@@ -49,9 +45,9 @@
 }
 
 .installation-page-directions-step img {
-	display: block; 
+	display: block;
 	margin-top: 30px;
-	height: auto; 
+	height: auto;
 }
 
 .highlighted-installation-text {
@@ -66,16 +62,21 @@
 }
 
 .tab-navigation {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap; 
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	gap: 10px;
-	margin: 15px 10px;
+	margin: 5px 10px;
+	background-color: rgb(43, 43, 43);
+	padding: 10px 0;
 }
 
 .tab-navigation button {
-	flex: 1 1 auto; 
+	flex: 1 1 auto;
 	padding: 10px 20px;
 	border: none;
 	background-color: rgb(74, 74, 74);
@@ -107,7 +108,7 @@
 	.installation-page-faq-text,
 	.installation-page-header {
 		margin-right: 0%;
-		margin-left: 0%
+		margin-left: 0%;
 	}
 }
 

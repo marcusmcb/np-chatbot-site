@@ -79,7 +79,7 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 					</span>
 				</p>
 				<p>
-					npChatbot will not function properly if the your live playlist is NOT
+					npChatbot will not function properly if your live playlist is NOT
 					set to public.
 				</p>
 

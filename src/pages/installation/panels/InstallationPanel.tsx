@@ -66,7 +66,7 @@ const InstallationPanel = (): JSX.Element => {
 					alt='npChatbot instructions, step 3'
 					src='/images/installation/setup_03_final.png'
 				/>
-			</div>
+			</div>			
 		</div>
 	)
 }

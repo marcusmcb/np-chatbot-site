@@ -11,7 +11,7 @@ const CommandsPage = (): JSX.Element => {
 							<b>!np </b>
 						</span>{' '}
 						<p className='command-name-description-text'>
-							displays the title/artist of the current song playing
+							displays the title and artist of the current song playing
 						</p>
 					</div>
 					<div className='commands-page-text'>
@@ -24,7 +24,7 @@ const CommandsPage = (): JSX.Element => {
 							</b>{' '}
 						</span>
 						<p className='command-name-description-text'>
-							displays the title/artist of the previous song played
+							displays the title and artist of the previous song played
 						</p>
 					</div>
 					<div className='commands-page-text'>
@@ -37,7 +37,7 @@ const CommandsPage = (): JSX.Element => {
 							</b>{' '}
 						</span>
 						<p className='command-name-description-text'>
-							displays the title/artist of the first song played in your stream
+							displays the title and artist of the first song played in your stream
 						</p>
 					</div>
 					<div className='commands-page-text'>
@@ -50,7 +50,7 @@ const CommandsPage = (): JSX.Element => {
 							</b>{' '}
 						</span>
 						<p className='command-name-description-text'>
-							displays the title/artist of a random selection from your play
+							displays the title and artist of a random selection from your play
 							history and how long ago you played it
 						</p>
 					</div>
@@ -65,7 +65,7 @@ const CommandsPage = (): JSX.Element => {
 						</span>
 						<p className='command-name-description-text'>
 							displays the title, artist, and length of the shortest song played
-							in your stream so far
+							within the last hour
 						</p>
 					</div>
 					<div className='commands-page-text'>
@@ -79,7 +79,7 @@ const CommandsPage = (): JSX.Element => {
 						</span>
 						<p className='command-name-description-text'>
 							displays the title, artist, and length of the longest song played
-							in your stream so far
+							within the last hour
 						</p>
 					</div>
 					<div className='commands-page-text'>
@@ -92,8 +92,8 @@ const CommandsPage = (): JSX.Element => {
 							</b>{' '}
 						</span>
 						<p className='command-name-description-text'>
-							links to this page for your viewer's to browse the available
-							commands
+							adds a link in your chat to this page for your viewers to browse
+							the available commands
 						</p>
 					</div>
 					<div className='commands-page-text'>
@@ -106,9 +106,8 @@ const CommandsPage = (): JSX.Element => {
 							</b>{' '}
 						</span>
 						<p className='command-name-description-text'>
-							displays the total number of songs played so far, your current
-							average song length for this stream, and your average song
-							length's increase/decrease since your last song
+							displays the total number of songs played so far and the current
+							average song length for your stream
 						</p>
 					</div>
 					<div className='commands-page-text'>
