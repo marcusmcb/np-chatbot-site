@@ -131,13 +131,7 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 					<IconSpan /> stream as chat text or, optionally, on-screen as text in
 					your OBS configuration.
 				</p>
-				<p className='highlighted-installation-text'>NOTE:</p>
-				<p>
-					Several npChatbot commands can only begin calculating the various
-					stats returned in its responses after three or four tracks have been
-					played in your set. Any of these commands used before this occurs will
-					return a response to the chat indicating this.
-				</p>
+				
 			</div>
 		</div>
 	)
