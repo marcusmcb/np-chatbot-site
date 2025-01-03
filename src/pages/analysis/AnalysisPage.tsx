@@ -4,28 +4,7 @@ import './analysispage.css'
 const AnalysisPage = (): JSX.Element => {
 	return (
 		<div className='analysis-page'>
-			<div className='analysis-page-header'>Data Quirks</div>
-			<div className='analysis-page-subheader'>
-				Command Responses On Start Up
-			</div>
-			<div className='analysis-page-container'>
-				<div className='analysis-page-item'>
-					<p>
-						Several of npChatbot's commands rely on calculations that need at
-						least 3-4 tracks to be played for accurate results. The following
-						commands require this track minimum to return proper responses:
-					</p>
-
-					<p className='highlighted-analysis-text'>!np stats</p>
-					<p className='highlighted-analysis-text'>!np longest</p>
-					<p className='highlighted-analysis-text'>!np shortest</p>
-					<p>
-						The response from npChatbot will indicate this if used before the
-						minimum number of tracks have been played. Once the threshold's been
-						met, all commands will return the expected results.
-					</p>
-				</div>
-			</div>
+			<div className='analysis-page-header'>Data Quirks</div>			
 			<div className='analysis-page-subheader'>
 				Determining The Longest Song Played
 			</div>
