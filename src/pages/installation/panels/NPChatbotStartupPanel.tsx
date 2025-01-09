@@ -72,15 +72,15 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 					alt='npChatbot instructions, step 7'
 					src='/images/installation/serato_03_final.png'
 				/>
-				
+
 				<p>
 					<span className='highlighted-installation-text'>
 						IMPORTANT - Playlist Visibility{' '}
 					</span>
 				</p>
 				<p>
-					npChatbot will not function properly if your live playlist is NOT
-					set to public.
+					npChatbot will not function properly if your live playlist is NOT set
+					to public.
 				</p>
 
 				<hr />
@@ -131,7 +131,62 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 					<IconSpan /> stream as chat text or, optionally, on-screen as text in
 					your OBS configuration.
 				</p>
-				
+			</div>
+
+			<div className='installation-page-directions-step'>
+				<hr />
+				<p>
+					<span className='highlighted-installation-text'>
+						Testing your Serato
+						<IconSpan /> Live Playlist's status
+					</span>
+				</p>
+				<img
+					alt='npChatbot instructions, step 9'
+					src='/images/installation/setup_11_final.png'
+				/>
+				<p>
+					To test if your current Serato
+					<IconSpan /> Live Playlist is properly set as public and readable by
+					npChatbot, you can tap or click the{' '}
+					<span className='highlighted-installation-text'>
+						Playlist Status
+					</span>{' '}
+					button.
+				</p>
+				<p>
+					If your live playlist is configured correctly, you'll see a message in
+					npChatbot indicating this.
+				</p>
+				<p>
+					Note that npChatbot does not need to be connected to a live Twitch
+					stream for this feature to work so you can test this at any time.
+				</p>
+				<hr />
+				<p>
+					<span className='highlighted-installation-text'>
+						If the Playlist Status test fails...
+					</span>
+				</p>
+				<p>
+					If your live playlist is not properly set as public, you'll see a
+					message indicating this.
+				</p>
+				<img
+					alt='npChatbot instructions, step 10'
+					src='/images/installation/setup_12_final.png'
+				/>
+
+				<p>
+					This can occur if you forget to start your live playlist in Serato
+					<IconSpan />, if your live playlist is not set as public, or if your
+					live playlist session is disconnected for any reason during your live
+					stream.
+				</p>
+				<p>
+					Simply follow the steps above to start a new live playlist in Serato
+					<IconSpan /> and ensure the playlist is set as public.
+				</p>
 			</div>
 		</div>
 	)
