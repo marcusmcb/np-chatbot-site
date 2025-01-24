@@ -72,7 +72,7 @@ const AnalysisPage = (): JSX.Element => {
 					<p>
 						Note that the title/artist tags from Serato© will appear as-is in
 						the chatbot's responses. Cleaner tags ensure better results. Missing
-						or incorrect info may affect the `!dyp` command if the searched term
+						or incorrect info may affect the !dyp command if the searched term
 						isn't found due to empty or malformed tags.
 					</p>
 				</div>
