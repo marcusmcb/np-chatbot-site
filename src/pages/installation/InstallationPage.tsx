@@ -21,6 +21,7 @@ const InstallationPage = (): JSX.Element => {
 	useEffect(() => {
 		const tab = getQueryParam('tab')
 		if (tab) {
+			console.log("TAB: ", tab)
 			setActiveTab(tab)
 		}
 	}, [location.search])
