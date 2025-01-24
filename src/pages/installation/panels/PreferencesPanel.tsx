@@ -31,6 +31,10 @@ const PreferencesPanel = (): JSX.Element => {
 					If enabled with no value entered, a default time of 5 seconds will be
 					used.
 				</p>
+				<p>
+					You may also store your OBS websocket address & password in your
+					credentials for later use without enabling this feature.
+				</p>
 			</div>
 			<div className='installation-page-directions-step'>
 				<p className='highlighted-installation-text'>
