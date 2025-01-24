@@ -46,6 +46,29 @@ const FeedbackPage = (): JSX.Element => {
 					</p>
 				</div>
 			</div>
+			<div className='feedback-page-subheader'>Disclaimer</div>
+			<div className='feedback-page-container'>
+				<div className='feedback-page-item'>
+					<p>
+						npChatbot is not affiliated with, endorsed, or sponsored by either
+						Twitch or Serato or any of its affiliates or subsidiaries.
+					</p>
+					<p>
+						All trademarks, logos, and brand names used in this project are the
+						property of their respective owners and are use solely to describe
+						the services they provide and the role each plays in npChatbot's
+						functionality.
+					</p>
+					<p>
+						As such, any usage of trademarks to refer to said services is
+						nominative in use. The intended purpose behind the npChatbot project
+						is to help facilitate music discovery within a DJ's live stream by
+						extending the existing technology currently in use by many
+						live-streaming DJs.{' '}
+					</p>
+					<p>If there any questions or concerns, please contact us.</p>
+				</div>
+			</div>
 
 			<div className='feedback-page-item'>
 				<a
