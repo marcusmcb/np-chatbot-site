@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import ReAuthPanel from './panels/ReAuthPanel'
 import PreferencesPanel from './panels/PreferencesPanel'
 import OBSConfigurationPanel from './panels/OBSConfigurationPanel'
@@ -9,7 +10,20 @@ import InstallationPanel from './panels/InstallationPanel'
 import './installationpage.css'
 
 const InstallationPage = (): JSX.Element => {
+	const location = useLocation()
 	const [activeTab, setActiveTab] = useState<string>('Installation')
+
+	const getQueryParam = (param: string): string | null => {
+		const params = new URLSearchParams(location.search)
+		return params.get(param)
+	}
+
+	useEffect(() => {
+		const tab = getQueryParam('tab')
+		if (tab) {
+			setActiveTab(tab)
+		}
+	}, [location.search])
 
 	const renderActivePanel = () => {
 		switch (activeTab) {
