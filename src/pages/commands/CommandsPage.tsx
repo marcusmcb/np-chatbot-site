@@ -1,3 +1,4 @@
+import IconSpan from '../components/IconSpan'
 import './commandspage.css'
 
 const CommandsPage = (): JSX.Element => {
@@ -37,7 +38,8 @@ const CommandsPage = (): JSX.Element => {
 							</b>{' '}
 						</span>
 						<p className='command-name-description-text'>
-							displays the title and artist of the first song played in your stream
+							displays the title and artist of the first song played in your
+							stream
 						</p>
 					</div>
 					<div className='commands-page-text'>
@@ -124,6 +126,25 @@ const CommandsPage = (): JSX.Element => {
 							same track playing simultaneously on both decks) so far in your
 							stream and the title/artist of the last song you played doubles
 							with
+						</p>
+					</div>
+					<div className='commands-page-text'>
+						<span className='command-name-span'>
+							<b>
+								!np{' '}
+								<span className='commands-highlighted-text'>
+									<i>playlist</i>
+								</span>
+							</b>{' '}
+						</span>
+						<p className='command-name-description-text'>
+							if you, the DJ/streamer, have the{' '}
+							<span className='commands-highlighted-text'>
+								Spotify
+								<IconSpan />
+							</span>{' '}
+							feature enabled in your npChatbot preferences, this command will return the link to your current
+							stream's playlist in the chat
 						</p>
 					</div>
 					<div className='commands-page-text'>

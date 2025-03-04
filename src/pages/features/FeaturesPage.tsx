@@ -145,7 +145,7 @@ const FeaturesPage = (): JSX.Element => {
 							<IconSpan />
 						</span>{' '}
 						account gives you the ability to create and share a playlist of your
-						streamed DJ set with your{' '}
+						live set with your{' '}
 						<span className='highlighted-text'>
 							Twitch
 							<IconSpan />
@@ -153,7 +153,8 @@ const FeaturesPage = (): JSX.Element => {
 						community any time that you stream.
 					</p>
 					<p>
-						With this feature, npChatbot will create a new playlist from your{' '}
+						With this feature enabled, npChatbot will create a new playlist from
+						your{' '}
 						<span className='highlighted-text'>
 							Serato
 							<IconSpan />
@@ -175,6 +176,20 @@ const FeaturesPage = (): JSX.Element => {
 				</div>
 			</div>
 			<div className='features-page-container'>
+				<div className='features-page-feature'>
+					<div className='features-page-subheader'>Auto ID & Tag Clean-Up</div>
+					<p>
+						With the <span className='highlighted-text'>Auto ID</span> feature
+						enabled, npChatbot will send a message to your channel's chat
+						identifying the current song playing each time that it updates.
+					</p>
+					<p>
+						Additionally, npChatbot also gives streamers the options to clean up
+						the file tag text used with this feature, removing any extra text
+						found in parentheses or brackets within the title or artist fields
+						before sending the info to the chat.
+					</p>
+				</div>
 				<div className='features-page-feature'>
 					<div className='features-page-subheader'>OBS Integration</div>
 					<p>
@@ -203,20 +218,6 @@ const FeaturesPage = (): JSX.Element => {
 							<span className='highlighted-text'>Text (GDI+)</span>
 						</a>{' '}
 						element.
-					</p>
-				</div>
-				<div className='features-page-feature'>
-					<div className='features-page-subheader'>Auto ID</div>
-					<p>
-						With the <span className='highlighted-text'>Auto ID</span> feature
-						enabled, npChatbot will send a message to your channel's chat
-						identifying the current song playing each time that it updates.
-					</p>
-					<p>
-						Additionally, npChatbot also gives streamers the options to clean up
-						the file tag text used with this feature, removing any extra text
-						found in parentheses or brackets within the title or artist fields
-						before sending the info to the chat.
 					</p>
 				</div>
 			</div>
