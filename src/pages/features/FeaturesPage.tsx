@@ -13,7 +13,8 @@ const FeaturesPage = (): JSX.Element => {
 						<p>
 							npChatbot (<span className='highlighted-text'>"now playing"</span>
 							) is a desktop app that adds a suite of interactive chat commands
-							to your Twitch<IconSpan/> channel during your live streamed DJ sets.
+							to your Twitch
+							<IconSpan /> channel during your live streamed DJ sets.
 						</p>
 						<p>
 							Under the hood, npChatbot links your{' '}
@@ -53,8 +54,8 @@ const FeaturesPage = (): JSX.Element => {
 					</div>
 					<p>
 						By opening up access to your play history during your live-streamed
-						DJ sets, viewers can directly interact with that history, adding a unique layer of interactivity and music
-						discovery to each stream.
+						DJ sets, viewers can directly interact with that history, adding a
+						unique layer of interactivity and music discovery to each stream.
 					</p>
 					<p>
 						The <span className='highlighted-text'>!np</span> command and its
@@ -134,6 +135,47 @@ const FeaturesPage = (): JSX.Element => {
 			</div>
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
+					<div className='features-page-subheader'>
+						Create Spotify Playlists From Your DJ Sets
+					</div>
+					<p>
+						Linking npChatbot to your{' '}
+						<span className='highlighted-text'>
+							Spotify
+							<IconSpan />
+						</span>{' '}
+						account gives you the ability to create and share a playlist of your
+						streamed DJ set with your{' '}
+						<span className='highlighted-text'>
+							Twitch
+							<IconSpan />
+						</span>{' '}
+						community any time that you stream.
+					</p>
+					<p>
+						With this feature, npChatbot will create a new playlist from your{' '}
+						<span className='highlighted-text'>
+							Serato
+							<IconSpan />
+						</span>{' '}
+						play history when you connect the app to your chat.
+					</p>
+					<p>
+						npChatbot will then regularly update the playlist with each new song
+						you play, and you can share this playlist with your viewers at any
+						time using the{' '}
+						<span className='highlighted-text'>!np playlist</span> command.
+					</p>
+				</div>
+				<div className='features-page-video'>
+					<video controls width='100%'>
+						<source src='/videos/spotify_demo.mp4' type='video/mp4' />
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+			<div className='features-page-container'>
+				<div className='features-page-feature'>
 					<div className='features-page-subheader'>OBS Integration</div>
 					<p>
 						For streamers using OBS, npChatbot can be configured to send each
@@ -163,7 +205,20 @@ const FeaturesPage = (): JSX.Element => {
 						element.
 					</p>
 				</div>
-				<div className='features-page-feature'></div>
+				<div className='features-page-feature'>
+					<div className='features-page-subheader'>Auto ID</div>
+					<p>
+						With the <span className='highlighted-text'>Auto ID</span> feature
+						enabled, npChatbot will send a message to your channel's chat
+						identifying the current song playing each time that it updates.
+					</p>
+					<p>
+						Additionally, npChatbot also gives streamers the options to clean up
+						the file tag text used with this feature, removing any extra text
+						found in parentheses or brackets within the title or artist fields
+						before sending the info to the chat.
+					</p>
+				</div>
 			</div>
 		</div>
 	)

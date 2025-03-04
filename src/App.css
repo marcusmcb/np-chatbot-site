@@ -92,12 +92,12 @@
 }
 
 .details-inset {
-	padding: 30px;
+	padding: 10px;
 	color: white;
 	border-radius: 15px;
 	font-weight: 300;
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
 	flex: 1;
 	text-align: left;
 }
@@ -209,8 +209,8 @@ button:hover {
 
 @media (min-width: 1400px) {
 	.details-inset {
-		margin-left: 80px;
-		margin-right: 80px;
+		margin-left: 40px;
+		margin-right: 40px;
 	}
 }
 
@@ -268,7 +268,7 @@ button:hover {
 		}
 	}
 
-	@media (max-width: 700px) {
+	@media (max-width: 900px) {
 		.details-panel-container {
 			display: block;
 		}
