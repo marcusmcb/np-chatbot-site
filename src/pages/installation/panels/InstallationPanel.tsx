@@ -22,8 +22,11 @@ const InstallationPanel = (): JSX.Element => {
 
 			<div className='installation-page-directions-step'>
 				Once loaded, click the{' '}
-				<span className='highlighted-installation-text'>Authorize</span> button
-				in the upper left to authorize npChatbot with Twitch
+				<span className='highlighted-installation-text'>
+					Twitch
+					<IconSpan />
+				</span>{' '}
+				icon button in the upper left to authorize npChatbot with Twitch
 				<IconSpan />.
 				<img
 					src='/images/installation/setup_01_final.png'
@@ -66,7 +69,54 @@ const InstallationPanel = (): JSX.Element => {
 					alt='npChatbot instructions, step 3'
 					src='/images/installation/setup_03_final.png'
 				/>
-			</div>			
+			</div>
+			<div className='installation-page-header'>
+				Spotify Authorization (Optional)
+			</div>
+			<div className='installation-page-directions-step'>
+				<p>
+					To link your{' '}
+					<span className='highlighted-text'>
+						Spotify
+						<IconSpan />
+					</span>{' '}
+					account with npChatbot, click the Spotify
+					<IconSpan /> icon up in the upper left to get started.
+				</p>
+				<p>
+					You should then see a prompt from{' '}
+					<span className='highlighted-text'>
+						Spotify
+						<IconSpan />
+					</span>{' '}
+					for you to authorize npChatbot.{' '}
+				</p>
+				<p>
+					Make sure that you're logged into the Spotify account that you'd like
+					npChatbot to use to create your playlists before tapping or clicking
+					Accept.
+				</p>
+				<img
+					src='/images/installation/setup_spotify_auth.png'
+					alt='npChatbot instructions, Spotify set 1'
+				/>
+			</div>
+			<div className='installation-page-directions-step'>
+				<p>
+					After authorizing with Spotify, you'll see a confirmation message from
+					npChatbot.
+				</p>
+				<img
+					src='/images/installation/setup_spotify_successful.png'
+					alt='npChatbot instructions, Spotify set 2'
+				/>
+				<p>
+					You will now be able to enable the Spotify playlist options in
+					npChatbot's preferences. Please see the{' '}
+					<span className='highlighted-text'>Preferences</span> section for
+					additional information about using these options in npChatbot.
+				</p>
+			</div>
 		</div>
 	)
 }

@@ -4,17 +4,18 @@ import './analysispage.css'
 const AnalysisPage = (): JSX.Element => {
 	return (
 		<div className='analysis-page'>
-			<div className='analysis-page-header'>Data Quirks</div>			
+			<div className='analysis-page-header'>Data Quirks</div>
 			<div className='analysis-page-subheader'>
 				Determining The Longest Song Played
 			</div>
 			<div className='analysis-page-container'>
 				<div className='analysis-page-item'>
 					<p>
-						npChatbot collects your Serato<IconSpan/> live playlist data in real time to
-						calculate your stats, data which is limited to the title, artist, and the
-						start time of each song played. Using this data, it estimates song
-						lengths based on when each song started.
+						npChatbot collects your Serato
+						<IconSpan /> live playlist data in real time to calculate your
+						stats, data which is limited to the title, artist, and the start
+						time of each song played. Using this data, it estimates song lengths
+						based on when each song started.
 					</p>
 					<p>
 						Since the data only includes start times, npChatbot assumes minimal
@@ -60,9 +61,10 @@ const AnalysisPage = (): JSX.Element => {
 						entries.
 					</p>
 					<p>
-						However, due to inconsistencies in Serato's<IconSpan/> playlist logging, the
-						!np doubles command may sometimes fail to detect recent doubles or
-						display older doubles instead of the latest ones.
+						However, due to inconsistencies in Serato's
+						<IconSpan /> playlist logging, the !np doubles command may sometimes
+						fail to detect recent doubles or display older doubles instead of
+						the latest ones.
 					</p>
 				</div>
 			</div>
@@ -70,10 +72,51 @@ const AnalysisPage = (): JSX.Element => {
 			<div className='analysis-page-container'>
 				<div className='analysis-page-item'>
 					<p>
-						Note that the title/artist tags from Serato© will appear as-is in
-						the chatbot's responses. Cleaner tags ensure better results. Missing
-						or incorrect info may affect the !dyp command if the searched term
-						isn't found due to empty or malformed tags.
+						Note that the title/artist tags from Serato
+						<IconSpan /> will appear as-is in the chatbot's responses. Cleaner
+						tags ensure better results. Missing or incorrect info may affect the
+						!dyp command if the searched term isn't found due to empty or
+						malformed tags.
+					</p>
+				</div>
+			</div>
+			<div className='analysis-page-subheader'>Spotify Playlist Selections</div>
+			<div className='analysis-page-container'>
+				<div className='analysis-page-item'>
+					<p>
+						When using the included Spotify
+						<IconSpan /> feature to create/update a playlist of the songs you
+						play, npChatbot uses the file tag information from each song played
+						in Serato
+						<IconSpan /> to submit a request to Spotify
+						<IconSpan />.{' '}
+					</p>
+					<p>
+						The results of each request are used to determine which song is
+						added to your Spotify
+						<IconSpan /> playlist.
+					</p>
+					<p>
+						By default, the most popular result for the song information
+						submitted is used when adding songs to your current playlist. For
+						common, popular songs, the resulting addition should be reasonably
+						accurate.
+					</p>
+					<p>
+						For songs not available on Spotify
+						<IconSpan />, no addition or change is made to the current playlist.
+					</p>
+					<p>
+						Bearing in mind that the file tag information from Serato
+						<IconSpan /> is used to submit the queries to Spotify, less than
+						perfect file tags (typos, missing artist/title values, etc) can skew
+						the results returned from Spotify
+						<IconSpan /> that are used when updating your playlists.
+					</p>
+					<p>
+						We're currently working on improving the accuracy of the Spotify
+						results to account for scenarios and instances like the ones
+						described above.
 					</p>
 				</div>
 			</div>

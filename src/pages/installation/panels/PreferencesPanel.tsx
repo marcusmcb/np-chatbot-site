@@ -6,9 +6,9 @@ const PreferencesPanel = (): JSX.Element => {
 		<div className='installation-page-directions-container'>
 			<div className='installation-page-header'>5. Preferences (optional)</div>
 			<div className='installation-page-directions-step'>
-				Set your preferences for OBS response and interval messages. Click{' '}
+				Set your preferences for npChatbot in this panel. Click{' '}
 				<span className='highlighted-installation-text'>Update</span> to save
-				your settings.
+				your settings when you change them.
 				<img
 					alt='npChatbot instructions, step 9'
 					src='/images/installation/setup_09_final.png'
@@ -98,7 +98,7 @@ const PreferencesPanel = (): JSX.Element => {
 
 			<div className='installation-page-directions-step'>
 				<p className='highlighted-installation-text'>
-					Enabled Auto ID Cleanup:
+					Enable Auto ID Cleanup:
 				</p>
 			</div>
 			<div className='installation-page-directions-step'>

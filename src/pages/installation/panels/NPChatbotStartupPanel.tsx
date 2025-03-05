@@ -188,6 +188,90 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 					<IconSpan /> and ensure the playlist is set as public.
 				</p>
 			</div>
+			<div className='installation-page-header'>
+				Starting a new Spotify
+				<IconSpan /> playlist
+			</div>
+			<div className='installation-page-directions-step'>
+				<p>
+					*** This feature is available after authorizing npChatbot with{' '}
+					<span className='highlighted-text'>
+						Spotify
+						<IconSpan />
+					</span>
+				</p>
+				<p>
+					With the{' '}
+					<span className='highlighted-text'>Enable Spotify Playlist</span>{' '}
+					option enabled, a new{' '}
+					<span className='highlighted-text'>
+						Spotify
+						<IconSpan />
+					</span>{' '}
+					playlist will be created each time you connect npChatbot to{' '}
+					<span className='highlighted-text'>
+						Twitch
+						<IconSpan />
+					</span>
+					.
+				</p>
+				<p>
+					You can view the playlist in your{' '}
+					<span className='highlighted-text'>Spotify</span> account once
+					created. By default, it's given a name of "Twitch Stream Playlist",
+					along with the date of that particular stream.
+				</p>
+				<img
+					alt='npChatbot instructions, step 11'
+					src='/images/installation/setup_spotify_playlist_example_final.png'
+				/>
+				<p>
+					You or your viewers can access the link to the playlist at any time
+					during the stream by using the{' '}
+					<span className='highlighted-text'>!np playlist</span> command.
+				</p>
+				<p>
+					As songs are successfully added to your{' '}
+					<span className='highlighted-text'>
+						Spotify
+						<IconSpan />
+					</span>{' '}
+					playlist, you'll see a notification indicating such in npChatbot.
+				</p>
+				<img
+					alt='npChatbot instructions, step 12'
+					src='/images/installation/setup_spotify_playlist_updated_final.png'
+				/>
+			</div>
+			<div className='installation-page-header'>
+				Resuming your last Spotify
+				<IconSpan /> playlist
+			</div>
+			<div className='installation-page-directions-step'>
+				<p>
+					*** This feature is available after authorizing npChatbot with{' '}
+					<span className='highlighted-text'>
+						Spotify
+						<IconSpan />
+					</span>
+				</p>
+				<p>
+					With the{' '}
+					<span className='highlighted-text'>Continue Last Playlist</span>{' '}
+					option enabled, npChatbot will continue adding the tracks you play to
+					the most recent{' '}
+					<span className='highlighted-text'>
+						Spotify
+						<IconSpan />
+					</span>{' '}
+					playlist created.
+				</p>
+				<p>
+					If you need to disconnect and reconnect npChatbot during your stream
+					(to change your preferences, etc), enable this feature to prevent
+					npChatbot from creating another new playlist for your current stream.
+				</p>
+			</div>
 		</div>
 	)
 }

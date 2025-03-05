@@ -75,13 +75,13 @@ const LandingPage = (): JSX.Element => {
 						</p>
 						<p>
 							Under the hood, npChatbot will update your Spotify
-							<IconSpan /> playlist in real-time directly from your Serato
+							<IconSpan /> playlist directly from your Serato
 							<IconSpan /> play history with each new song you play during your
 							set.
 						</p>
 						<p>
 							With a simple command, viewers can access the Spotify playlist for
-							your current set at any time!
+							your current set in the chat at any time!
 						</p>
 					</div>
 				</div>
