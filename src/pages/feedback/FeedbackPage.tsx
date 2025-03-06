@@ -52,7 +52,7 @@ const FeedbackPage = (): JSX.Element => {
 				<div className='feedback-page-item'>
 					<p>
 						npChatbot is not affiliated with, endorsed, or sponsored by either
-						Twitch<IconSpan/> or Serato<IconSpan/> or any of its affiliates or subsidiaries.
+						Twitch<IconSpan/>, Spotify<IconSpan/>, or Serato<IconSpan/> or any of its affiliates or subsidiaries.
 					</p>
 					<p>
 						All trademarks, logos, and brand names used in this project are the
