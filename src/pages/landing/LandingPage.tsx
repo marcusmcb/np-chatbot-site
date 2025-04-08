@@ -10,10 +10,10 @@ const LandingPage = (): JSX.Element => {
 						<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-setup.exe'>
 							<button>Download (PC)</button>
 						</a>
-						<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot.dmg'>
+						{/* <a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot.dmg'>
 							<button>Download (Mac)</button>
-						</a>
-						{/* <div className='mac-installer-text'>(macOS version coming soon)</div> */}
+						</a> */}
+						<div className='mac-installer-text'>(macOS version coming soon)</div>
 					</div>
 				</div>
 				<div className='description-box'>
