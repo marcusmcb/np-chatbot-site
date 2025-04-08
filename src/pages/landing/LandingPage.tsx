@@ -6,10 +6,15 @@ const LandingPage = (): JSX.Element => {
 			<div className='download-section'>
 				<div className='download-box'>
 					<p className='download-header'>Download npChatbot</p>
-					<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-setup.exe'>
-						<button>Download (PC)</button>
-					</a>
-					<div className='mac-installer-text'>(macOS version coming soon)</div>
+					<div className='download-button-group'>
+						<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-setup.exe'>
+							<button>Download (PC)</button>
+						</a>
+						<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot.dmg'>
+							<button>Download (Mac)</button>
+						</a>
+						{/* <div className='mac-installer-text'>(macOS version coming soon)</div> */}
+					</div>
 				</div>
 				<div className='description-box'>
 					<div className='description-box-text'>
@@ -37,7 +42,7 @@ const LandingPage = (): JSX.Element => {
 						<p>
 							npChatbot enables a unique level of music discovery during your
 							live-streamed DJ sets by connecting your Twitch
-							<IconSpan /> chat to your Serato
+							<IconSpan /> chat (aka, your viewers!) to your Serato
 							<IconSpan /> Live Playlist and includes:
 						</p>
 						<p>* Real-time display of the track "now playing"</p>
@@ -48,8 +53,8 @@ const LandingPage = (): JSX.Element => {
 							<IconSpan /> chat
 						</p>
 						<p>
-							* A "vibe check" command that provides viewer insight as to what
-							type of set you've been playing
+							* A "vibe check" command that provides some viewer insight as to
+							what type of set you've been playing
 						</p>
 					</div>
 					<div className='details-inset'>
