@@ -8,18 +8,41 @@ const InstallationPanel = (): JSX.Element => {
 				1. Installation & Initial Setup
 			</div>
 			<div className='installation-page-directions-step'>
-				Download the npChatbot desktop app{' '}
+				For <span className='highlighted-installation-text'>PC</span> users,
+				download the app{' '}
 				<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-setup.exe'>
 					here
 				</a>
 				.
 			</div>
-
 			<div className='installation-page-directions-step'>
 				Double-click the installer file once the download has completed. You'll
-				see a loading image briefly before npChatbot fully loads.
+				see a loading image briefly before npChatbot fully installs and loads.
 			</div>
-
+			<div className='installation-page-directions-step'>
+				<hr />
+			</div>
+			<div className='installation-page-directions-step'>
+				For <span className='highlighted-installation-text'>Mac</span> users,
+				download the app{' '}
+				<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot.dmg'>
+					here
+				</a>
+				.
+			</div>
+			<div className='installation-page-directions-step'>
+				<div>Double-click the dmg file once the download has completed.</div>
+				<br />
+				<div>
+					You should then see a window display an icon for npChatbot's installer
+					file. Drag this icon into{' '}
+					<span className='highlighted-installation-text'>Applications</span> in
+					your Finder utility to install npChatbot.
+				</div>
+			</div>
+			<div className='installation-page-directions-step'>
+				<hr />
+			</div>
 			<div className='installation-page-directions-step'>
 				Once loaded, click the{' '}
 				<span className='highlighted-installation-text'>
