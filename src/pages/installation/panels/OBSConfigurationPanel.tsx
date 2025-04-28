@@ -23,16 +23,18 @@ const OBSConfigurationPanel = (): JSX.Element => {
 				<hr />
 				<p className='highlighted-installation-text'>Note for Mac users:</p>
 				<p>
-					When updating or entering your OBS websocket address and password for
-					the first time, you may see an error message from npChatbot noting
-					that it was unable to save your data along with a MacOS system prompt.
+					After updating or entering your OBS websocket address and password for
+					the first time, you may see an error message from npChatbot when
+					attempting to connect to Twitch later on. Your MacOS will also display a prompt
+					requesting access to allow npChatbot to connect to OBS.
 				</p>
+				<p></p>
 				<p>
 					Select{' '}
 					<span className='highlighted-installation-text'>Allow Access</span>{' '}
 					from the prompt to allow npChatbot to connect to OBS and then press
-					"Update" again. You should see a message indicating that your
-					information was properly updated.
+					"Update" again. You should be able to connect npChatbot to Twitch
+					without issue thereafter.
 				</p>
 				<img
 					alt='npChatbot instructions, step 9'
