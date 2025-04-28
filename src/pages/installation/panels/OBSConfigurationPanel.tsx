@@ -23,18 +23,23 @@ const OBSConfigurationPanel = (): JSX.Element => {
 				<hr />
 				<p className='highlighted-installation-text'>Note for Mac users:</p>
 				<p>
-					After updating or entering your OBS websocket address and password for
-					the first time, you may see an error message from npChatbot when
-					attempting to connect to Twitch later on. Your MacOS will also display a prompt
-					requesting access to allow npChatbot to connect to OBS.
+					When updating or entering your OBS information for the first time, you
+					may see an error message from npChatbot when attempting to connect to
+					Twitch
+					<IconSpan /> thereafter.{' '}
+				</p>
+				<p>
+					As a security measure, your MacOS will also display a prompt requesting access to allow
+					npChatbot to connect to OBS.
 				</p>
 				<p></p>
 				<p>
 					Select{' '}
 					<span className='highlighted-installation-text'>Allow Access</span>{' '}
 					from the prompt to allow npChatbot to connect to OBS and then press
-					"Update" again. You should be able to connect npChatbot to Twitch
-					without issue thereafter.
+					<span className='highlighted-installation-text'> Update</span> again.
+					You should be able to connect npChatbot to Twitch
+					<IconSpan /> without issue thereafter.
 				</p>
 				<img
 					alt='npChatbot instructions, step 9'
@@ -107,8 +112,8 @@ const OBSConfigurationPanel = (): JSX.Element => {
 					You can test placement in OBS by following the start up instructions
 					for npChatbot without actually starting a live stream on Twitch
 					<IconSpan />. Start a Live Playlist in Serato
-					<IconSpan /> and then start and connect npChatbot to Twitch with OBS
-					running.
+					<IconSpan /> and then start and connect npChatbot to Twitch
+					<IconSpan /> with OBS running.
 				</p>
 				<p>
 					You can then use npChatbot's commands in OBS' chat dock to test the
