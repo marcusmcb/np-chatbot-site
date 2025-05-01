@@ -40,6 +40,9 @@ const App = (): JSX.Element => {
 						<Link to='/commands'>
 							<div className='navbar-element'>Command List</div>
 						</Link>
+						<Link to='https://www.youtube.com/@npchatbot'>
+							<div className='navbar-element'>YouTube</div>
+						</Link>
 					</div>
 				</div>
 
