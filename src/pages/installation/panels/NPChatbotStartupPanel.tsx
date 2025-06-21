@@ -68,6 +68,11 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 					option, scroll down, and select{' '}
 					<span className='highlighted-installation-text'>Save Changes</span>.
 				</p>
+				<p>
+					You may also want to double check that the start time of your Serato
+					Live Playlist is correct as this can affect the accuracy of several of
+					npChatbot's stats.
+				</p>
 				<img
 					alt='npChatbot instructions, step 7'
 					src='/images/installation/serato_03_final.png'
