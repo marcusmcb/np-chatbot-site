@@ -221,6 +221,25 @@ const FeaturesPage = (): JSX.Element => {
 					</p>
 				</div>
 			</div>
+			<div className='features-page-container'>
+				<div className='features-page-feature'>
+					<div className='features-page-subheader'>Playlist Summaries</div>
+					<p>
+						With npChatbot's{' '}
+						<span className='highlighted-text'>Playlist Summaries</span>{' '}
+						feature, you can review your final playlist "stats" and npChatbot
+						command use for each of your DJ streams.
+					</p>
+					<p>
+						Along with your final playlist "stats", each summary will give you a
+						detailed breakdown of the songs, artists, and terms that your
+						viewers searched for during that stream. This additional insight
+						gives you, the streaming DJ, a better look into what music your
+						viewers are potentially signalling interest in during your streams.
+					</p>
+				</div>
+				<div className='features-page-feature'></div>
+			</div>
 		</div>
 	)
 }
