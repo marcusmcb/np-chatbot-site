@@ -1,9 +1,14 @@
+
 import IconSpan from '../components/IconSpan'
 import './featurespage.css'
+import { useState } from 'react';
 
 const FeaturesPage = (): JSX.Element => {
-	return (
-		<div className='features-page'>
+	   const [modalOpen, setModalOpen] = useState(false);
+	   const handleImgClick = () => setModalOpen(true);
+	   const handleModalClose = () => setModalOpen(false);
+	   return (
+			   <div className='features-page'>
 			<div className='features-page-header-container'>
 				<div className='features-page-feature-main'>
 					<div className='features-page-header main-header page-title'>
@@ -238,7 +243,26 @@ const FeaturesPage = (): JSX.Element => {
 						viewers are potentially signalling interest in during your streams.
 					</p>
 				</div>
-				<div className='features-page-feature'></div>
+							   <div className='features-page-feature'>
+									   <img
+											   src='/images/features/npchatbot_103_screenshot_02.png'
+											   alt='Playlist Summaries'
+											   width='85%'
+											   height='85%'
+											   style={{ cursor: 'pointer' }}
+											   onClick={handleImgClick}
+									   />
+									   {modalOpen && (
+											   <div className='modal-overlay' onClick={handleModalClose}>
+													   <img
+															   className='modal-img'
+															   src='/images/features/npchatbot_103_screenshot_02.png'
+															   alt='Playlist Summaries Full Size'
+													   />
+													   <span className='modal-close'>&#10005;</span>
+											   </div>
+									   )}
+							   </div>
 			</div>
 		</div>
 	)

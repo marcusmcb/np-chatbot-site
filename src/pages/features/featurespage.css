@@ -1,3 +1,38 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.modal-img {
+  max-width: 95vw;
+  max-height: 90vh;
+  border-radius: 15px;
+  border: 5px solid #888;
+  background: #222;
+  box-shadow: 0 0 20px #000;
+  display: block;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  z-index: 10000;
+  pointer-events: none;
+  text-shadow: 0 0 10px #000;
+}
 .features-page {
 	background-color: rgb(43, 43, 43);
 	color: white;
@@ -53,6 +88,11 @@
 	margin-left: 30px;
 }
 
+.features-page-feature img {
+	border: 5px solid grey;
+	border-radius: 15px;
+}
+
 .video-element {
 	margin-top: 60px;
 	margin-right: 30px;
@@ -95,13 +135,17 @@
 	.features-page-feature {
 		margin-right: 0px;
 	}
+
+	.features-page-feature img {
+		margin-top: 15px;
+	}
 }
 
 @media (max-width: 800px) {
 	.features-page-feature,
 	.features-pages-feature-main {
 		max-width: 100%;
-	}
+	}	
 }
 
 @media (max-width: 1200px) {

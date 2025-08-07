@@ -1,3 +1,10 @@
+.download-version {
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .App {
@@ -69,14 +76,25 @@
 	color: rgb(74, 242, 228);
 }
 
+.download-section {
+	padding: 15px;
+}
+
 .details-panel,
 .download-section {
-	background-color: rgb(43, 43, 43);
-	padding: 30px 15px 30px 15px;
+	background-color: rgb(43, 43, 43);	
 	display: flex;
 	justify-content: space-between;
 	font-family: 'DM Sans', sans-serif;
 	flex-grow: 1;
+}
+
+.details-panel-top {
+	padding: 30px 15px 0px 15px;
+}
+
+.details-panel-bottom {
+	padding: 0px 15px 30px 15px;
 }
 
 .details-header,
@@ -143,6 +161,8 @@
 .download-header {
 	font-size: 30px !important;
 	margin-top: 40px;
+	margin-bottom: 5px;
+	color: rgb(74, 242, 228)
 }
 
 .download-button-group {
@@ -153,7 +173,34 @@
 }
 
 .download-button-group a {
-	margin: 5px 0px
+	   margin: 5px 0px;
+}
+
+.learn-more-button {
+  padding: 20px 35px;
+  background-color: rgb(74, 242, 228);
+  border: none;
+  color: rgb(49, 49, 49);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1em;
+  margin: 0 auto;
+  display: block;
+}
+
+.learn-more-button:hover {
+  background-color: rgb(49, 49, 49);
+  color: rgb(74, 242, 228);
+}
+
+.learn-more-button-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(43, 43, 43);
+  margin: 0;
+  padding: 0 0 40px 0;
 }
 
 .description-box {
