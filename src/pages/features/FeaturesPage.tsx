@@ -1,14 +1,13 @@
-
 import IconSpan from '../components/IconSpan'
 import './featurespage.css'
-import { useState } from 'react';
+import { useState } from 'react'
 
 const FeaturesPage = (): JSX.Element => {
-	   const [modalOpen, setModalOpen] = useState(false);
-	   const handleImgClick = () => setModalOpen(true);
-	   const handleModalClose = () => setModalOpen(false);
-	   return (
-			   <div className='features-page'>
+	const [modalOpen, setModalOpen] = useState(false)
+	const handleImgClick = () => setModalOpen(true)
+	const handleModalClose = () => setModalOpen(false)
+	return (
+		<div className='features-page'>
 			<div className='features-page-header-container'>
 				<div className='features-page-feature-main'>
 					<div className='features-page-header main-header page-title'>
@@ -71,7 +70,8 @@ const FeaturesPage = (): JSX.Element => {
 					<p>
 						There's also a "vibecheck" option that returns a random selection
 						from your play history (title/artist) and how long ago you played
-						it.
+						it, giving your viewers insight into your set's current mood or
+						tone.
 					</p>
 				</div>
 				<div className='features-page-video'>
@@ -88,17 +88,16 @@ const FeaturesPage = (): JSX.Element => {
 					</div>
 					<p>
 						When using the <span className='highlighted-text'>!dyp</span>{' '}
-						command (short for "did you play...?") followed by an artist name or
-						a song title, your viewers will see the total number of songs that
-						match the result along with the most recent song played and how long
-						ago it was played.
+						command (short for "did you play...?") followed by an artist's name
+						or a song title, your viewers will see the total number of songs
+						that match the result along with the most recent song played and how
+						long ago it was played.
 					</p>
 					<p>
 						This gives your viewers the ability to digitally "dig" through your
-						history and see what kind of music/vibe you've been playing up to
-						that point in the set. It also gives you, the DJ, some <i>real</i>{' '}
-						insight (and potential inspiration) on where to go next musically
-						speaking.
+						history at any time during your set, providing you, the streaming
+						DJ, with on-the-fly insight as to what music your current viewers
+						are signaling an interest in.
 					</p>
 				</div>
 				<div className='features-page-video'>
@@ -115,12 +114,10 @@ const FeaturesPage = (): JSX.Element => {
 					</div>
 					<p>
 						Using the commmands in npChatbot, your viewers (or you!) can check
-						your current
-						<span className='highlighted-text'> stats</span> at any time during
-						the stream with options to display the total number of songs you've
-						played so far, your average song length for this set currently, and
-						whether that average has increased/decreased since the previous song
-						played.
+						the
+						<span className='highlighted-text'> stats</span> for your DJ set at
+						any time during your stream, showing the total number of songs
+						played so far and the average song length for your current set.
 					</p>
 					<p>
 						For a deeper dive, viewers have access to commands that determine
@@ -164,7 +161,7 @@ const FeaturesPage = (): JSX.Element => {
 							Serato
 							<IconSpan />
 						</span>{' '}
-						play history when you connect the app to your chat.
+						play history when you connect npChatbot to your chat.
 					</p>
 					<p>
 						npChatbot will then regularly update the playlist with each new song
@@ -186,11 +183,11 @@ const FeaturesPage = (): JSX.Element => {
 					<p>
 						With the <span className='highlighted-text'>Auto ID</span> feature
 						enabled, npChatbot will send a message to your channel's chat
-						identifying the current song playing each time that it updates.
+						identifying the current song playing each time it updates.
 					</p>
 					<p>
 						Additionally, npChatbot also gives streamers the options to clean up
-						the file tag text used with this feature, removing any extra text
+						the file tag text used in this feature, removing any extra text
 						found in parentheses or brackets within the title or artist fields
 						before sending the info to the chat.
 					</p>
@@ -243,26 +240,26 @@ const FeaturesPage = (): JSX.Element => {
 						viewers are potentially signalling interest in during your streams.
 					</p>
 				</div>
-							   <div className='features-page-feature'>
-									   <img
-											   src='/images/features/npchatbot_103_screenshot_02.png'
-											   alt='Playlist Summaries'
-											   width='85%'
-											   height='85%'
-											   style={{ cursor: 'pointer' }}
-											   onClick={handleImgClick}
-									   />
-									   {modalOpen && (
-											   <div className='modal-overlay' onClick={handleModalClose}>
-													   <img
-															   className='modal-img'
-															   src='/images/features/npchatbot_103_screenshot_02.png'
-															   alt='Playlist Summaries Full Size'
-													   />
-													   <span className='modal-close'>&#10005;</span>
-											   </div>
-									   )}
-							   </div>
+				<div className='features-page-feature'>
+					<img
+						src='/images/features/npchatbot_103_screenshot_02.png'
+						alt='Playlist Summaries'
+						width='85%'
+						height='85%'
+						style={{ cursor: 'pointer' }}
+						onClick={handleImgClick}
+					/>
+					{modalOpen && (
+						<div className='modal-overlay' onClick={handleModalClose}>
+							<img
+								className='modal-img'
+								src='/images/features/npchatbot_103_screenshot_02.png'
+								alt='Playlist Summaries Full Size'
+							/>
+							<span className='modal-close'>&#10005;</span>
+						</div>
+					)}
+				</div>
 			</div>
 		</div>
 	)
