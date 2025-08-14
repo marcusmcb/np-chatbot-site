@@ -4,9 +4,9 @@ import '../installationpage.css'
 const InstallationPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
-			<div className='installation-page-header'>
+			<h1 className='installation-page-header'>
 				1. Installation & Initial Setup
-			</div>
+			</h1>
 			<div className='installation-page-directions-step'>
 				For <span className='highlighted-installation-text'>PC</span> users,
 				download the app{' '}
@@ -62,7 +62,7 @@ const InstallationPanel = (): JSX.Element => {
 					You should then see a prompt from Twitch
 					<IconSpan /> for you to authorize npChatbot.
 				</p>
-				<p className='highlighted-installation-text'>NOTE:</p>
+				<h2 className='highlighted-installation-text'>NOTE:</h2>
 				<p>
 					Please be sure that you're signed into the Twitch
 					<IconSpan /> account that you would like npChatbot to use for its
@@ -93,11 +93,17 @@ const InstallationPanel = (): JSX.Element => {
 					src='/images/installation/setup_03_final.png'
 				/>
 			</div>
-			<div className='installation-page-header'>
+			<h1 className='installation-page-header'>
 				Spotify
 				<IconSpan /> Authorization (Optional)
-			</div>
+			</h1>
 			<div className='installation-page-directions-step'>
+				<h3>
+					npChatbot can be linked to your{' '}
+					<span className='highlighted-installation-text'>Spotify</span> account
+					to create and update playlists of your live DJ sets which you can
+					share in your chat.
+				</h3>
 				<p>
 					To link your{' '}
 					<span className='highlighted-text'>
@@ -142,11 +148,24 @@ const InstallationPanel = (): JSX.Element => {
 				</p>
 			</div>
 
-			<div className='installation-page-header'>
+			<h1 className='installation-page-header'>
 				Discord
 				<IconSpan /> Authorization (Optional)
-			</div>
+			</h1>
 			<div className='installation-page-directions-step'>
+				<h3>
+					npChatbot can also be linked to your{' '}
+					<span className='highlighted-installation-text'>
+						Discord
+						<IconSpan />
+					</span>{' '}
+					server to share your{' '}
+					<span className='highlighted-installation-text'>
+						Spotify
+						<IconSpan />
+					</span>{' '}
+					playlists there.
+				</h3>
 				<p>
 					To link your{' '}
 					<span className='highlighted-text'>

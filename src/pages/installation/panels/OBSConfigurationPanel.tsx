@@ -3,9 +3,9 @@ import IconSpan from '../../components/IconSpan'
 const OBSConfigurationPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
-			<div className='installation-page-header'>
+			<h1 className='installation-page-header'>
 				4. OBS Configuration (optional)
-			</div>
+			</h1>
 			<div className='installation-page-directions-step'>
 				<p>
 					If you'd like to send npChatbot's responses to your OBS software to
@@ -21,7 +21,7 @@ const OBSConfigurationPanel = (): JSX.Element => {
 					save your settings.
 				</p>
 				<hr />
-				<p className='highlighted-installation-text'>Note for Mac users:</p>
+				<h2 className='highlighted-installation-text'>Note for Mac users:</h2>
 				<p>
 					When updating or entering your OBS information for the first time, you
 					may see an error message from npChatbot when attempting to connect to
@@ -71,11 +71,11 @@ const OBSConfigurationPanel = (): JSX.Element => {
 				/>
 			</div>
 			<div className='installation-page-directions-step'>
-				<p>
+				<h2>
 					<span className='highlighted-installation-text'>
 						Using npChatbot Responses In OBS
 					</span>
-				</p>
+				</h2>
 				<p>
 					To use npChatbot's responses in OBS, add a new{' '}
 					<span className='highlighted-installation-text'>Text (GDI+)</span>{' '}
@@ -96,11 +96,11 @@ const OBSConfigurationPanel = (): JSX.Element => {
 					option in your preferences will determine how long the text is
 					displayed on screen before being cleared.
 				</p>
-				<p>
+				<h2>
 					<span className='highlighted-installation-text'>
 						Styling & Testing On-Screen Text Placement in OBS
 					</span>
-				</p>
+				</h2>
 				<p>
 					How you style and place the text data within your OBS overlays is up
 					to you. The demo clips of npChatbot on the{' '}

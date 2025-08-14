@@ -10,9 +10,9 @@ const FeaturesPage = (): JSX.Element => {
 		<div className='features-page'>
 			<div className='features-page-header-container'>
 				<div className='features-page-feature-main'>
-					<div className='features-page-header main-header page-title'>
+					<h1 className='features-page-header main-header page-title'>
 						What is npChatbot anyway?
-					</div>
+					</h1>
 					<div className='features-page-feature-main main-header-text'>
 						<p>
 							npChatbot (<span className='highlighted-text'>"now playing"</span>
@@ -53,9 +53,9 @@ const FeaturesPage = (): JSX.Element => {
 
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
-					<div className='features-page-subheader'>
+					<h2 className='features-page-subheader'>
 						Interactive Music Discovery
-					</div>
+					</h2>
 					<p>
 						By opening up access to your play history during your live-streamed
 						DJ sets, viewers can directly interact with that history, adding a
@@ -83,9 +83,9 @@ const FeaturesPage = (): JSX.Element => {
 			</div>
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
-					<div className='features-page-subheader'>
+					<h2 className='features-page-subheader'>
 						Search By Song Or Artist
-					</div>
+					</h2>
 					<p>
 						When using the <span className='highlighted-text'>!dyp</span>{' '}
 						command (short for "did you play...?") followed by an artist's name
@@ -109,9 +109,9 @@ const FeaturesPage = (): JSX.Element => {
 			</div>
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
-					<div className='features-page-subheader'>
+					<h2 className='features-page-subheader'>
 						Real Time Playlist Stats
-					</div>
+					</h2>
 					<p>
 						Using the commands in npChatbot, your viewers (or you!) can check
 						the
@@ -137,10 +137,10 @@ const FeaturesPage = (): JSX.Element => {
 			</div>
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
-					<div className='features-page-subheader'>
+					<h2 className='features-page-subheader'>
 						Create Spotify
 						<IconSpan /> Playlists From Your DJ Sets
-					</div>
+					</h2>
 					<p>
 						Linking npChatbot to your{' '}
 						<span className='highlighted-text'>
@@ -180,7 +180,7 @@ const FeaturesPage = (): JSX.Element => {
 			</div>
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
-					<div className='features-page-subheader'>Auto ID & Tag Clean-Up</div>
+					<h2 className='features-page-subheader'>Auto ID & Tag Clean-Up</h2>
 					<p>
 						With the <span className='highlighted-text'>Auto ID</span> feature
 						enabled, npChatbot will send a message to your channel's chat
@@ -194,7 +194,7 @@ const FeaturesPage = (): JSX.Element => {
 					</p>
 				</div>
 				<div className='features-page-feature'>
-					<div className='features-page-subheader'>OBS Integration</div>
+					<h2 className='features-page-subheader'>OBS Integration</h2>
 					<p>
 						For streamers using OBS, npChatbot can be configured to send each
 						command's response to OBS for use in overlays in your live streams.
@@ -226,9 +226,9 @@ const FeaturesPage = (): JSX.Element => {
 			</div>
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
-					<div className='features-page-subheader'>
+					<h2 className='features-page-subheader'>
 						Playlist Summaries & Discord Sharing
-					</div>
+					</h2>
 					<p>
 						With npChatbot's{' '}
 						<span className='highlighted-text'>Playlist Summaries</span>{' '}

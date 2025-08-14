@@ -20,17 +20,16 @@ const LandingPage = (): JSX.Element => {
 						<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot.dmg'>
 							<button>Download (Mac)</button>
 						</a>
-						{/* <div className='mac-installer-text'>(macOS version coming soon)</div> */}
 					</div>
 				</div>
 				<div className='description-box'>
 					<div className='description-box-text'>
-						<p>
+						<h3>
 							Connect your Twitch
-							<IconSpan /> chat with your Serato
+							<IconSpan /> chat to your Serato
 							<IconSpan /> Live Playlist to add a collection of interactive
-							music discovery commands to your channel
-						</p>
+							music discovery features to your channel
+						</h3>
 					</div>
 					<div className='description-box-text'>
 						<div className='features-page-feature video-element'>
@@ -45,7 +44,7 @@ const LandingPage = (): JSX.Element => {
 			<div className='details-panel details-panel-top'>
 				<div className='details-panel-container'>
 					<div className='details-inset'>
-						<div className='details-header'>Real Time Music Discovery</div>
+						<h3 className='details-header'>Real Time Music Discovery</h3>
 						<p>
 							npChatbot enables a unique level of music discovery during your
 							live-streamed DJ sets by connecting your Twitch
@@ -53,71 +52,37 @@ const LandingPage = (): JSX.Element => {
 							<IconSpan /> Live Playlist through a set of interactive chat
 							commands.
 						</p>
-						{/* <p>* Real-time display of the track "now playing"</p>
-			<p>* Access to any previously played song during your set</p>
-			<p>
-			  * Search functionality by song title and artist directly in your
-			  Twitch
-			  <IconSpan /> chat
-			</p>
-			<p>
-			  * A "vibe check" command that provides some viewer insight as to
-			  what type of set you've been playing
-			</p> */}
 					</div>
 					<div className='details-inset'>
-						<div className='details-header'>Instant Playlist Stats</div>
+						<h3 className='details-header'>Instant Playlist Stats</h3>
 						<p>
 							npChatbot's commands aren't limited to just music discovery. The
 							app also provides real-time "stats" about your DJ set during your
 							live streams, offering up unique insight about your current set in
 							real time.
 						</p>
-						{/* <p>* The average song length for your set</p>
-			<p>* Total songs played at any point during your set</p>
-			<p>* The shortest or longest song of your set</p>
-			<p>* How many times you've rocked "doubles" during your set</p> */}
 					</div>
 				</div>
 			</div>
 			<div className='details-panel details-panel-bottom'>
 				<div className='details-panel-container'>
 					<div className='details-inset'>
-						<div className='details-header'>Spotify Playlist Creation</div>
+						<h3 className='details-header'>Spotify Playlist Creation + Discord Integration</h3>
 						<p>
 							Linking your Spotify
 							<IconSpan /> account with npChatbot gives you the ability to
 							create and share playlists of your DJ sets with your Twitch
-							<IconSpan /> viewers directly in your chat!
+							<IconSpan /> viewers directly in your chat!  You can also link npChatbot with your Discord<IconSpan/> server to share them there as well!
 						</p>
-						{/* <p>
-			  Under the hood, npChatbot will update your Spotify
-			  <IconSpan /> playlist directly from your Serato
-			  <IconSpan /> play history with each new song you play during your
-			  set.
-			</p>
-			<p>
-			  With a simple command, viewers can access the Spotify playlist for
-			  your current set in the chat at any time!
-			</p> */}
 					</div>
 					<div className='details-inset'>
-						<div className='details-header'>Playlist Summaries</div>
+						<h3 className='details-header'>Playlist Summaries</h3>
 						<p>
 							npChatbot also provides a final Playlist Summary for each streamed
-							DJ set, with a final tally of the songs played, their average
-							length, which songs you rocked doubles with, the discovery
-							commands used during each set, and more!
+							DJ set with all of your set's stats and command use during that
+							stream, giving you, the DJ streamer, deeper insights into those
+							streamed sets.
 						</p>
-						{/* <p>
-			  Each summary also shows npChatbot's command use during your set,
-			  showing which songs, artists, and phrases your viewers searched
-			  for during that stream.
-			</p>
-			<p>
-			  With the Spotify feature enabled, your playlist link is available
-			  in your summary to easily share with your streaming community.
-			</p> */}
 					</div>
 				</div>
 			</div>

@@ -6,6 +6,7 @@ import OBSConfigurationPanel from './panels/OBSConfigurationPanel'
 import NPChatbotStartupPanel from './panels/NPChatbotStartupPanel'
 import CredentialsPanel from './panels/CredentialsPanel'
 import InstallationPanel from './panels/InstallationPanel'
+import SummariesPanel from './panels/SummariesPanel'
 
 import './installationpage.css'
 
@@ -40,6 +41,8 @@ const InstallationPage = (): JSX.Element => {
 				return <PreferencesPanel />
 			case 'ReAuth':
 				return <ReAuthPanel />
+			case 'Summaries':
+				return <SummariesPanel />
 			default:
 				return <InstallationPanel />
 		}
@@ -79,12 +82,12 @@ const InstallationPage = (): JSX.Element => {
 				>
 					Preferences
 				</button>
-				{/* <button
+				<button
 					className={activeTab === 'Summaries' ? 'active' : ''}
 					onClick={() => setActiveTab('Summaries')}
 				>
 					Summaries
-				</button> */}
+				</button>
 				<button
 					className={activeTab === 'ReAuth' ? 'active' : ''}
 					onClick={() => setActiveTab('ReAuth')}

@@ -4,7 +4,7 @@ import '../installationpage.css'
 const PreferencesPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
-			<div className='installation-page-header'>5. Preferences (optional)</div>
+			<h1 className='installation-page-header'>5. Preferences (optional)</h1>
 			<div className='installation-page-directions-step'>
 				Set your preferences for npChatbot in this panel. Click{' '}
 				<span className='highlighted-installation-text'>Update</span> to save
@@ -16,20 +16,20 @@ const PreferencesPanel = (): JSX.Element => {
 			</div>
 
 			<div className='installation-page-directions-step'>
-				<p className='highlighted-installation-text'>
+				<h2 className='highlighted-installation-text'>
 					Enable Spotify
 					<IconSpan /> Playlist:
-				</p>
+				</h2>
 			</div>
 			<div className='installation-page-directions-step'>
-				<p>
+				<h3>
 					*** This feature is enabled after connecting npChatbot to your{' '}
 					<span className='highlighted-text'>
 						Spotify
 						<IconSpan />
 					</span>{' '}
 					account.
-				</p>
+				</h3>
 				<p>
 					When enabled, npChatbot will create a new{' '}
 					<span className='highlighted-text'>
@@ -55,7 +55,7 @@ const PreferencesPanel = (): JSX.Element => {
 			</div>
 
 			<div className='installation-page-directions-step'>
-				<p className='highlighted-installation-text'>Continue Last Playlist:</p>
+				<h2 className='highlighted-installation-text'>Continue Last Playlist:</h2>
 			</div>
 			<div className='installation-page-directions-step'>
 				<p>
@@ -86,7 +86,7 @@ const PreferencesPanel = (): JSX.Element => {
 			</div>
 
 			<div className='installation-page-directions-step'>
-				<p className='highlighted-installation-text'>Enable Auto ID:</p>
+				<h2 className='highlighted-installation-text'>Enable Auto ID:</h2>
 			</div>
 			<div className='installation-page-directions-step'>
 				<p>
@@ -97,9 +97,9 @@ const PreferencesPanel = (): JSX.Element => {
 			</div>
 
 			<div className='installation-page-directions-step'>
-				<p className='highlighted-installation-text'>
+				<h2 className='highlighted-installation-text'>
 					Enable Auto ID Cleanup:
-				</p>
+				</h2>
 			</div>
 			<div className='installation-page-directions-step'>
 				<p>
@@ -111,14 +111,14 @@ const PreferencesPanel = (): JSX.Element => {
 			</div>
 
 			<div className='installation-page-directions-step'>
-				<p className='highlighted-installation-text'>
+				<h2 className='highlighted-installation-text'>
 					Enable On-Screen OBS Responses:
-				</p>
+				</h2>
 			</div>
 			<div className='installation-page-directions-step'>
-				<p>
+				<h3>
 					*** This feature is enabled after entering your OBS Websocket Address
-				</p>
+				</h3>
 				<p>
 					When enabled, this determines the time (in seconds) that each
 					command's response will be visible on screen in your OBS setup.
@@ -134,9 +134,9 @@ const PreferencesPanel = (): JSX.Element => {
 			</div>
 
 			<div className='installation-page-directions-step'>
-				<p className='highlighted-installation-text'>
+				<h2 className='highlighted-installation-text'>
 					Enable Interval Messages:
-				</p>
+				</h2>
 			</div>
 			<div className='installation-page-directions-step'>
 				<p>

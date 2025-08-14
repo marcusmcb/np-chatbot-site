@@ -4,10 +4,10 @@ import '../installationpage.css'
 const ReAuthPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
-			<div className='installation-page-header'>
+			<h1 className='installation-page-header'>
 				6. Re-Authorizing npChatbot with Twitch
 				<IconSpan />
-			</div>
+			</h1>
 			<div className='installation-page-directions-step'>
 				<p>
 					Changing the password for the Twitch
@@ -32,10 +32,10 @@ const ReAuthPanel = (): JSX.Element => {
 					credentials or preferences.
 				</p>
 			</div>
-			<div className='installation-page-header'>
+			<h1 className='installation-page-header'>
 				De-Authorizing npChatbot with Twitch
 				<IconSpan />
-			</div>
+			</h1>
 			<div className='installation-page-directions-step'>
 				<p>
 					If you'd like to de-authorize npChatbot from your connected Twitch
@@ -65,10 +65,10 @@ const ReAuthPanel = (): JSX.Element => {
 					</p>
 				</p>
 			</div>
-			<div className='installation-page-header'>
+			<h1 className='installation-page-header'>
 				De-Authorizing npChatbot with Spotify
 				<IconSpan />
-			</div>
+			</h1>
 			<div className='installation-page-directions-step'>
 				<p>
 					If you'd like to de-authorize npChatbot from your connected Spotify
@@ -92,6 +92,36 @@ const ReAuthPanel = (): JSX.Element => {
 						option. Finally, click the{' '}
 						<span className='highlighted-installation-text'>Remove Access</span>{' '}
 						button next to npChatbot to remove the authorization.
+					</p>
+				</p>
+			</div>
+			<h1 className='installation-page-header'>
+				De-Authorizing npChatbot with Discord
+				<IconSpan />
+			</h1>
+			<div className='installation-page-directions-step'>
+				<p>
+					If you'd like to de-authorize npChatbot from your connected Discord
+					server:
+				</p>
+				<p>
+					<p>
+						- Log in to the Discord
+						<IconSpan /> account npChatbot is authorized with
+					</p>
+					<p>
+						- Click on the{' '}
+						<span className='highlighted-installation-text'>settings icon</span>{' '}
+						in the lower left (near your profile picture and status), and then
+						select{' '}
+						<span className='highlighted-installation-text'>
+							Authorized Apps
+						</span>{' '}
+						from the options
+					</p>
+					<p>
+						- Scroll or search until you find npChatbot in the Authorized Apps
+						section and click the <span className="highlighted-installation-text">Deauthorize</span> button to remove it.
 					</p>
 				</p>
 			</div>

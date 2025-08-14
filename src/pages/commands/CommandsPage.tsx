@@ -6,7 +6,7 @@ const CommandsPage = (): JSX.Element => {
 		<>
 			<div className='commands-page'>
 				<div className='commands-page-container'>
-					<div className='commands-page-header'>Command List:</div>
+					<h1 className='commands-page-header'>Command List:</h1>
 					<div className='commands-page-text'>
 						<span className='command-name-span'>
 							<b>!np </b>
