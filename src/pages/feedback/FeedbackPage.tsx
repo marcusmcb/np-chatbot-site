@@ -4,8 +4,8 @@ import './feedbackpage.css'
 const FeedbackPage = (): JSX.Element => {
 	return (
 		<div className='feedback-page'>
-			<div className='feedback-page-header'>Feedback & Support</div>
-			<div className='feedback-page-subheader'>Beta Testing</div>
+			<h1 className='feedback-page-header'>Feedback & Support</h1>
+			<h2 className='feedback-page-subheader'>Beta Testing</h2>
 			<div className='feedback-page-container'>
 				<div className='feedback-page-item'>
 					<p>
@@ -14,7 +14,7 @@ const FeedbackPage = (): JSX.Element => {
 					</p>
 				</div>
 			</div>
-			<div className='feedback-page-subheader'>Suggestions & Improvements</div>
+			<h2 className='feedback-page-subheader'>Suggestions & Improvements</h2>
 			<div className='feedback-page-container'>
 				<div className='feedback-page-item'>
 					<p>
@@ -28,7 +28,7 @@ const FeedbackPage = (): JSX.Element => {
 					</p>
 				</div>
 			</div>
-			<div className='feedback-page-subheader'>Bugs & Errors</div>
+			<h2 className='feedback-page-subheader'>Bugs & Errors</h2>
 			<div className='feedback-page-container'>
 				<div className='feedback-page-item'>
 					<p>
@@ -47,7 +47,7 @@ const FeedbackPage = (): JSX.Element => {
 					</p>
 				</div>
 			</div>
-			<div className='feedback-page-subheader'>Disclaimer</div>
+			<h2 className='feedback-page-subheader'>Disclaimer</h2>
 			<div className='feedback-page-container'>
 				<div className='feedback-page-item'>
 					<p>
@@ -75,7 +75,7 @@ const FeedbackPage = (): JSX.Element => {
 					className='highlighted-text mail-link'
 					href='mailto:npchatbotapp@gmail.com'
 				>
-					<span>Send Us A Message</span>
+					<span	>Send Us A Message</span>
 				</a>
 			</div>
 		</div>

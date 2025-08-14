@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# installer storage
+/installers
+
 # production
 /build
 

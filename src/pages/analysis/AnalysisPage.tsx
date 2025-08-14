@@ -4,10 +4,10 @@ import './analysispage.css'
 const AnalysisPage = (): JSX.Element => {
 	return (
 		<div className='analysis-page'>
-			<div className='analysis-page-header'>Data Quirks</div>
-			<div className='analysis-page-subheader'>
+			<h1 className='analysis-page-header'>Data Quirks</h1>
+			<h2 className='analysis-page-subheader'>
 				Determining The Longest Song Played
-			</div>
+			</h2>
 			<div className='analysis-page-container'>
 				<div className='analysis-page-item'>
 					<p>
@@ -35,9 +35,9 @@ const AnalysisPage = (): JSX.Element => {
 					</p>
 				</div>
 			</div>
-			<div className='analysis-page-subheader'>
+			<h2 className='analysis-page-subheader'>
 				Calculating Average Track Length
-			</div>
+			</h2>
 			<div className='analysis-page-container'>
 				<div className='analysis-page-item'>
 					<p>
@@ -51,7 +51,7 @@ const AnalysisPage = (): JSX.Element => {
 					</p>
 				</div>
 			</div>
-			<div className='analysis-page-subheader'>Detecting "Doubles" Played</div>
+			<h2 className='analysis-page-subheader'>Detecting "Doubles" Played</h2>
 			<div className='analysis-page-container'>
 				<div className='analysis-page-item'>
 					<p>
@@ -68,7 +68,7 @@ const AnalysisPage = (): JSX.Element => {
 					</p>
 				</div>
 			</div>
-			<div className='analysis-page-subheader'>Missing Title/Artist Tags</div>
+			<h2 className='analysis-page-subheader'>Missing Title/Artist Tags</h2>
 			<div className='analysis-page-container'>
 				<div className='analysis-page-item'>
 					<p>
@@ -80,7 +80,7 @@ const AnalysisPage = (): JSX.Element => {
 					</p>
 				</div>
 			</div>
-			<div className='analysis-page-subheader'>Spotify Playlist Selections</div>
+			<h2 className='analysis-page-subheader'>Spotify Playlist Selections</h2>
 			<div className='analysis-page-container'>
 				<div className='analysis-page-item'>
 					<p>
