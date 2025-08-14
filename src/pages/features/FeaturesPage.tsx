@@ -113,7 +113,7 @@ const FeaturesPage = (): JSX.Element => {
 						Real Time Playlist Stats
 					</div>
 					<p>
-						Using the commmands in npChatbot, your viewers (or you!) can check
+						Using the commands in npChatbot, your viewers (or you!) can check
 						the
 						<span className='highlighted-text'> stats</span> for your DJ set at
 						any time during your stream, showing the total number of songs
@@ -138,7 +138,8 @@ const FeaturesPage = (): JSX.Element => {
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
 					<div className='features-page-subheader'>
-						Create Spotify Playlists From Your DJ Sets
+						Create Spotify
+						<IconSpan /> Playlists From Your DJ Sets
 					</div>
 					<p>
 						Linking npChatbot to your{' '}
@@ -225,7 +226,9 @@ const FeaturesPage = (): JSX.Element => {
 			</div>
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
-					<div className='features-page-subheader'>Playlist Summaries</div>
+					<div className='features-page-subheader'>
+						Playlist Summaries & Discord Sharing
+					</div>
 					<p>
 						With npChatbot's{' '}
 						<span className='highlighted-text'>Playlist Summaries</span>{' '}
@@ -235,14 +238,28 @@ const FeaturesPage = (): JSX.Element => {
 					<p>
 						Along with your final playlist "stats", each summary will give you a
 						detailed breakdown of the songs, artists, and terms that your
-						viewers searched for during that stream. This additional insight
-						gives you, the streaming DJ, a better look into what music your
-						viewers are potentially signalling interest in during your streams.
+						viewers searched for during that stream.
+					</p>
+					<p>
+						This additional insight gives you, the streaming DJ, a better look
+						into what music your viewers are potentially signalling interest in
+						during your streams.
+					</p>
+					<p>
+						If you've created a Spotify
+						<IconSpan /> playlist of your stream, the link is included in your
+						summary which you can easily share with your community by linking
+						npChatbot with your{' '}
+						<span className='highlighted-text'>
+							Discord
+							<IconSpan />
+						</span>{' '}
+						server!
 					</p>
 				</div>
 				<div className='features-page-feature'>
 					<img
-						src='/images/features/npchatbot_103_screenshot_02.png'
+						src='/images/features/npchatbot_104_screenshot.png'
 						alt='Playlist Summaries'
 						width='85%'
 						height='85%'
@@ -253,7 +270,7 @@ const FeaturesPage = (): JSX.Element => {
 						<div className='modal-overlay' onClick={handleModalClose}>
 							<img
 								className='modal-img'
-								src='/images/features/npchatbot_103_screenshot_02.png'
+								src='/images/features/npchatbot_104_screenshot.png'
 								alt='Playlist Summaries Full Size'
 							/>
 							<span className='modal-close'>&#10005;</span>

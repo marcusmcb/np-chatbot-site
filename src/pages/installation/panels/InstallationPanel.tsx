@@ -94,7 +94,8 @@ const InstallationPanel = (): JSX.Element => {
 				/>
 			</div>
 			<div className='installation-page-header'>
-				Spotify Authorization (Optional)
+				Spotify
+				<IconSpan /> Authorization (Optional)
 			</div>
 			<div className='installation-page-directions-step'>
 				<p>
@@ -138,6 +139,66 @@ const InstallationPanel = (): JSX.Element => {
 					npChatbot's preferences. Please see the{' '}
 					<span className='highlighted-text'>Preferences</span> section for
 					additional information about using these options in npChatbot.
+				</p>
+			</div>
+
+			<div className='installation-page-header'>
+				Discord
+				<IconSpan /> Authorization (Optional)
+			</div>
+			<div className='installation-page-directions-step'>
+				<p>
+					To link your{' '}
+					<span className='highlighted-text'>
+						Discord
+						<IconSpan />
+					</span>{' '}
+					server with npChatbot, click the Discord
+					<IconSpan /> icon up in the upper left to get started.
+				</p>
+				<p>
+					You should then see a prompt from{' '}
+					<span className='highlighted-text'>
+						Discord
+						<IconSpan />
+					</span>{' '}
+					for you to authorize npChatbot.{' '}
+				</p>
+				<p>
+					Select the{' '}
+					<span className='highlighted-text'>
+						Discord
+						<IconSpan />
+					</span>{' '}
+					server and corresponding channel you want to link npChatbot to. This
+					will be the server and channel that npChatbot will post your{' '}
+					<span className='highlighted-text'>
+						Spotify
+						<IconSpan />
+					</span>
+					playlist links.
+				</p>
+				<img
+					src='/images/installation/discord_auth_01.png'
+					alt='npChatbot instructions, Spotify set 1'
+				/>
+			</div>
+			<div className='installation-page-directions-step'>
+				<p>
+					After authorizing with Discord
+					<IconSpan />, you'll see a confirmation message from npChatbot.
+				</p>
+				<img
+					src='/images/installation/discord_auth_02.png'
+					alt='npChatbot instructions, Spotify set 2'
+				/>
+				<p>
+					You will now be able to share any Spotify
+					<IconSpan /> playlists created with npChatbot directly to your
+					connected Discord
+					<IconSpan /> server. Please see the{' '}
+					<span className='highlighted-text'>Summaries</span> section for
+					additional information about sharing playlists in npChatbot.
 				</p>
 			</div>
 		</div>

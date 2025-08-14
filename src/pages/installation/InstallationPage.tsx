@@ -21,7 +21,7 @@ const InstallationPage = (): JSX.Element => {
 	useEffect(() => {
 		const tab = getQueryParam('tab')
 		if (tab) {
-			console.log("TAB: ", tab)
+			console.log('TAB: ', tab)
 			setActiveTab(tab)
 		}
 	}, [location.search])
@@ -79,6 +79,12 @@ const InstallationPage = (): JSX.Element => {
 				>
 					Preferences
 				</button>
+				{/* <button
+					className={activeTab === 'Summaries' ? 'active' : ''}
+					onClick={() => setActiveTab('Summaries')}
+				>
+					Summaries
+				</button> */}
 				<button
 					className={activeTab === 'ReAuth' ? 'active' : ''}
 					onClick={() => setActiveTab('ReAuth')}
