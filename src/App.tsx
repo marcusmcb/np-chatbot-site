@@ -9,6 +9,7 @@ import FeaturesPage from './pages/features/FeaturesPage';
 import FeedbackPage from './pages/feedback/FeedbackPage';
 import AnalysisPage from './pages/analysis/AnalysisPage';
 import PageNotFound from './pages/pagenotfound/PageNotFound';
+import DownloadsPage from './pages/downloads/DownloadsPage';
 import './App.css';
 
 // ScrollToTop component to scroll to top on route change
@@ -38,8 +39,12 @@ const App = (): JSX.Element => {
 			</div>
 		  </div>
 		  <div className='navbar-links'>
-			<Link to='/features'>
+			
+			{/* <Link to='/features'>
 			  <div className='navbar-element'>Features</div>
+			</Link> */}
+			<Link to='/downloads'>
+			  <div className='navbar-element'>Downloads</div>
 			</Link>
 			<Link to='/installation'>
 			  <div className='navbar-element'>Installation & Setup</div>
@@ -64,6 +69,8 @@ const App = (): JSX.Element => {
 		  <Route path='/features' element={<FeaturesPage />} />
 		  <Route path='/feedback' element={<FeedbackPage />} />
 		  <Route path='/analysis' element={<AnalysisPage />} />
+		  <Route path='/pagenotfound' element={<PageNotFound />} />
+		  <Route path='/downloads' element={<DownloadsPage/>} />
 		  <Route path='*' element={<PageNotFound />} />
 		</Routes>
 
