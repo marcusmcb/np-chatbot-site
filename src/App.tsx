@@ -40,12 +40,12 @@ const App = (): JSX.Element => {
 		  </div>
 		  <div className='navbar-links'>
 			
-			{/* <Link to='/features'>
+			<Link to='/features'>
 			  <div className='navbar-element'>Features</div>
-			</Link> */}
-			<Link to='/downloads'>
-			  <div className='navbar-element'>Downloads</div>
 			</Link>
+			{/* <Link to='/downloads'>
+			  <div className='navbar-element'>Downloads</div>
+			</Link> */}
 			<Link to='/installation'>
 			  <div className='navbar-element'>Installation & Setup</div>
 			</Link>

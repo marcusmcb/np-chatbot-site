@@ -14,10 +14,10 @@ const LandingPage = (): JSX.Element => {
 					<div className='download-header'>Download npChatbot</div>
 					<div className='download-version'>(version 1.0.4)</div>
 					<div className='download-button-group'>
-						<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-setup.exe'>
+						<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.0.4-setup.exe'>
 							<button>Download (PC)</button>
 						</a>
-						<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot.dmg'>
+						<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.0.4-setup.dmg'>
 							<button>Download (Mac)</button>
 						</a>
 					</div>
