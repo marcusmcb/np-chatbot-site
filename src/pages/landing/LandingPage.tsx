@@ -68,7 +68,7 @@ const LandingPage = (): JSX.Element => {
         <div className="details-panel-container">
           <div className="details-inset">
             <h3 className="details-header">
-              Spotify Playlist Creation + Discord Integration
+              Spotify<IconSpan/> Playlist Creation + Discord<IconSpan/> Integration
             </h3>
             <p>
               Linking your Spotify
