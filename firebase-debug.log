@@ -1,0 +1,37 @@
+[debug] [2025-05-01T04:17:41.082Z] ----------------------------------------------------------------------
+[debug] [2025-05-01T04:17:41.085Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\marcu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-05-01T04:17:41.085Z] CLI Version:   12.7.0
+[debug] [2025-05-01T04:17:41.085Z] Platform:      win32
+[debug] [2025-05-01T04:17:41.085Z] Node Version:  v22.13.1
+[debug] [2025-05-01T04:17:41.086Z] Time:          Wed Apr 30 2025 21:17:41 GMT-0700 (Pacific Daylight Time)
+[debug] [2025-05-01T04:17:41.086Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-01T04:17:41.175Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-01T04:17:41.175Z] > authorizing via signed-in user (marcusmcb@gmail.com)
+[debug] [2025-05-01T04:17:41.175Z] [iam] checking project np-chatbot-site for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-05-01T04:17:41.177Z] > refreshing access token with scopes: []
+[debug] [2025-05-01T04:17:41.179Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-05-01T04:17:41.179Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-05-01T04:17:41.371Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-05-01T04:17:41.371Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-05-01T04:17:41.372Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/np-chatbot-site:testIamPermissions [none]
+[debug] [2025-05-01T04:17:41.372Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/np-chatbot-site:testIamPermissions x-goog-quota-user=projects/np-chatbot-site
+[debug] [2025-05-01T04:17:41.372Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/np-chatbot-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-01T04:17:41.623Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/np-chatbot-site:testIamPermissions 401
+[debug] [2025-05-01T04:17:41.624Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/np-chatbot-site:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2025-05-01T04:17:41.626Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-05-01T04:17:41.627Z] > refreshing access token with scopes: []
+[debug] [2025-05-01T04:17:41.628Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-05-01T04:17:41.628Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-05-01T04:17:41.698Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-05-01T04:17:41.699Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-05-01T04:17:41.700Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/np-chatbot-site [none]
+[debug] [2025-05-01T04:17:42.083Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/np-chatbot-site 401
+[debug] [2025-05-01T04:17:42.084Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/np-chatbot-site {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-05-01T04:17:42.084Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-05-01T04:17:42.208Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\marcu\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\marcu\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project np-chatbot-site. Please make sure the project exists and your account has permission to access it.
