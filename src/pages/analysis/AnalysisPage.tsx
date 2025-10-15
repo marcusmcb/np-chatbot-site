@@ -80,7 +80,10 @@ const AnalysisPage = (): JSX.Element => {
 					</p>
 				</div>
 			</div>
-			<h2 className='analysis-page-subheader'>Spotify Playlist Selections</h2>
+			<h2 className='analysis-page-subheader'>
+				Spotify
+				<IconSpan /> Playlist Selections
+			</h2>
 			<div className='analysis-page-container'>
 				<div className='analysis-page-item'>
 					<p>
@@ -115,8 +118,8 @@ const AnalysisPage = (): JSX.Element => {
 					</p>
 					<p>
 						We're currently working on improving the accuracy of the Spotify
-						results to account for scenarios and instances like the ones
-						described above.
+						<IconSpan /> results to account for scenarios and instances like the
+						ones described above.
 					</p>
 				</div>
 			</div>

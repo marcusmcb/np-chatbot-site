@@ -227,7 +227,7 @@ const FeaturesPage = (): JSX.Element => {
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
 					<h2 className='features-page-subheader'>
-						Playlist Summaries & Discord Sharing
+						Playlist Summaries & Discord<IconSpan/> Sharing
 					</h2>
 					<p>
 						With npChatbot's{' '}

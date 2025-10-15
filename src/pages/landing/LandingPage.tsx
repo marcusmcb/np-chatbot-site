@@ -67,7 +67,7 @@ const LandingPage = (): JSX.Element => {
 			<div className='details-panel details-panel-bottom'>
 				<div className='details-panel-container'>
 					<div className='details-inset'>
-						<h3 className='details-header'>Spotify Playlist Creation + Discord Integration</h3>
+						<h3 className='details-header'>Spotify<IconSpan/> Playlist Creation + Discord<IconSpan/> Integration</h3>
 						<p>
 							Linking your Spotify
 							<IconSpan /> account with npChatbot gives you the ability to
