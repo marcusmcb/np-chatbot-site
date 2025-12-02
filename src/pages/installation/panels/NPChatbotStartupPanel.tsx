@@ -15,7 +15,9 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 					Next, click{' '}
 					<span className='highlighted-installation-text'>Start Session</span>{' '}
 					to reset Serato's
-					<IconSpan /> play history.
+					<IconSpan /> current play history. If using Serato
+					<IconSpan /> 4.0, you'll need to click the "Manage History" button
+					first in order to view the "Start Session" control.
 				</p>
 				<p>
 					Finally, click{' '}
