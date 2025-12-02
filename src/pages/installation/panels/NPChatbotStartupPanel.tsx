@@ -24,7 +24,7 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 					</span>
 					. More information about the Live Playlist feature can be found{' '}
 					<a
-						href='https://support.serato.com/hc/en-us/articles/228019568-Live-Playlists'
+						href='https://support.serato.com/hc/en-us/articles/223455827-Playlists'
 						rel='noreferrer'
 						target='_blank'
 					>
