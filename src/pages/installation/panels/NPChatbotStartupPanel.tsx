@@ -4,7 +4,7 @@ import '../installationpage.css'
 const NPChatbotStartupPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
-			<h1 className='installation-page-header'>3. Starting npChatbot</h1>
+			<h1 className='installation-page-header'>Starting npChatbot</h1>
 			<div className='installation-page-directions-step'>
 				<p>
 					In Serato

@@ -4,7 +4,7 @@ const OBSConfigurationPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
 			<h1 className='installation-page-header'>
-				4. OBS Configuration (optional)
+				OBS Configuration (optional)
 			</h1>
 			<div className='installation-page-directions-step'>
 				<p>

@@ -82,7 +82,7 @@ const App = (): JSX.Element => {
 			<div>npChatbot {new Date().getFullYear()}</div>
 		  </Link>
 		  <Link to='/analysis'>
-			<span>Data Quirks</span>
+			<span>Known Issues</span>
 		  </Link>
 		</div>
 	  </div>

@@ -5,7 +5,7 @@ const ReAuthPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
 			<h1 className='installation-page-header'>
-				6. Re-Authorizing npChatbot with Twitch
+				Re-Authorizing npChatbot with Twitch
 				<IconSpan />
 			</h1>
 			<div className='installation-page-directions-step'>

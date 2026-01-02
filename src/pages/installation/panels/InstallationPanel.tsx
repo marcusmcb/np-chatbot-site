@@ -4,9 +4,7 @@ import '../installationpage.css'
 const InstallationPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
-			<h1 className='installation-page-header'>
-				1. Installation & Initial Setup
-			</h1>
+			<h1 className='installation-page-header'>Installation & Initial Setup</h1>
 			<div className='installation-page-directions-step'>
 				For <span className='highlighted-installation-text'>PC</span> users,
 				download the app{' '}
@@ -86,8 +84,15 @@ const InstallationPanel = (): JSX.Element => {
 			</div>
 
 			<div className='installation-page-directions-step'>
-				npChatbot will confirm the authorization and the app is now ready for
-				your credentials and preferences.
+				<p>
+					npChatbot will confirm the authorization and the app is now ready for
+					your credentials and preferences.
+				</p>
+				<p>
+					For Mac users, your Twitch<IconSpan/> authorization is stored in MacOS Keychain.
+					If prompted, select "store all" or "allow all" to store your Twitch<IconSpan/>
+					authorization information.
+				</p>
 				<img
 					alt='npChatbot instructions, step 3'
 					src='/images/installation/setup_03_final.png'
@@ -135,6 +140,11 @@ const InstallationPanel = (): JSX.Element => {
 				<p>
 					After authorizing with Spotify, you'll see a confirmation message from
 					npChatbot.
+				</p>
+				<p>
+					For Mac users, your Spotify<IconSpan/> authorization is stored in MacOS Keychain.
+					If prompted, select "store all" or "allow all" to store your Spotify<IconSpan/>
+					authorization information.
 				</p>
 				<img
 					src='/images/installation/setup_spotify_successful.png'
@@ -206,6 +216,11 @@ const InstallationPanel = (): JSX.Element => {
 				<p>
 					After authorizing with Discord
 					<IconSpan />, you'll see a confirmation message from npChatbot.
+				</p>
+				<p>
+					For Mac users, your Discord<IconSpan/> authorization is stored in MacOS Keychain.
+					If prompted, select "store all" or "allow all" to store your Discord<IconSpan/>
+					authorization information.
 				</p>
 				<img
 					src='/images/installation/discord_auth_02.png'

@@ -5,7 +5,7 @@ const CredentialsPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
 			<h1 className='installation-page-header'>
-				2. Storing Your Credentials
+				Storing Your Credentials
 			</h1>
 			<div className='installation-page-directions-step'>
 				<p>The follow credentials are required:</p>

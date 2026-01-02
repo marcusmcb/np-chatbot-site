@@ -4,7 +4,38 @@ import './analysispage.css'
 const AnalysisPage = (): JSX.Element => {
 	return (
 		<div className='analysis-page'>
-			<h1 className='analysis-page-header'>Data Quirks</h1>
+			<h1 className='analysis-page-header'>Known Issues & Data Quirks</h1>
+			<h2 className='analysis-page-subheader'>
+				If your Serato
+				<IconSpan /> Live Playlist loses connection while streaming...
+			</h2>
+			<div className='analysis-page-container'>
+				<div className='analysis-page-item'>
+					<p>
+						npChatbot works properly when it is able to "read" your Serato
+						<IconSpan /> Live Playlist data from the web, which is updated from
+						your DJ laptop with each new song you play.
+					</p>
+					<p>
+						If your laptop running Serato
+						<IconSpan /> loses connection to the internet for any reason
+						(internet outage, "airplane" mode enabled, etc), the current live
+						playlist stream will be disrupted.
+					</p>
+					<p>
+						Should this occur, Serato
+						<IconSpan /> does not currently offer a way to resume that Live
+						Playlist (or start a new one) without restarting the software
+						altogether, which is obviously not ideal during a live stream.
+					</p>
+					<p>
+						This was discovered during testing Serato
+						<IconSpan /> 3.x, and we'll update this page once we've done
+						likewise with the newer Serato
+						<IconSpan /> 4.x release as this issue may have been resolved since.
+					</p>
+				</div>
+			</div>
 			<h2 className='analysis-page-subheader'>
 				Determining The Longest Song Played
 			</h2>

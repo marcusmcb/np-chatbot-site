@@ -4,7 +4,7 @@ import '../installationpage.css'
 const PreferencesPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
-			<h1 className='installation-page-header'>5. Preferences (optional)</h1>
+			<h1 className='installation-page-header'>Preferences (optional)</h1>
 			<div className='installation-page-directions-step'>
 				Set your preferences for npChatbot in this panel. Click{' '}
 				<span className='highlighted-installation-text'>Update</span> to save
