@@ -89,9 +89,10 @@ const InstallationPanel = (): JSX.Element => {
 					your credentials and preferences.
 				</p>
 				<p>
-					For Mac users, your Twitch<IconSpan/> authorization is stored in MacOS Keychain.
-					If prompted, select "store all" or "allow all" to store your Twitch<IconSpan/>
-					authorization information.
+					For Mac users, your Twitch
+					<IconSpan /> authorization is stored in MacOS Keychain. If prompted,
+					select "store all" or "allow all" to store your Twitch
+					<IconSpan /> authorization information.
 				</p>
 				<img
 					alt='npChatbot instructions, step 3'
@@ -142,9 +143,10 @@ const InstallationPanel = (): JSX.Element => {
 					npChatbot.
 				</p>
 				<p>
-					For Mac users, your Spotify<IconSpan/> authorization is stored in MacOS Keychain.
-					If prompted, select "store all" or "allow all" to store your Spotify<IconSpan/>
-					authorization information.
+					For Mac users, your Spotify
+					<IconSpan /> authorization is stored in MacOS Keychain. If prompted,
+					select "store all" or "allow all" to store your Spotify
+					<IconSpan /> authorization information.
 				</p>
 				<img
 					src='/images/installation/setup_spotify_successful.png'
@@ -218,9 +220,10 @@ const InstallationPanel = (): JSX.Element => {
 					<IconSpan />, you'll see a confirmation message from npChatbot.
 				</p>
 				<p>
-					For Mac users, your Discord<IconSpan/> authorization is stored in MacOS Keychain.
-					If prompted, select "store all" or "allow all" to store your Discord<IconSpan/>
-					authorization information.
+					For Mac users, your Discord
+					<IconSpan /> authorization is stored in MacOS Keychain. If prompted,
+					select "store all" or "allow all" to store your Discord
+					<IconSpan /> authorization information.
 				</p>
 				<img
 					src='/images/installation/discord_auth_02.png'
