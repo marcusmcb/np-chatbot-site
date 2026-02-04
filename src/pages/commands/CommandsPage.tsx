@@ -67,7 +67,7 @@ const CommandsPage = (): JSX.Element => {
 						</span>
 						<p className='command-name-description-text'>
 							displays the title, artist, and length of the shortest song played
-							within the last hour
+							within your set
 						</p>
 					</div>
 					<div className='commands-page-text'>
@@ -81,7 +81,7 @@ const CommandsPage = (): JSX.Element => {
 						</span>
 						<p className='command-name-description-text'>
 							displays the title, artist, and length of the longest song played
-							within the last hour
+							within your set
 						</p>
 					</div>
 					<div className='commands-page-text'>
