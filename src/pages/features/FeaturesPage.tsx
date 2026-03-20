@@ -1,4 +1,5 @@
 import IconSpan from '../components/IconSpan'
+import VideoWithPlaceholder from '../components/VideoWithPlaceholder'
 import './featurespage.css'
 import { useState } from 'react'
 
@@ -40,10 +41,10 @@ const FeaturesPage = (): JSX.Element => {
 					</div>
 				</div>
 				<div className='features-page-feature video-element'>
-					<video controls width='100%'>
-						<source src='/videos/npchatbot-demo-01.mp4' type='video/mp4' />
-						Your browser does not support the video tag.
-					</video>
+					<VideoWithPlaceholder
+						src='/videos/npchatbot-demo-01.mp4'
+						ariaLabel='npChatbot overview video'
+					/>
 				</div>
 			</div>
 
@@ -75,10 +76,10 @@ const FeaturesPage = (): JSX.Element => {
 					</p>
 				</div>
 				<div className='features-page-video'>
-					<video controls width='100%'>
-						<source src='/videos/npchatbot-demo-02.mp4' type='video/mp4' />
-						Your browser does not support the video tag.
-					</video>
+					<VideoWithPlaceholder
+						src='/videos/npchatbot-demo-02.mp4'
+						ariaLabel='Interactive Music Discovery demo video'
+					/>
 				</div>
 			</div>
 			<div className='features-page-container'>
@@ -101,10 +102,10 @@ const FeaturesPage = (): JSX.Element => {
 					</p>
 				</div>
 				<div className='features-page-video'>
-					<video controls width='100%'>
-						<source src='/videos/dyp-command-video.mp4' type='video/mp4' />
-						Your browser does not support the video tag.
-					</video>
+					<VideoWithPlaceholder
+						src='/videos/dyp-command-video.mp4'
+						ariaLabel='Search by song or artist demo video'
+					/>
 				</div>
 			</div>
 			<div className='features-page-container'>
@@ -129,10 +130,10 @@ const FeaturesPage = (): JSX.Element => {
 					</p>
 				</div>
 				<div className='features-page-video'>
-					<video controls width='100%'>
-						<source src='/videos/doubles_command_video.mp4' type='video/mp4' />
-						Your browser does not support the video tag.
-					</video>
+					<VideoWithPlaceholder
+						src='/videos/doubles_command_video.mp4'
+						ariaLabel='Real time playlist stats demo video'
+					/>
 				</div>
 			</div>
 			<div className='features-page-container'>
@@ -172,10 +173,10 @@ const FeaturesPage = (): JSX.Element => {
 					</p>
 				</div>
 				<div className='features-page-video'>
-					<video controls width='100%'>
-						<source src='/videos/spotify_demo.mp4' type='video/mp4' />
-						Your browser does not support the video tag.
-					</video>
+					<VideoWithPlaceholder
+						src='/videos/spotify_demo.mp4'
+						ariaLabel='Spotify playlist creation demo video'
+					/>
 				</div>
 			</div>
 			<div className='features-page-container'>

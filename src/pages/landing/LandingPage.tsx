@@ -1,4 +1,5 @@
 import IconSpan from "../components/IconSpan";
+import VideoWithPlaceholder from "../components/VideoWithPlaceholder";
 import { useNavigate } from "react-router-dom";
 
 const LandingPage = (): JSX.Element => {
@@ -33,10 +34,10 @@ const LandingPage = (): JSX.Element => {
           </div>
           <div className="description-box-text">
             <div className="features-page-feature video-element">
-              <video controls width="100%">
-                <source src="/videos/npchatbot_demo.MP4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <VideoWithPlaceholder
+                src="/videos/npchatbot_demo.MP4"
+                ariaLabel="npChatbot demo video"
+              />
             </div>
           </div>
         </div>
