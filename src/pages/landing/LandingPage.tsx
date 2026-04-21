@@ -81,7 +81,7 @@ const LandingPage = (): JSX.Element => {
             </p>
           </div>
           <div className="details-inset">
-            <h3 className="details-header">Playlist Summaries</h3>
+            <h3 className="details-header">Playlist Analytics</h3>
             <p>
               npChatbot also provides a final Playlist Summary for each streamed
               DJ set with all of your set's stats and command use during that

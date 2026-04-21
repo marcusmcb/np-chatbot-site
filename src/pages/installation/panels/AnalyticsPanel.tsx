@@ -1,11 +1,11 @@
 import IconSpan from '../../components/IconSpan'
 import '../installationpage.css'
 
-const SummariesPanel = (): JSX.Element => {
+const AnalyticsPanel = (): JSX.Element => {
 	return (
 		<div className='installation-page-directions-container'>
 			<h1 className='installation-page-header'>
-				Playlist Summaries & Discord
+				Analytics & Discord
 				<IconSpan /> Sharing
 			</h1>
 			<div className='installation-page-directions-step'>
@@ -13,42 +13,41 @@ const SummariesPanel = (): JSX.Element => {
 					When disconnecting npChatbot from Twitch
 					<IconSpan />,{' '}
 					<span className='highlighted-installation-text'>npChatbot</span> will
-					create a final summary of your streamed set, including all of the
-					"stats" for that set along with any artists, songs, or terms your
+					create a final analytics summary of your streamed set, including all of
+					the "stats" for that set along with any artists, songs, or terms your
 					viewers searched for during that stream (and more!).
 				</p>
 				<p>
 					You can view these at any time by clicking the{' '}
-					<span className='highlighted-installation-text'>View Summary</span>{' '}
-					button.
+					<span className='highlighted-installation-text'>Analytics</span> button.
 				</p>
 				<p>
 					NOTE: This button does *not* appear until you've completed at least
 					one stream using npChatbot.
 				</p>
 				<img
-					src='/images/installation/summaries_01.png'
-					alt='npChatbot instructions, Discord set 1'
+					src='/images/installation/analytics_01.png'
+					alt='npChatbot instructions, analytics (1)'
 				/>
 			</div>
 			<div className='installation-page-directions-step'>
 				<p>
-					By default,{' '}
-					<span className='highlighted-installation-text'>View Summary</span>{' '}
-					will display the playlist summary for your most recent stream. Use the
-					arrow icons to navigate through your playlist summaries. If you wish
-					to delete a playlist summary, use the red x icon to do so.
+					By default, the{' '}
+					<span className='highlighted-installation-text'>Analytics</span> button
+					will display the analytics for your most recent stream. Use the arrow
+					icons to navigate through previous streams. If you wish to delete an
+					entry, use the red x icon to do so.
 				</p>
 				<p>
 					The left-hand panel will display the "stats" for the selected stream,
-					with specific details about your streamed set along with links to
-					share that stream's{' '}
+					with specific details about your streamed set along with links to share
+					that stream's{' '}
 					<span className='highlighted-installation-text'>Spotify</span>
 					<IconSpan /> playlist (if you created one).
 				</p>
 				<img
-					src='/images/installation/summaries_02.png'
-					alt='npChatbot instructions, Discord set 1'
+					src='/images/installation/analytics_02.png'
+					alt='npChatbot instructions, analytics (2)'
 				/>
 			</div>
 			<div className='installation-page-directions-step'>
@@ -58,9 +57,7 @@ const SummariesPanel = (): JSX.Element => {
 				</p>
 				<p>
 					The{' '}
-					<span className='highlighted-installation-text'>
-						Doubles detected
-					</span>{' '}
+					<span className='highlighted-installation-text'>Doubles detected</span>{' '}
 					section will display a list of the songs where you used{' '}
 					<span className='highlighted-installation-text'>doubles</span>,
 					which occurs when the same song is loaded/playing on both decks.
@@ -80,8 +77,8 @@ const SummariesPanel = (): JSX.Element => {
 					command to search for.
 				</p>
 				<img
-					src='/images/installation/summaries_03.png'
-					alt='npChatbot instructions, Discord set 1'
+					src='/images/installation/analytics_03.png'
+					alt='npChatbot instructions, analytics (3)'
 				/>
 			</div>
 			<div className='installation-page-directions-step'>
@@ -93,7 +90,7 @@ const SummariesPanel = (): JSX.Element => {
 						Spotify
 						<IconSpan />
 					</span>{' '}
-					playlists for each stream with your connected server and channel.{' '}
+					playlists for each stream with your connected server and channel.
 				</p>
 				<p>
 					Click the{' '}
@@ -102,12 +99,12 @@ const SummariesPanel = (): JSX.Element => {
 					the link has been successfully shared.
 				</p>
 				<img
-					src='/images/installation/summaries_04.png'
-					alt='npChatbot instructions, Discord set 1'
+					src='/images/installation/analytics_04.png'
+					alt='npChatbot instructions, analytics (4)'
 				/>
 			</div>
 		</div>
 	)
 }
 
-export default SummariesPanel
+export default AnalyticsPanel

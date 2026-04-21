@@ -228,11 +228,11 @@ const FeaturesPage = (): JSX.Element => {
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
 					<h2 className='features-page-subheader'>
-						Playlist Summaries & Discord<IconSpan/> Sharing
+						Playlist Analytics & Discord<IconSpan/> Sharing
 					</h2>
 					<p>
 						With npChatbot's{' '}
-						<span className='highlighted-text'>Playlist Summaries</span>{' '}
+						<span className='highlighted-text'>Playlist Analytics</span>{' '}
 						feature, you can review your final playlist "stats" and npChatbot
 						command use for each of your DJ streams.
 					</p>
@@ -261,7 +261,7 @@ const FeaturesPage = (): JSX.Element => {
 				<div className='features-page-feature'>
 					<img
 						src='/images/features/npchatbot_104_screenshot.png'
-						alt='Playlist Summaries'
+						alt='Playlist Analytics'
 						width='85%'
 						height='85%'
 						style={{ cursor: 'pointer' }}
@@ -272,7 +272,7 @@ const FeaturesPage = (): JSX.Element => {
 							<img
 								className='modal-img'
 								src='/images/features/npchatbot_104_screenshot.png'
-								alt='Playlist Summaries Full Size'
+								alt='Playlist Analytics Full Size'
 							/>
 							<span className='modal-close'>&#10005;</span>
 						</div>

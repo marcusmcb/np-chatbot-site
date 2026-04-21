@@ -234,7 +234,7 @@ const InstallationPanel = (): JSX.Element => {
 					<IconSpan /> playlists created with npChatbot directly to your
 					connected Discord
 					<IconSpan /> server. Please see the{' '}
-					<span className='highlighted-text'>Summaries</span> section for
+					<span className='highlighted-text'>Analytics</span> section for
 					additional information about sharing playlists in npChatbot.
 				</p>
 			</div>

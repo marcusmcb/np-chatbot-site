@@ -6,7 +6,7 @@ import OBSConfigurationPanel from './panels/OBSConfigurationPanel'
 import NPChatbotStartupPanel from './panels/NPChatbotStartupPanel'
 import CredentialsPanel from './panels/CredentialsPanel'
 import InstallationPanel from './panels/InstallationPanel'
-import SummariesPanel from './panels/SummariesPanel'
+import AnalyticsPanel from './panels/AnalyticsPanel'
 
 import './installationpage.css'
 
@@ -22,7 +22,6 @@ const InstallationPage = (): JSX.Element => {
 	useEffect(() => {
 		const tab = getQueryParam('tab')
 		if (tab) {
-			console.log('TAB: ', tab)
 			setActiveTab(tab)
 		}
 	}, [location.search])
@@ -41,8 +40,8 @@ const InstallationPage = (): JSX.Element => {
 				return <PreferencesPanel />
 			case 'ReAuth':
 				return <ReAuthPanel />
-			case 'Summaries':
-				return <SummariesPanel />
+			case 'Analytics':
+				return <AnalyticsPanel />
 			default:
 				return <InstallationPanel />
 		}
@@ -83,10 +82,10 @@ const InstallationPage = (): JSX.Element => {
 					Preferences
 				</button>
 				<button
-					className={activeTab === 'Summaries' ? 'active' : ''}
-					onClick={() => setActiveTab('Summaries')}
+					className={activeTab === 'Analytics' ? 'active' : ''}
+					onClick={() => setActiveTab('Analytics')}
 				>
-					Summaries
+					Analytics
 				</button>
 				<button
 					className={activeTab === 'ReAuth' ? 'active' : ''}
