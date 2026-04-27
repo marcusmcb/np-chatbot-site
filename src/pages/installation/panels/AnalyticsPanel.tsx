@@ -13,13 +13,14 @@ const AnalyticsPanel = (): JSX.Element => {
 					When disconnecting npChatbot from Twitch
 					<IconSpan />,{' '}
 					<span className='highlighted-installation-text'>npChatbot</span> will
-					create a final analytics summary of your streamed set, including all of
-					the "stats" for that set along with any artists, songs, or terms your
+					create a final summary of your streamed set, including all of the
+					"stats" for that set along with any artists, songs, or terms your
 					viewers searched for during that stream (and more!).
 				</p>
 				<p>
 					You can view these at any time by clicking the{' '}
-					<span className='highlighted-installation-text'>Analytics</span> button.
+					<span className='highlighted-installation-text'>Analytics</span>{' '}
+					button.
 				</p>
 				<p>
 					NOTE: This button does *not* appear until you've completed at least
@@ -32,18 +33,19 @@ const AnalyticsPanel = (): JSX.Element => {
 			</div>
 			<div className='installation-page-directions-step'>
 				<p>
-					By default, the{' '}
-					<span className='highlighted-installation-text'>Analytics</span> button
-					will display the analytics for your most recent stream. Use the arrow
-					icons to navigate through previous streams. If you wish to delete an
-					entry, use the red x icon to do so.
+					The <span className='highlighted-installation-text'>Analytics</span>{' '}
+					view, which is split into two sections, will open in your device's
+					default web browser.
 				</p>
 				<p>
-					The left-hand panel will display the "stats" for the selected stream,
-					with specific details about your streamed set along with links to share
-					that stream's{' '}
-					<span className='highlighted-installation-text'>Spotify</span>
-					<IconSpan /> playlist (if you created one).
+					The top section allows you to review the playlist summaries for your
+					individual streams. You can use the date selector or buttons to
+					navigate to the playlist summary for any previous stream, and you can
+					use the red X icon to delete a particular summary if you'd like to.
+				</p>
+				<p>
+					The bottom section displays the various options you may use to
+					digitally dig through all of your previous streams.
 				</p>
 				<img
 					src='/images/installation/analytics_02.png'
@@ -57,10 +59,12 @@ const AnalyticsPanel = (): JSX.Element => {
 				</p>
 				<p>
 					The{' '}
-					<span className='highlighted-installation-text'>Doubles detected</span>{' '}
+					<span className='highlighted-installation-text'>
+						Doubles detected
+					</span>{' '}
 					section will display a list of the songs where you used{' '}
-					<span className='highlighted-installation-text'>doubles</span>,
-					which occurs when the same song is loaded/playing on both decks.
+					<span className='highlighted-installation-text'>doubles</span>, which
+					occurs when the same song is loaded/playing on both decks.
 				</p>
 				<p>
 					The{' '}
