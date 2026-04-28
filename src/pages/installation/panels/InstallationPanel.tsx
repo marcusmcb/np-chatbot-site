@@ -51,7 +51,7 @@ const InstallationPanel = (): JSX.Element => {
 				<IconSpan />.
 				<img
 					src='/images/installation/NEW_setup_final_01.png'
-					alt='npChatbot instructions, step 1'
+					alt='npChatbot installation instructions, step 1'
 				/>
 			</div>
 
@@ -78,7 +78,7 @@ const InstallationPanel = (): JSX.Element => {
 				</p>
 
 				<img
-					alt='npChatbot instructions, step 2'
+					alt='npChatbot installation instructions, step 2'
 					src='/images/installation/setup_02_final.png'
 				/>
 			</div>
@@ -95,8 +95,8 @@ const InstallationPanel = (): JSX.Element => {
 					<IconSpan /> authorization information.
 				</p>
 				<img
-					alt='npChatbot instructions, step 3'
-					src='/images/installation/setup_03_final.png'
+					alt='npChatbot installation instructions, step 3'
+					src='/images/installation/NEW_setup_final_03.png'
 				/>
 			</div>
 			<h1 className='installation-page-header'>
@@ -134,7 +134,7 @@ const InstallationPanel = (): JSX.Element => {
 				</p>
 				<img
 					src='/images/installation/setup_spotify_auth.png'
-					alt='npChatbot instructions, Spotify set 1'
+					alt='npChatbot installation instructions, Spotify setup'
 				/>
 			</div>
 			<div className='installation-page-directions-step'>
@@ -149,8 +149,8 @@ const InstallationPanel = (): JSX.Element => {
 					<IconSpan /> authorization information.
 				</p>
 				<img
-					src='/images/installation/setup_spotify_successful.png'
-					alt='npChatbot instructions, Spotify set 2'
+					src='/images/installation/NEW_spotify_setup_success.png'
+					alt='npChatbot installation instructions, Spotify success'
 				/>
 				<p>
 					You will now be able to enable the Spotify playlist options in
@@ -211,7 +211,7 @@ const InstallationPanel = (): JSX.Element => {
 				</p>
 				<img
 					src='/images/installation/discord_auth_01.png'
-					alt='npChatbot instructions, Spotify set 1'
+					alt='npChatbot installation instructions, Discord setup'
 				/>
 			</div>
 			<div className='installation-page-directions-step'>
@@ -226,8 +226,8 @@ const InstallationPanel = (): JSX.Element => {
 					<IconSpan /> authorization information.
 				</p>
 				<img
-					src='/images/installation/discord_auth_02.png'
-					alt='npChatbot instructions, Spotify set 2'
+					src='/images/installation/NEW_discord_setup_success.png'
+					alt='npChatbot installation instructions, Discord success'
 				/>
 				<p>
 					You will now be able to share any Spotify
