@@ -8,7 +8,7 @@ const InstallationPanel = (): JSX.Element => {
 			<div className='installation-page-directions-step'>
 				For <span className='highlighted-installation-text'>PC</span> users,
 				download the app{' '}
-				<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-setup.exe'>
+				<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.1-setup.exe'>
 					here
 				</a>
 				.
@@ -23,7 +23,7 @@ const InstallationPanel = (): JSX.Element => {
 			<div className='installation-page-directions-step'>
 				For <span className='highlighted-installation-text'>Mac</span> users,
 				download the app{' '}
-				<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot.dmg'>
+				<a href='https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.0.4.dmg'>
 					here
 				</a>
 				.
