@@ -84,9 +84,7 @@ const FeaturesPage = (): JSX.Element => {
 			</div>
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
-					<h2 className='features-page-subheader'>
-						Search By Song Or Artist
-					</h2>
+					<h2 className='features-page-subheader'>Search By Song Or Artist</h2>
 					<p>
 						When using the <span className='highlighted-text'>!dyp</span>{' '}
 						command (short for "did you play...?") followed by an artist's name
@@ -110,9 +108,7 @@ const FeaturesPage = (): JSX.Element => {
 			</div>
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
-					<h2 className='features-page-subheader'>
-						Real Time Playlist Stats
-					</h2>
+					<h2 className='features-page-subheader'>Real Time Playlist Stats</h2>
 					<p>
 						Using the commands in npChatbot, your viewers (or you!) can check
 						the
@@ -228,29 +224,33 @@ const FeaturesPage = (): JSX.Element => {
 			<div className='features-page-container'>
 				<div className='features-page-feature'>
 					<h2 className='features-page-subheader'>
-						Playlist Analytics & Discord<IconSpan/> Sharing
+						Playlist Analytics & Discord
+						<IconSpan /> Sharing
 					</h2>
 					<p>
-						With npChatbot's{' '}
-						<span className='highlighted-text'>Playlist Analytics</span>{' '}
-						feature, you can review your final playlist "stats" and npChatbot
-						command use for each of your DJ streams.
+						With npChatbot's <span className='highlighted-text'>Analytics</span>{' '}
+						feature, you can review your final playlist "stats" and your
+						viewers' command use for each of your DJ streams.
 					</p>
 					<p>
-						Along with your final playlist "stats", each summary will give you a
-						detailed breakdown of the songs, artists, and terms that your
-						viewers searched for during that stream.
+						You can also do a deeper dive into what you play on-stream during
+						your DJ sets, with the ability to search by title, artist, and more
+						over any time range you specify.
 					</p>
 					<p>
 						This additional insight gives you, the streaming DJ, a better look
-						into what music your viewers are potentially signalling interest in
-						during your streams.
+						into what music your viewers are really connecting with and engaging
+						with most during your streams.
 					</p>
 					<p>
-						If you've created a Spotify
-						<IconSpan /> playlist of your stream, the link is included in your
-						summary which you can easily share with your community by linking
-						npChatbot with your{' '}
+						If you've created a{' '}
+						<span className='highlighted-text'>
+							Spotify
+							<IconSpan />
+						</span>{' '}
+						playlist of your stream, the link is included in your summary which
+						you can easily share with your community by linking npChatbot with
+						your{' '}
 						<span className='highlighted-text'>
 							Discord
 							<IconSpan />
@@ -260,7 +260,7 @@ const FeaturesPage = (): JSX.Element => {
 				</div>
 				<div className='features-page-feature'>
 					<img
-						src='/images/features/npchatbot_104_screenshot.png'
+						src='/images/installation/NEW_analytics_01.png'
 						alt='Playlist Analytics'
 						width='85%'
 						height='85%'
@@ -271,7 +271,7 @@ const FeaturesPage = (): JSX.Element => {
 						<div className='modal-overlay' onClick={handleModalClose}>
 							<img
 								className='modal-img'
-								src='/images/features/npchatbot_104_screenshot.png'
+								src='/images/installation/NEW_analytics_01.png'
 								alt='Playlist Analytics Full Size'
 							/>
 							<span className='modal-close'>&#10005;</span>
