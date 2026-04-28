@@ -5,7 +5,8 @@
 
 .installation-page-header {
 	font-size: 30px;
-	padding: 30px 30px 15px 30px;
+	/* padding: 30px 30px 15px 30px; */
+	padding: 5px 30px;
 	font-family: 'Fira Sans', sans-serif;
 	text-align: left;
 	margin-left: 30px;
@@ -47,7 +48,17 @@
 .installation-page-directions-step img {
 	display: block;
 	margin-top: 30px;
+	max-width: 100%;
 	height: auto;
+}
+
+.installation-image-clickable {
+	cursor: pointer;
+}
+
+.installation-image-thumbnail {
+	width: 100%;
+	max-width: 650px;
 }
 
 .highlighted-installation-text {
@@ -100,6 +111,10 @@
 	border-radius: 5px;
 	padding: 20px;
 	background-color: rgb(30, 30, 30);
+}
+
+.divider {
+	margin-top: 20px;
 }
 
 @media (max-width: 800px) {
