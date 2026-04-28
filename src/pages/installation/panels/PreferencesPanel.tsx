@@ -11,7 +11,7 @@ const PreferencesPanel = (): JSX.Element => {
 				your settings when you change them.
 				<img
 					alt='npChatbot instructions, step 9'
-					src='/images/installation/setup_09_final.png'
+					src='/images/installation/NEW_setup_final_09.png'
 				/>
 			</div>
 

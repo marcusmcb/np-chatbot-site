@@ -50,7 +50,7 @@ const InstallationPanel = (): JSX.Element => {
 				icon button in the upper left to authorize npChatbot with Twitch
 				<IconSpan />.
 				<img
-					src='/images/installation/setup_01_final.png'
+					src='/images/installation/NEW_setup_final_01.png'
 					alt='npChatbot instructions, step 1'
 				/>
 			</div>

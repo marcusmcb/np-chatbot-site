@@ -43,7 +43,7 @@ const OBSConfigurationPanel = (): JSX.Element => {
 				</p>
 				<img
 					alt='npChatbot instructions, step 9'
-					src='/images/installation/setup_08_final.png'
+					src='/images/installation/NEW_setup_final_08.png'
 				/>
 			</div>
 			<div className='installation-page-directions-step'>

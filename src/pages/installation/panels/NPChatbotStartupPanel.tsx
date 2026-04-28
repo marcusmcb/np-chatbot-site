@@ -127,7 +127,7 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 				</p>
 				<img
 					alt='npChatbot instructions, step 8'
-					src='/images/installation/setup_10_final.png'
+					src='/images/installation/NEW_setup_final_10.png'
 				/>
 			</div>
 
@@ -150,7 +150,7 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 				</h2>
 				<img
 					alt='npChatbot instructions, step 9'
-					src='/images/installation/setup_11_final.png'
+					src='/images/installation/NEW_setup_final_11.png'
 				/>
 				<p>
 					To test if your current Serato
@@ -181,7 +181,7 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 				</p>
 				<img
 					alt='npChatbot instructions, step 10'
-					src='/images/installation/setup_12_final.png'
+					src='/images/installation/NEW_serato_playlist_status.png'
 				/>
 
 				<p>
@@ -247,7 +247,7 @@ const NPChatbotStartupPanel = (): JSX.Element => {
 				</p>
 				<img
 					alt='npChatbot instructions, step 12'
-					src='/images/installation/setup_spotify_playlist_updated_final.png'
+					src='/images/installation/NEW_spotify_playlist_updated.png'
 				/>
 			</div>
 			<h2 className='installation-page-header'>

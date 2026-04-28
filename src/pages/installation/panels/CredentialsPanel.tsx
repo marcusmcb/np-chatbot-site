@@ -28,7 +28,7 @@ const CredentialsPanel = (): JSX.Element => {
 				</p>
 				<img
 					alt='npChatbot instructions, step 4'
-					src='/images/installation/setup_05_final.png'
+					src='/images/installation/NEW_setup_final_05.png'
 				/>
 			</div>
 			<div className='installation-page-directions-step'>
