@@ -1,9 +1,15 @@
 import IconSpan from '../components/IconSpan'
+import Seo from '../components/Seo'
 import './analysispage.css'
 
 const AnalysisPage = (): JSX.Element => {
 	return (
 		<div className='analysis-page'>
+			<Seo
+				title='Known Issues and Data Notes | npChatbot'
+				description='Review npChatbot known issues and data notes for Serato DJ live playlists, Twitch chat commands, Spotify playlist matching, and DJ set analytics.'
+				path='/analysis'
+			/>
 			<h1 className='analysis-page-header'>Known Issues & Data Quirks</h1>
 			<h2 className='analysis-page-subheader'>
 				If your Serato

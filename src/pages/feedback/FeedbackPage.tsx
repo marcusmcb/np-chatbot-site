@@ -1,9 +1,15 @@
 import IconSpan from '../components/IconSpan'
+import Seo from '../components/Seo'
 import './feedbackpage.css'
 
 const FeedbackPage = (): JSX.Element => {
 	return (
 		<div className='feedback-page'>
+			<Seo
+				title='Support and Feedback | npChatbot'
+				description='Contact npChatbot for beta testing, support, bug reports, improvement suggestions, and questions about the Serato DJ and Twitch chatbot app.'
+				path='/feedback'
+			/>
 			<h1 className='feedback-page-header'>Feedback & Support</h1>
 			<h2 className='feedback-page-subheader'>Beta Testing</h2>
 			<div className='feedback-page-container'>

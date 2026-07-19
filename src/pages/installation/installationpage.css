@@ -74,7 +74,7 @@
 
 .tab-navigation {
 	position: sticky;
-	top: 0;
+	top: var(--site-header-sticky-height);
 	z-index: 1000;
 	display: flex;
 	flex-direction: row;

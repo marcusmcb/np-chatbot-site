@@ -1,9 +1,15 @@
 import IconSpan from '../components/IconSpan'
+import Seo from '../components/Seo'
 import './commandspage.css'
 
 const CommandsPage = (): JSX.Element => {
 	return (
 		<>
+			<Seo
+				title='Twitch DJ Chat Commands | npChatbot Command List'
+				description='Browse npChatbot commands for current track lookup, previous songs, DJ set stats, playlist links, artist searches, doubles detection, and more.'
+				path='/commands'
+			/>
 			<div className='commands-page'>
 				<div className='commands-page-container'>
 					<h1 className='commands-page-header'>Command List:</h1>

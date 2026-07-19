@@ -1,6 +1,25 @@
 import IconSpan from "../components/IconSpan";
+import Seo from "../components/Seo";
 import VideoWithPlaceholder from "../components/VideoWithPlaceholder";
 import { useNavigate } from "react-router-dom";
+
+const homeJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "npChatbot",
+  applicationCategory: "MultimediaApplication",
+  operatingSystem: "Windows, macOS",
+  description:
+    "npChatbot connects Serato DJ live playlist history to Twitch chat with interactive commands, Spotify playlist tools, Discord sharing, and DJ set analytics.",
+  url: "https://www.npchatbot.com/",
+  downloadUrl:
+    "https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.1-setup.exe",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+};
 
 const LandingPage = (): JSX.Element => {
   const navigate = useNavigate();
@@ -10,27 +29,39 @@ const LandingPage = (): JSX.Element => {
   };
   return (
     <div>
+      <Seo
+        title="npChatbot | Twitch Chat Commands for Serato DJ Live Playlists"
+        description="Connect Serato DJ live playlist history to Twitch chat with interactive now-playing commands, DJ set stats, Spotify playlist tools, and Discord sharing."
+        path="/"
+        jsonLd={homeJsonLd}
+      />
       <div className="download-section">
         <div className="download-box">
           <div className="download-header">Download npChatbot</div>
           <div className="download-version">(version 1.1 for Mac soon)</div>
           <div className="download-button-group">
-            <a href="https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.1-setup.exe">
-              <button>Download (PC - 1.1)</button>
+            <a
+              className="download-button"
+              href="https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.1-setup.exe"
+            >
+              Download (PC - 1.1)
             </a>
-            <a href="https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.0.4-setup.dmg">
-              <button>Download (Mac - 1.0.4)</button>
+            <a
+              className="download-button"
+              href="https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.0.4-setup.dmg"
+            >
+              Download (Mac - 1.0.4)
             </a>
           </div>
         </div>
         <div className="description-box">
           <div className="description-box-text">
-            <h3>
+            <h1>
               Connect your Twitch
               <IconSpan /> chat to your Serato
               <IconSpan /> Live Playlist to add a collection of interactive
               music discovery features to your channel
-            </h3>
+            </h1>
           </div>
           <div className="description-box-text">
             <div className="features-page-feature video-element">
@@ -45,7 +76,7 @@ const LandingPage = (): JSX.Element => {
       <div className="details-panel details-panel-top">
         <div className="details-panel-container">
           <div className="details-inset">
-            <h3 className="details-header">Real Time Music Discovery</h3>
+            <h2 className="details-header">Real Time Music Discovery</h2>
             <p>
               npChatbot enables a unique level of music discovery during your
               live-streamed DJ sets by connecting your Twitch
@@ -55,7 +86,7 @@ const LandingPage = (): JSX.Element => {
             </p>
           </div>
           <div className="details-inset">
-            <h3 className="details-header">Instant Playlist Stats</h3>
+            <h2 className="details-header">Instant Playlist Stats</h2>
             <p>
               npChatbot's commands aren't limited to just music discovery. The
               app also provides real-time "stats" about your DJ set during your
@@ -68,9 +99,9 @@ const LandingPage = (): JSX.Element => {
       <div className="details-panel details-panel-bottom">
         <div className="details-panel-container">
           <div className="details-inset">
-            <h3 className="details-header">
+            <h2 className="details-header">
               Spotify<IconSpan/> Playlist Creation + Discord<IconSpan/> Integration
-            </h3>
+            </h2>
             <p>
               Linking your Spotify
               <IconSpan /> account with npChatbot gives you the ability to
@@ -81,7 +112,7 @@ const LandingPage = (): JSX.Element => {
             </p>
           </div>
           <div className="details-inset">
-            <h3 className="details-header">Playlist Analytics</h3>
+            <h2 className="details-header">Playlist Analytics</h2>
             <p>
               npChatbot also provides a final Playlist Summary for each streamed
               DJ set with all of your set's stats and command use during that

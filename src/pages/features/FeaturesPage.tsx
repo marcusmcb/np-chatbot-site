@@ -1,4 +1,5 @@
 import IconSpan from '../components/IconSpan'
+import Seo from '../components/Seo'
 import VideoWithPlaceholder from '../components/VideoWithPlaceholder'
 import './featurespage.css'
 import { useState } from 'react'
@@ -9,6 +10,11 @@ const FeaturesPage = (): JSX.Element => {
 	const handleModalClose = () => setModalOpen(false)
 	return (
 		<div className='features-page'>
+			<Seo
+				title='Features | npChatbot for Serato DJ and Twitch'
+				description='Explore npChatbot features including Twitch music discovery commands, Serato playlist stats, Spotify playlist creation, OBS integration, and Discord sharing.'
+				path='/features'
+			/>
 			<div className='features-page-header-container'>
 				<div className='features-page-feature-main'>
 					<h1 className='features-page-header main-header page-title'>
