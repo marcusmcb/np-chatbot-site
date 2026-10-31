@@ -1,167 +1,200 @@
-import IconSpan from '../components/IconSpan'
-import Seo from '../components/Seo'
-import './analysispage.css'
+import IconSpan from "../components/IconSpan";
+import Seo from "../components/Seo";
+import "./analysispage.css";
 
 const AnalysisPage = (): JSX.Element => {
-	return (
-		<div className='analysis-page'>
-			<Seo
-				title='Known Issues and Data Notes | npChatbot'
-				description='Review npChatbot known issues and data notes for Serato DJ live playlists, Twitch chat commands, Spotify playlist matching, and DJ set analytics.'
-				path='/analysis'
-			/>
-			<h1 className='analysis-page-header'>Known Issues & Data Quirks</h1>
-			<h2 className='analysis-page-subheader'>
-				If your Serato
-				<IconSpan /> Live Playlist loses connection while streaming...
-			</h2>
-			<div className='analysis-page-container'>
-				<div className='analysis-page-item'>
-					<p>
-						npChatbot works properly when it is able to "read" your Serato
-						<IconSpan /> Live Playlist data from the web, which is updated from
-						your DJ laptop with each new song you play.
-					</p>
-					<p>
-						If your laptop running Serato
-						<IconSpan /> loses connection to the internet for any reason
-						(internet outage, "airplane" mode enabled, etc), the current live
-						playlist stream will be disrupted.
-					</p>
-					<p>
-						Should this occur, Serato
-						<IconSpan /> does not currently offer a way to resume that Live
-						Playlist (or start a new one) without restarting the software
-						altogether, which is obviously not ideal during a live stream.
-					</p>
-					<p>
-						This was discovered during testing Serato
-						<IconSpan /> 3.x, and we'll update this page once we've done
-						likewise with the newer Serato
-						<IconSpan /> 4.x release as this issue may have been resolved since.
-					</p>
-				</div>
-			</div>
-			<h2 className='analysis-page-subheader'>
-				Determining The Longest Song Played
-			</h2>
-			<div className='analysis-page-container'>
-				<div className='analysis-page-item'>
-					<p>
-						npChatbot collects your Serato
-						<IconSpan /> live playlist data in real time to calculate your
-						stats, data which is limited to the title, artist, and the start
-						time of each song played. Using this data, it estimates song lengths
-						based on when each song started.
-					</p>
-					<p>
-						Since the data only includes start times, npChatbot assumes minimal
-						breaks between songs to determine the longest track. Extended breaks
-						can cause inaccurate results, as the app can't distinguish between a
-						long song played and an extended pause or break during the set.
-					</p>
+  return (
+    <div className="analysis-page">
+      <Seo
+        title="Known Issues and Data Notes | npChatbot"
+        description="Review npChatbot known issues and data notes for Serato DJ live playlists, Twitch chat commands, Spotify playlist matching, and DJ set analytics."
+        path="/analysis"
+      />
+      <h1 className="analysis-page-header">Known Issues & Data Quirks</h1>
+      <h2 className="analysis-page-subheader">
+        If your Serato
+        <IconSpan /> Live Playlist loses connection while streaming...
+      </h2>
+      <div className="analysis-page-container">
+        <div className="analysis-page-item">
+          <p>
+            npChatbot works properly when it is able to "read" your Serato
+            <IconSpan /> Live Playlist data from the web, which is updated from
+            your DJ laptop with each new song you play.
+          </p>
+          <p>
+            If your laptop running Serato
+            <IconSpan /> loses connection to the internet for any reason
+            (internet outage, "airplane" mode enabled, etc), the current live
+            playlist stream will be disrupted.
+          </p>
+          <p>
+            Should this occur, Serato
+            <IconSpan /> does not currently offer a way to resume that Live
+            Playlist (or start a new one) without restarting the software
+            altogether, which is obviously not ideal during a live stream.
+          </p>
+          <p>
+            This was discovered during testing Serato
+            <IconSpan /> 3.x, and we'll update this page once we've done
+            likewise with the newer Serato
+            <IconSpan /> 4.x release as this issue may have been resolved since.
+          </p>
+        </div>
+      </div>
+      <h2 className="analysis-page-subheader">
+        Determining The Longest Song Played
+      </h2>
+      <div className="analysis-page-container">
+        <div className="analysis-page-item">
+          <p>
+            npChatbot collects your Serato
+            <IconSpan /> live playlist data in real time to calculate your
+            stats, data which is limited to the title, artist, and the start
+            time of each song played. Using this data, it estimates song lengths
+            based on when each song started.
+          </p>
+          <p>
+            Since the data only includes start times, npChatbot assumes minimal
+            breaks between songs to determine the longest track. Extended breaks
+            can cause inaccurate results, as the app can't distinguish between a
+            long song played and an extended pause or break during the set.
+          </p>
 
-					<p>
-						When this scenario occurs during a live playlist set, the{' '}
-						<b>
-							<span className='highlighted-analysis-text'>!np longest</span>
-						</b>{' '}
-						command will display the title and artist of the longest song played
-						but will not display its length. For live playlist sets with few or
-						no breaks between songs, the length will be displayed.
-					</p>
-				</div>
-			</div>
-			<h2 className='analysis-page-subheader'>
-				Calculating Average Track Length
-			</h2>
-			<div className='analysis-page-container'>
-				<div className='analysis-page-item'>
-					<p>
-						Extended breaks between songs can also impact the accuracy of the
-						average track length calculation, skewing the result.
-					</p>
-					<p>
-						To address this, the `!np stats` command automatically filters out
-						any unusually long or short tracks to provide a more accurate
-						average.
-					</p>
-				</div>
-			</div>
-			<h2 className='analysis-page-subheader'>Detecting "Doubles" Played</h2>
-			<div className='analysis-page-container'>
-				<div className='analysis-page-item'>
-					<p>
-						"Doubles" occur when the DJ plays the same song on both decks
-						simultaneously (e.g., beat juggles, cut sessions). These are
-						typically detected in the live playlist as back-to-back track
-						entries.
-					</p>
-					<p>
-						However, due to inconsistencies in Serato's
-						<IconSpan /> playlist logging, the !np doubles command may sometimes
-						fail to detect recent doubles or display older doubles instead of
-						the latest ones.
-					</p>
-				</div>
-			</div>
-			<h2 className='analysis-page-subheader'>Missing Title/Artist Tags</h2>
-			<div className='analysis-page-container'>
-				<div className='analysis-page-item'>
-					<p>
-						Note that the title/artist tags from Serato
-						<IconSpan /> will appear as-is in the chatbot's responses. Cleaner
-						tags ensure better results. Missing or incorrect info may affect the
-						!dyp command if the searched term isn't found due to empty or
-						malformed tags.
-					</p>
-				</div>
-			</div>
-			<h2 className='analysis-page-subheader'>
-				Spotify
-				<IconSpan /> Playlist Selections
-			</h2>
-			<div className='analysis-page-container'>
-				<div className='analysis-page-item'>
-					<p>
-						When using the included Spotify
-						<IconSpan /> feature to create/update a playlist of the songs you
-						play, npChatbot uses the file tag information from each song played
-						in Serato
-						<IconSpan /> to submit a request to Spotify
-						<IconSpan />.{' '}
-					</p>
-					<p>
-						The results of each request are used to determine which song is
-						added to your Spotify
-						<IconSpan /> playlist.
-					</p>
-					<p>
-						By default, the most popular result for the song information
-						submitted is used when adding songs to your current playlist. For
-						common, popular songs, the resulting addition should be reasonably
-						accurate.
-					</p>
-					<p>
-						For songs not available on Spotify
-						<IconSpan />, no addition or change is made to the current playlist.
-					</p>
-					<p>
-						Bearing in mind that the file tag information from Serato
-						<IconSpan /> is used to submit the queries to Spotify, less than
-						perfect file tags (typos, missing artist/title values, etc) can skew
-						the results returned from Spotify
-						<IconSpan /> that are used when updating your playlists.
-					</p>
-					<p>
-						We're currently working on improving the accuracy of the Spotify
-						<IconSpan /> results to account for scenarios and instances like the
-						ones described above.
-					</p>
-				</div>
-			</div>
-		</div>
-	)
-}
+          <p>
+            When this scenario occurs during a live playlist set, the{" "}
+            <b>
+              <span className="highlighted-analysis-text">!np longest</span>
+            </b>{" "}
+            command will display the title and artist of the longest song played
+            but will not display its length. For live playlist sets with few or
+            no breaks between songs, the length will be displayed.
+          </p>
+        </div>
+      </div>
+      <h2 className="analysis-page-subheader">
+        Calculating Average Track Length
+      </h2>
+      <div className="analysis-page-container">
+        <div className="analysis-page-item">
+          <p>
+            Extended breaks between songs can also impact the accuracy of the
+            average track length calculation, skewing the result.
+          </p>
+          <p>
+            To address this, the `!np stats` command automatically filters out
+            any unusually long or short tracks to provide a more accurate
+            average.
+          </p>
+        </div>
+      </div>
+      <h2 className="analysis-page-subheader">Detecting "Doubles" Played</h2>
+      <div className="analysis-page-container">
+        <div className="analysis-page-item">
+          <p>
+            "Doubles" occur when the DJ plays the same song on both decks
+            simultaneously (e.g., beat juggles, cut sessions). These are
+            typically detected in the live playlist as back-to-back track
+            entries.
+          </p>
+          <p>
+            However, due to inconsistencies in Serato's
+            <IconSpan /> playlist logging, the !np doubles command may sometimes
+            fail to detect recent doubles or display older doubles instead of
+            the latest ones.
+          </p>
+        </div>
+      </div>
+      <h2 className="analysis-page-subheader">Missing Title/Artist Tags</h2>
+      <div className="analysis-page-container">
+        <div className="analysis-page-item">
+          <p>
+            Note that the title/artist tags from Serato
+            <IconSpan /> will appear as-is in the chatbot's responses. Cleaner
+            tags ensure better results. Missing or incorrect info may affect the
+            !dyp command if the searched term isn't found due to empty or
+            malformed tags.
+          </p>
+        </div>
+      </div>
+      <h2 className="analysis-page-subheader">
+        Spotify
+        <IconSpan /> Playlist Selections
+      </h2>
+      <div className="analysis-page-container">
+        <div className="analysis-page-item">
+          <p>
+            When using the included Spotify
+            <IconSpan /> feature to create/update a playlist of the songs you
+            play, npChatbot uses the file tag information from each song played
+            in Serato
+            <IconSpan /> to submit a request to Spotify
+            <IconSpan />.{" "}
+          </p>
+          <p>
+            The results of each request are used to determine which song is
+            added to your Spotify
+            <IconSpan /> playlist.
+          </p>
+          <p>
+            By default, the most popular result for the song information
+            submitted is used when adding songs to your current playlist. For
+            common, popular songs, the resulting addition should be reasonably
+            accurate.
+          </p>
+          <p>
+            For songs not available on Spotify
+            <IconSpan />, no addition or change is made to the current playlist.
+          </p>
+          <p>
+            Bearing in mind that the file tag information from Serato
+            <IconSpan /> is used to submit the queries to Spotify, less than
+            perfect file tags (typos, missing artist/title values, etc) can skew
+            the results returned from Spotify
+            <IconSpan /> that are used when updating your playlists.
+          </p>
+          <p>
+            We're currently working on improving the accuracy of the Spotify
+            <IconSpan /> results to account for scenarios and instances like the
+            ones described above.
+          </p>
+        </div>
+      </div>
+      <h2 className="analysis-page-subheader">
+        Using Spotify as a streaming source in Serato
+        <IconSpan />
+      </h2>
+      <div className="analysis-page-container">
+        <div className="analysis-page-item">
+          <p>
+            When using Spotify
+            <IconSpan /> as a source for music in Serato
+            <IconSpan />, any songs played directly from Spotify
+            <IconSpan /> are omitted from your Serato Live Playlist.
+          </p>
+          <p>
+            npChatbot has no work-around for this currently, so be advised that
+            npChatbot's commands will not return results for songs played from
+            Spotify
+            <IconSpan /> in Serato
+            <IconSpan />
+          </p>
+          <p>
+            We've tested this Apple Music
+            <IconSpan /> as well and there appear to be no issues currently.
+            Songs played from this service in Serato
+            <IconSpan /> are included in your Live Playlist history; npChatbot's
+            commands should work as intended.
+          </p>
+          <p>
+            As of October 2026, we've not tested this issue with any of the
+            other streaming services currently offered in Serato
+            <IconSpan />.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default AnalysisPage
+export default AnalysisPage;
