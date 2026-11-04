@@ -139,6 +139,36 @@ const CommandsPage = (): JSX.Element => {
 							<b>
 								!np{' '}
 								<span className='commands-highlighted-text'>
+									<i>rank</i>
+								</span>
+							</b>{' '}
+						</span>
+						<p className='command-name-description-text'>
+							displays the channel rank of the current song playing along with
+							how many times it's been played within the last 30 days in your
+							streams
+						</p>
+					</div>
+					<div className='commands-page-text'>
+						<span className='command-name-span'>
+							<b>
+								!np{' '}
+								<span className='commands-highlighted-text'>
+									<i>artist</i>
+								</span>
+							</b>{' '}
+						</span>
+						<p className='command-name-description-text'>
+							displays the channel rank of the current artist playing along with
+							how many times that artists has been played within the last 30 days in your
+							streams
+						</p>
+					</div>
+					<div className='commands-page-text'>
+						<span className='command-name-span'>
+							<b>
+								!np{' '}
+								<span className='commands-highlighted-text'>
 									<i>playlist</i>
 								</span>
 							</b>{' '}
@@ -149,8 +179,8 @@ const CommandsPage = (): JSX.Element => {
 								Spotify
 								<IconSpan />
 							</span>{' '}
-							feature enabled in your npChatbot preferences, this command will return the link to your current
-							stream's playlist in the chat
+							feature enabled in your npChatbot preferences, this command will
+							return the link to your current stream's playlist in the chat
 						</p>
 					</div>
 					<div className='commands-page-text'>
