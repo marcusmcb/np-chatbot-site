@@ -6,23 +6,27 @@
 
 .commands-page-container {
 	margin-left: 30px;
-	margin-right: 30px;	
+	margin-right: 30px;
 	text-align: left;
+	columns: 2;
+	column-gap: 40px;
 }
 
 .commands-page-header {
-	padding: 20px 10px;
+	padding: 20px 10px 10px 10px;
 	font-size: 28px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 500;
 	color: rgb(74, 242, 228);
+	column-span: all;
 }
 
 .commands-page-text {
-	padding: 10px;
+	padding: 6px 10px;
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 300;
-	width: 50vw;
+	width: auto;
+	break-inside: avoid;
 }
 
 .commands-highlighted-text {
@@ -34,7 +38,7 @@
 }
 
 .command-name-description-text {
-	margin: 3px 0px 16px 0px;
+	margin: 3px 0px 8px 0px;
 	font-size: 16px;	
 }
 
@@ -42,6 +46,7 @@
 	.commands-page-container {
 		margin-left: 5vw;
 		margin-right: 5vw;
+		columns: 1;
 	}
 	.commands-page-text {
 		width: auto;

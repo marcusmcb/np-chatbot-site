@@ -2,12 +2,23 @@ import IconSpan from '../components/IconSpan'
 import Seo from '../components/Seo'
 import VideoWithPlaceholder from '../components/VideoWithPlaceholder'
 import './featurespage.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 const FeaturesPage = (): JSX.Element => {
 	const [modalOpen, setModalOpen] = useState(false)
 	const handleImgClick = () => setModalOpen(true)
 	const handleModalClose = () => setModalOpen(false)
+	const location = useLocation()
+
+	useEffect(() => {
+		if (location.hash) {
+			const target = document.getElementById(location.hash.slice(1))
+			if (target) {
+				target.scrollIntoView({ behavior: 'auto', block: 'start' })
+			}
+		}
+	}, [location.hash])
 	return (
 		<div className='features-page'>
 			<Seo
@@ -58,7 +69,7 @@ const FeaturesPage = (): JSX.Element => {
 
 			{/* <hr /> */}
 
-			<div className='features-page-container'>
+			<div className='features-page-container' id='music-discovery'>
 				<div className='features-page-feature'>
 					<h2 className='features-page-subheader'>
 						Interactive Music Discovery
@@ -112,7 +123,7 @@ const FeaturesPage = (): JSX.Element => {
 					/>
 				</div>
 			</div>
-			<div className='features-page-container'>
+			<div className='features-page-container' id='playlist-stats'>
 				<div className='features-page-feature'>
 					<h2 className='features-page-subheader'>Real Time Playlist Stats</h2>
 					<p>
@@ -143,7 +154,7 @@ const FeaturesPage = (): JSX.Element => {
 					/>
 				</div>
 			</div>
-			<div className='features-page-container'>
+			<div className='features-page-container' id='spotify-playlists'>
 				<div className='features-page-feature'>
 					<h2 className='features-page-subheader'>
 						Create Spotify
@@ -232,7 +243,7 @@ const FeaturesPage = (): JSX.Element => {
 					</p>
 				</div>
 			</div>
-			<div className='features-page-container'>
+			<div className='features-page-container' id='playlist-analytics'>
 				<div className='features-page-feature'>
 					<h2 className='features-page-subheader'>
 						Playlist Analytics & Discord

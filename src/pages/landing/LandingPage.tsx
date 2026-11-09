@@ -67,7 +67,7 @@ const LandingPage = (): JSX.Element => {
               Download (PC - 1.1)
             </a>
             <a
-              className="download-button"
+              className="download-button download-button-secondary"
               href="https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.0.4-setup.dmg"
             >
               Download (Mac - 1.0.4)
@@ -120,21 +120,24 @@ const LandingPage = (): JSX.Element => {
           <div className="details-inset">
             <h2 className="details-header">Real Time Music Discovery</h2>
             <p>
-              npChatbot enables a unique level of music discovery during your
-              live-streamed DJ sets by connecting your Twitch
-              <IconSpan /> chat (aka, your viewers!) to your Serato
-              <IconSpan /> Live Playlist through a set of interactive chat
-              commands.
+              Viewers interact with your Serato
+              <IconSpan /> live playlist directly from Twitch
+              <IconSpan /> chat — !np commands surface the songs you're playing
+              in real time.
             </p>
+            <Link to="/features#music-discovery" className="details-link">
+              See music discovery commands
+            </Link>
           </div>
           <div className="details-inset">
             <h2 className="details-header">Instant Playlist Stats</h2>
             <p>
-              npChatbot's commands aren't limited to just music discovery. The
-              app also provides real-time "stats" about your DJ set during your
-              live streams, offering up unique insights about these sets to both
-              you and your viewers.
+              Check set stats mid-stream: songs played, average track length,
+              longest and shortest selections, and more.
             </p>
+            <Link to="/features#playlist-stats" className="details-link">
+              Explore playlist stats
+            </Link>
           </div>
         </div>
       </div>
@@ -145,23 +148,24 @@ const LandingPage = (): JSX.Element => {
               Spotify<IconSpan/> Playlist Creation + Discord<IconSpan/> Integration
             </h2>
             <p>
-              Linking your Spotify
-              <IconSpan /> account with npChatbot gives you the ability to
-              create and share playlists of your DJ sets with your Twitch
-              <IconSpan /> viewers directly in your chat! You can also link
-              npChatbot with your Discord
-              <IconSpan /> server to share them there as well!
+              Turn each DJ set into a Spotify
+              <IconSpan /> playlist automatically, then share it to Twitch
+              <IconSpan /> chat or your Discord
+              <IconSpan /> server.
             </p>
+            <Link to="/features#spotify-playlists" className="details-link">
+              See playlist sharing
+            </Link>
           </div>
           <div className="details-inset">
             <h2 className="details-header">Playlist Analytics</h2>
             <p>
-              npChatbot also provides a final Playlist Summary for each streamed
-              DJ set with all of your set's stats and command use during that
-              stream. This gives you, the DJ streamer, deeper insights into the
-              music played and how your viewers interacted with it during your
-              streams.
+              Review a full summary after every stream — set stats and command
+              usage, searchable by title, artist, and date range.
             </p>
+            <Link to="/features#playlist-analytics" className="details-link">
+              See analytics
+            </Link>
           </div>
         </div>
       </div>
