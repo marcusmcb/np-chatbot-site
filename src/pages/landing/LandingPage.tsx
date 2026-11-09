@@ -3,7 +3,7 @@ import Seo from "../components/Seo";
 import VideoWithPlaceholder from "../components/VideoWithPlaceholder";
 import { useNavigate } from "react-router-dom";
 
-const homeJsonLd = {
+const softwareAppJsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "npChatbot",
@@ -14,12 +14,34 @@ const homeJsonLd = {
   url: "https://www.npchatbot.com/",
   downloadUrl:
     "https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.1-setup.exe",
+  softwareVersion: "1.1",
+  dateModified: "2026-11-08",
+  author: {
+    "@type": "Person",
+    name: "Marcus McBride",
+    url: "https://www.npchatbot.com/",
+  },
+  screenshot: "https://www.npchatbot.com/images/logos/npchatbot-icon-teal.svg",
   offers: {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
   },
 };
+
+const demoVideoJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "npChatbot demo — Serato DJ live playlist commands in Twitch chat",
+  description:
+    "Watch npChatbot connect a Serato DJ live playlist to Twitch chat, answering interactive now-playing commands with real-time track and playlist stats during a live DJ stream.",
+  thumbnailUrl: "https://www.npchatbot.com/images/npchatbot-demo-thumbnail.jpg",
+  uploadDate: "2024-09-01",
+  contentUrl: "https://www.npchatbot.com/videos/npchatbot_demo.MP4",
+  duration: "PT21S",
+};
+
+const homeJsonLd = [softwareAppJsonLd, demoVideoJsonLd];
 
 const LandingPage = (): JSX.Element => {
   const navigate = useNavigate();
