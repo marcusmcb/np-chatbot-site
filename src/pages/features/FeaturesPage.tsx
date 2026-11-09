@@ -18,7 +18,7 @@ const FeaturesPage = (): JSX.Element => {
 			<div className='features-page-header-container'>
 				<div className='features-page-feature-main'>
 					<h1 className='features-page-header main-header page-title'>
-						What is npChatbot anyway?
+						What is npChatbot?
 					</h1>
 					<div className='features-page-feature-main main-header-text'>
 						<p>
@@ -129,6 +129,11 @@ const FeaturesPage = (): JSX.Element => {
 						in your set, as well as how many times you've rocked{' '}
 						<span className='highlighted-text'>doubles</span> during your set
 						and which songs you were cutting it up with when you did.
+					</p>
+					<p>
+						npChatbot also features commands which allow you and your viewers to
+						discover the songs and artists most frequently played during your
+						live streams.
 					</p>
 				</div>
 				<div className='features-page-video'>

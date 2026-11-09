@@ -38,7 +38,7 @@ const LandingPage = (): JSX.Element => {
       <div className="download-section">
         <div className="download-box">
           <div className="download-header">Download npChatbot</div>
-          <div className="download-version">(version 1.1 for Mac soon)</div>
+          <div className="download-version">(version 2.0 for PC & Mac soon)</div>
           <div className="download-button-group">
             <a
               className="download-button"
@@ -52,6 +52,23 @@ const LandingPage = (): JSX.Element => {
             >
               Download (Mac - 1.0.4)
             </a>
+          </div>
+          <div className="new-commands-section">
+            <h2 className="new-commands-header">New commands coming in npChatbot 2.0</h2>
+            <ul className="new-commands-list">
+              <li className="new-commands-item">
+                <span className="new-commands-name">!np rank</span>
+                <span className="new-commands-description"> - Discover the songs that you play the most during your live-streams.</span>
+              </li>
+              <li className="new-commands-item">
+                <span className="new-commands-name">!np artist</span>
+                <span className="new-commands-description"> - Find out how popular the current artist playing is in your streams.</span>
+              </li>
+              <li className="new-commands-item">
+                <span className="new-commands-name">!np artists</span>
+                <span className="new-commands-description"> - Discover the top played artists during your live streams.</span>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="description-box">
