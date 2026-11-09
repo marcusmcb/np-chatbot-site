@@ -2,38 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.npchatbot.com/</loc>
+		<lastmod>2026-11-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.npchatbot.com/features</loc>
+		<lastmod>2026-11-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.npchatbot.com/commands</loc>
+		<lastmod>2026-11-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.npchatbot.com/installation</loc>
+		<lastmod>2026-11-08</lastmod>
 	</url>
 	<url>
-		<loc>https://www.npchatbot.com/installation?tab=Credentials</loc>
-	</url>
-	<url>
-		<loc>https://www.npchatbot.com/installation?tab=Startup</loc>
-	</url>
-	<url>
-		<loc>https://www.npchatbot.com/installation?tab=OBS</loc>
-	</url>
-	<url>
-		<loc>https://www.npchatbot.com/installation?tab=Preferences</loc>
-	</url>
-	<url>
-		<loc>https://www.npchatbot.com/installation?tab=Analytics</loc>
-	</url>
-	<url>
-		<loc>https://www.npchatbot.com/installation?tab=ReAuth</loc>
+		<loc>https://www.npchatbot.com/downloads</loc>
+		<lastmod>2026-11-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.npchatbot.com/feedback</loc>
+		<lastmod>2026-11-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.npchatbot.com/analysis</loc>
+		<lastmod>2026-11-08</lastmod>
 	</url>
 </urlset>

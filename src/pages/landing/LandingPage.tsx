@@ -1,7 +1,7 @@
 import IconSpan from "../components/IconSpan";
 import Seo from "../components/Seo";
 import VideoWithPlaceholder from "../components/VideoWithPlaceholder";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const softwareAppJsonLd = {
   "@context": "https://schema.org",
@@ -44,9 +44,7 @@ const demoVideoJsonLd = {
 const homeJsonLd = [softwareAppJsonLd, demoVideoJsonLd];
 
 const LandingPage = (): JSX.Element => {
-  const navigate = useNavigate();
-  const handleLearnMore = () => {
-    navigate("/features");
+  const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   };
   return (
@@ -59,7 +57,7 @@ const LandingPage = (): JSX.Element => {
       />
       <div className="download-section">
         <div className="download-box">
-          <div className="download-header">Download npChatbot</div>
+          <h2 className="download-header">Download npChatbot</h2>
           <div className="download-version">(version 2.0 for PC & Mac soon)</div>
           <div className="download-button-group">
             <a
@@ -106,8 +104,13 @@ const LandingPage = (): JSX.Element => {
             <div className="features-page-feature video-element">
               <VideoWithPlaceholder
                 src="/videos/npchatbot_demo.MP4"
+                poster="/images/npchatbot-demo-thumbnail.jpg"
                 ariaLabel="npChatbot demo video"
               />
+              <p className="video-caption">
+                npChatbot in action: a Serato DJ live playlist connected
+                to Twitch chat with real-time song and playlist stats during a live DJ stream.
+              </p>
             </div>
           </div>
         </div>
@@ -164,9 +167,13 @@ const LandingPage = (): JSX.Element => {
       </div>
       {/* Learn More Button */}
       <div className="learn-more-button-container">
-        <button className="learn-more-button" onClick={handleLearnMore}>
-          Learn More
-        </button>
+        <Link
+          to="/features"
+          className="learn-more-button"
+          onClick={scrollToTop}
+        >
+          Explore all npChatbot features
+        </Link>
       </div>
     </div>
   );

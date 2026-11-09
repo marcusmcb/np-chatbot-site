@@ -86,6 +86,16 @@
 	font-size: 16px;
 	font-weight: 300;
 }
+
+.video-caption {
+	font-family: 'DM Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+	margin: 12px 10px 0 10px;
+	line-height: 1.5;
+}
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
@@ -350,6 +360,7 @@
 	font-size: 1em;
 	margin: 0 auto;
 	display: block;
+	text-decoration: none;
 }
 
 .learn-more-button:hover {
