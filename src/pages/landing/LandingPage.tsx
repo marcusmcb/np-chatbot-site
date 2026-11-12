@@ -62,7 +62,7 @@ const LandingPage = (): JSX.Element => {
           <div className="download-button-group">
             <a
               className="download-button"
-              href="https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.1-setup.exe"
+              href="https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-2.0-setup.exe"
             >
               Download (PC - 2.0)
             </a>
