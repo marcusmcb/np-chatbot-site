@@ -13,7 +13,7 @@ const softwareAppJsonLd = {
     "npChatbot connects Serato DJ live playlist history to Twitch chat with interactive commands, Spotify playlist tools, Discord sharing, and DJ set analytics.",
   url: "https://www.npchatbot.com/",
   downloadUrl:
-    "https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.1-setup.exe",
+    "https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-2.0-setup.exe",
   softwareVersion: "1.1",
   dateModified: "2026-11-08",
   author: {
@@ -58,13 +58,13 @@ const LandingPage = (): JSX.Element => {
       <div className="download-section">
         <div className="download-box">
           <h2 className="download-header">Download npChatbot</h2>
-          <div className="download-version">(version 2.0 for PC & Mac soon)</div>
+          <div className="download-version">(version 2.0 for Mac coming soon)</div>
           <div className="download-button-group">
             <a
               className="download-button"
               href="https://npchatbot-downloads.s3.us-west-2.amazonaws.com/npchatbot-1.1-setup.exe"
             >
-              Download (PC - 1.1)
+              Download (PC - 2.0)
             </a>
             <a
               className="download-button download-button-secondary"
