@@ -135,6 +135,7 @@
 	height: 2vh;
 	color: rgb(74, 242, 228);
 	font-weight: 500;
+  margin-top: auto;
 }
 
 .navbar a {
