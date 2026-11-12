@@ -57,7 +57,11 @@ const FeedbackPage = (): JSX.Element => {
 			<div className='feedback-page-container'>
 				<div className='feedback-page-item'>
 					<p>
-						npChatbot is not affiliated with, endorsed, or sponsored by Twitch<IconSpan/>, Spotify<IconSpan/>, or Serato<IconSpan/> or any of its affiliates or subsidiaries.
+						npChatbot is not affiliated with, endorsed, or sponsored by Twitch
+						<IconSpan />, Spotify
+						<IconSpan />, Discord
+						<IconSpan />, or Serato
+						<IconSpan /> or any of its affiliates or subsidiaries.
 					</p>
 					<p>
 						All trademarks, logos, and brand names used in this project are the
@@ -67,12 +71,15 @@ const FeedbackPage = (): JSX.Element => {
 					</p>
 					<p>
 						As such, any usage of trademarks to refer to said services is
-						nominative in use. The intended purpose behind the npChatbot project
-						is to help facilitate music discovery within a DJ's live stream by
-						extending the existing technology currently in use by many
-						streaming DJs.{' '}
+						nominative in use.{' '}
 					</p>
-					<p>If there are any questions or concerns, please contact us.</p>
+					<p>
+						The intended purpose behind the npChatbot project is to help
+						facilitate music discovery within a DJ's live stream by extending
+						the existing technology currently in use by many streaming DJs.{' '}
+					</p>
+          <br/>
+					<p>Use the link to get in touch with us.</p>
 				</div>
 			</div>
 
@@ -81,7 +88,7 @@ const FeedbackPage = (): JSX.Element => {
 					className='highlighted-text mail-link'
 					href='mailto:npchatbotapp@gmail.com'
 				>
-					<span	>Send Us A Message</span>
+					<span>Send Us A Message</span>
 				</a>
 			</div>
 		</div>
